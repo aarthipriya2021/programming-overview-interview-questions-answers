@@ -63,3 +63,227 @@
 ![image](https://user-images.githubusercontent.com/75599178/172365383-62c4f9b3-708f-4bcb-9540-e0e561792105.png)
 	
 </details>
+
+### Table
+<details>
+  <summary>:bulb:</summary>
+	A basic Bootstrap 5 table has a light padding and horizontal dividers.
+
+``` html
+	<!-- table -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Tables</title>
+	</head>
+	<body>
+	    <div class="container text-center">
+	    <table class="table">
+		<thead>
+		    <tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+		    </tr>
+		</thead>
+		</tbody>
+		    <tr>
+			<td>Mary</td>
+			<td>Moe</td>
+			<td>mary@example.com</td>
+		    </tr>
+		    <tr>
+			<td>July</td>
+			<td>Dooley</td>
+			<td>july@example.com</td>
+		    </tr>
+		    <tr></tr>
+		</tbody>
+	    </div>
+	    </table>
+	</body>
+	</html> 
+	
+```
+![image](https://user-images.githubusercontent.com/75599178/172455324-1c87ebd0-286f-437d-b0b7-d8bab47df1ae.png)
+
+``` html
+	<!-- table-striped-->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Tables</title>
+	</head>
+	<body>
+	    <div class="container text-center">
+	    <table class="table table-striped">
+		<thead>
+		    <tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+		    </tr>
+		</thead>
+		</tbody>
+		    <tr>
+			<td>Mary</td>
+			<td>Moe</td>
+			<td>mary@example.com</td>
+		    </tr>
+		    <tr>
+			<td>July</td>
+			<td>Dooley</td>
+			<td>july@example.com</td>
+		    </tr>
+		    <tr></tr>
+		</tbody>
+	    </div>
+	    </table>
+	</body>
+	</html>
+	
+```
+![image](https://user-images.githubusercontent.com/75599178/172455635-e54be125-c97b-4d03-9069-61b21ff20000.png)
+
+``` html
+	<!-- bordered table-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Tables</title>
+	</head>
+	<body>
+	    <div class="container text-center">
+	    <table class="table table-bordered">
+		<thead>
+		    <tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+		    </tr>
+		</thead>
+		</tbody>
+		    <tr>
+			<td>Mary</td>
+			<td>Moe</td>
+			<td>mary@example.com</td>
+		    </tr>
+		    <tr>
+			<td>July</td>
+			<td>Dooley</td>
+			<td>july@example.com</td>
+		    </tr>
+		    <tr></tr>
+		</tbody>
+	    </div>
+	    </table>
+	</body>
+	</html>
+	
+```
+![image](https://user-images.githubusercontent.com/75599178/172455829-621f56dd-0056-416f-a945-11f8629baec2.png)
+
+``` html
+	<!-- hover rows-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Tables</title>
+	</head>
+	<body>
+	    <div class="container text-center">
+	    <table class="table table-hover">
+		<thead>
+		    <tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+		    </tr>
+		</thead>
+		</tbody>
+		    <tr>
+			<td>Mary</td>
+			<td>Moe</td>
+			<td>mary@example.com</td>
+		    </tr>
+		    <tr>
+			<td>July</td>
+			<td>Dooley</td>
+			<td>july@example.com</td>
+		    </tr>
+		    <tr></tr>
+		</tbody>
+	    </div>
+	    </table>
+	</body>
+	</html>
+	
+```
+![image](https://user-images.githubusercontent.com/75599178/172456377-1c9e8753-ffe8-49c0-9125-3b15933b4fd2.png)
+
+``` html
+	
+	<!-- borderless table-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Tables</title>
+	</head>
+	<body>
+	    <div class="container text-center">
+	    <table class="table table-borderless">
+		<thead>
+		    <tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Email</th>
+		    </tr>
+		</thead>
+		</tbody>
+		    <tr>
+			<td>Mary</td>
+			<td>Moe</td>
+			<td>mary@example.com</td>
+		    </tr>
+		    <tr>
+			<td>July</td>
+			<td>Dooley</td>
+			<td>july@example.com</td>
+		    </tr>
+		    <tr></tr>
+		</tbody>
+	    </div>
+	    </table>
+	</body>
+	</html>
+	
+```
+![image](https://user-images.githubusercontent.com/75599178/172456883-58f29aaf-7532-44be-94ff-e718912e9a6f.png)
+
+</details>
+
