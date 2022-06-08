@@ -798,8 +798,767 @@
 	
 </details>
 
+### Buttons
+<details>
+	<summary>:bulb:</summary>
+	
+``` html
+	<!-- Buttons -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Button Styles</h2>
+		<button type="button" class="btn">Basic</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-secondary">Secondary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-dark">Dark</button>
+		<button type="button" class="btn btn-light">Light</button>
+		<button type="button" class="btn btn-link">Link</button>      
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172627223-db628315-06a9-41d1-8b52-ad942c782680.png)
+	
+``` html
+	<!-- Buttons Elements-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Button Elements</h2>
+		<a href="#" class="btn btn-success">Link Button</a>
+		<button type="button" class="btn btn-success">Button</button>
+		<input type="button" class="btn btn-success" value="Input Button">
+		<input type="submit" class="btn btn-success" value="Submit Button">
+		<input type="reset" class="btn btn-success" value="Reset Button" disabled>    
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172628293-c8fe321f-3597-4901-804c-4530c797c0ed.png)
+	
+``` html
+	<!-- Buttons Outline -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Button Outline</h2>
+		<button type="button" class="btn btn-outline-primary">Primary</button>
+		<button type="button" class="btn btn-outline-secondary">Secondary</button>
+		<button type="button" class="btn btn-outline-success">Success</button>
+		<button type="button" class="btn btn-outline-info">Info</button>
+		<button type="button" class="btn btn-outline-warning">Warning</button>
+		<button type="button" class="btn btn-outline-danger">Danger</button>
+		<button type="button" class="btn btn-outline-dark">Dark</button>
+		<button type="button" class="btn btn-outline-light text-dark">Light</button>   
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172628371-ccec0c0f-90d6-46ae-8ef4-6d05bec827d9.png)
+	
+``` html
+	<!-- Button Sizes -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Button Sizes</h2>
+		<button type="button" class="btn btn-primary btn-lg">Large</button>
+		<button type="button" class="btn btn-primary btn-md">Default</button>    
+		<button type="button" class="btn btn-primary btn-sm">Small</button>  
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172628445-2099cc5b-03ef-4298-badb-6638f03544d5.png)
+	
+``` html
+	<!-- Block Level Buttons -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		<div class="d-grid">
+		    <h2>Button Sizes</h2>
+		    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+		</div>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172628547-c0f6d054-2f1d-4ffc-909e-8c0f49acde5d.png)
+	
+``` html
+	<!-- space between buttons vertically-->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		<div class="d-grid gap-3">
+		    <h2>Button Sizes</h2>
+		    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+		    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+		    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+		</div>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172628685-2a989978-a471-4025-a830-9c2cdf53ac9b.png)
 
+``` html
+	<!-- Active/Disabled Buttons -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Button States</h2>
+		<button type="button" class="btn btn-primary">Primary Button</button>
+		<button type="button" class="btn btn-primary active">Active Primary</button>
+		<button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+		<a href="#" class="btn btn-primary disabled">Disabled Link</a>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172628855-335e9a3b-244e-4b51-be81-d75db0dbfd98.png)
 
+``` html
+	  <!-- button group / dropdown-item-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Buttons</title>
+	</head>
+	<body>
+	    <div class="container">
+		    <h2>Nesting Button Groups</h2>
+		    <p>Nest button groups to create dropdown menus:</p>
+		    <div class="btn-group">
+		      <button type="button" class="btn btn-primary">Apple</button>
+		      <button type="button" class="btn btn-primary">Samsung</button>
+		      <div class="btn-group">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="#">Tablet</a></li>
+			  <li><a class="dropdown-item" href="#">Smartphone</a></li>
+			</ul>
+		      </div>
+		    </div>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172628941-b61430f6-3ccb-482c-acfc-83fbcd08c4d4.png)
+	
+</details>
+
+### Badges
+<details>
+	<summary>:bulb:</summary>
+	
+``` html
+	<!-- Badges -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3 d-grid"></div>
+		<h2 class="text-center">Badges</h2>
+		<p class="text-center">Use the .badge class together with a contextual class (like .bg-secondary) within <span> elements to create rectangular badges. </p>
+		<h1 class="text-center">Example heading <span class="badge bg-secondary">New</span></h1>
+		<h2 class="text-center">Example heading <span class="badge bg-secondary">New</span></h2>
+		<h3 class="text-center">Example heading <span class="badge bg-secondary">New</span></h3>
+		<h4 class="text-center">Example heading <span class="badge bg-secondary">New</span></h4>
+		<h5 class="text-center">Example heading <span class="badge bg-secondary">New</span></h5>
+		<h6 class="text-center">Example heading <span class="badge bg-secondary">New</span></h6>    
+
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172632666-579347bd-7c68-46d2-a6a3-8b3c6978d3b3.png)
+
+``` html
+
+	<!-- Contextual Badges -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Contextual Badges</h2>
+		<span class="badge bg-primary">Primary</span>
+		<span class="badge bg-secondary">Secondary</span>
+		<span class="badge bg-success">Success</span>
+		<span class="badge bg-danger">Danger</span>
+		<span class="badge bg-warning">Warning</span>
+		<span class="badge bg-info">Info</span>
+		<span class="badge bg-light">Light</span>
+		<span class="badge bg-dark">Dark</span>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172632734-f1d6d333-616c-460f-ba13-d82798446cfa.png)
+
+``` html
+	<!-- Pill Badges -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Pill Badges</h2>
+		<span class="badge rounded-pill bg-primary">Primary</span>
+		<span class="badge rounded-pill bg-secondary">Secondary</span>
+		<span class="badge rounded-pill bg-success">Success</span>
+		<span class="badge rounded-pill bg-danger">Danger</span>
+		<span class="badge rounded-pill bg-warning">Warning</span>
+		<span class="badge rounded-pill bg-info">Info</span>
+		<span class="badge rounded-pill bg-light">Light</span>
+		<span class="badge rounded-pill bg-dark">Dark</span>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172632798-f10e2a78-8b88-4ab2-9bed-df43100a7ab4.png)
+
+``` html
+	<!-- Badge inside a Button -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Badge inside a Button</h2>
+		<button type="button" class="btn btn-primary">
+		  Messages <span class="badge bg-danger">4</span>
+		</button>
+		<button type="button" class="btn btn-danger">
+		  Notifications <span class="badge bg-dark">7</span>
+		</button>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172632863-b2ee6297-0297-449d-9efe-551282aab0d4.png)
+
+</details>
+
+### Progress Bar 
+<details>
+	<summary>:bulb:</summary>
+	
+``` html
+	<!-- Progress bars -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<p>A progress bar can be used to show how far a user is in a process.</p>
+		<h2>Basic Progress Bar</h2>
+		<p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+		<div class="progress">
+		    <div class="progress-bar" style="width:70%"></div>
+		</div>
+		<p>width indicates progresses.</p>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172638653-59d656ab-b9ad-4606-8455-a5d17300d869.png)	
+	
+``` html
+	<!-- Progress Bar Height -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Progress Bar Height</h2>
+		<p>The height of the progress bar is 1rem (16px) by default. Use the CSS height property to change the height:</p> 
+		<div class="progress" style="height:10px">
+		    <div class="progress-bar" style="width:40%;height:10px">40%</div>
+		</div>
+		<br>
+		<div class="progress" style="height:20px">
+		    <div class="progress-bar" style="width:50%;height:20px">50%</div>
+		</div>
+		<br>
+		<div class="progress" style="height:30px">
+		    <div class="progress-bar" style="width:60%;height:30px">60%</div>
+		</div>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172638741-2cc75fa4-7e3d-482c-8753-c7f8fa0a3a57.png)
+	
+``` html
+	<!-- Colored Progress Bars -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Colored Progress Bars</h2>
+		<p>Use any of the contextual color classes to change the color of the progress bar:</p> 
+		<!-- Blue -->
+		<div class="progress">
+		    <div class="progress-bar" style="width:10%"></div>
+		</div><br>
+
+		<!-- Green -->
+		<div class="progress">
+		    <div class="progress-bar bg-success" style="width:20%"></div>
+		</div><br>
+
+		<!-- Turquoise -->
+		<div class="progress">
+		    <div class="progress-bar bg-info" style="width:30%"></div>
+		</div><br>
+
+		<!-- Orange -->
+		<div class="progress">
+		    <div class="progress-bar bg-warning" style="width:40%"></div>
+		</div><br>
+
+		<!-- Red -->
+		<div class="progress">
+		    <div class="progress-bar bg-danger" style="width:50%"></div>
+		</div><br>
+
+		<!-- White -->
+		<div class="progress border">
+		    <div class="progress-bar bg-white" style="width:60%"></div>
+		</div><br>
+
+		<!-- Grey -->
+		<div class="progress">
+		    <div class="progress-bar bg-secondary" style="width:70%"></div>
+		</div><br>
+
+		<!-- Light Grey -->
+		<div class="progress border">
+		    <div class="progress-bar bg-light" style="width:80%"></div>
+		</div><br>
+
+		<!-- Dark Grey -->
+		<div class="progress">
+		    <div class="progress-bar bg-dark" style="width:90%"></div>
+		</div>
+	    </div>
+	</body>
+	</html>
+	
+```	
+![image](https://user-images.githubusercontent.com/75599178/172638836-54df12ea-7caa-448c-9101-002e741aa776.png)
+	
+``` html
+	<!-- Striped Progress Bars -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Striped Progress Bars</h2>
+		<p>The .progress-bar-striped class adds stripes to the progress bars:</p> 
+		<div class="progress">
+		    <div class="progress-bar progress-bar-striped" style="width:30%"></div>
+		</div>
+		<br>
+		<div class="progress">
+		    <div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
+		</div>
+		<br>
+		<div class="progress">
+		    <div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
+		</div>
+		<br>
+		<div class="progress">
+		    <div class="progress-bar bg-warning progress-bar-striped" style="width:60%"></div>
+		</div>
+		<br>
+		<div class="progress">
+		    <div class="progress-bar bg-danger progress-bar-striped" style="width:70%"></div>
+		</div>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172639001-c3030749-05c1-4209-a676-bd0502c7f9fd.png)
+
+	
+``` html
+	<!-- Animated Progress Bar -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Badges | Progress Bars</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-4">
+		<h2>Animated Progress Bar</h2>
+		<p>Add the .progress-bar-animated class to animate the progress bar:</p> 
+		<div class="progress">
+		    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+		</div>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172639105-efa8ffd3-8bab-44c0-b25e-86f4432f3770.png)
+	
+
+</details>
+
+### Pagination
+
+<details>
+	<summary>:bulb:</summary>
+
+``` html
+	<!-- Pagination -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Pagination</h2>
+		<p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>                  
+		<ul class="pagination">
+		  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		  <li class="page-item"><a class="page-link" href="#">1</a></li>
+		  <li class="page-item"><a class="page-link" href="#">2</a></li>
+		  <li class="page-item"><a class="page-link" href="#">3</a></li>
+		  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172673217-b67893a8-8455-4f2c-ba3d-dd63af2c5958.png)
+	
+``` html
+	<!-- Active State -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Active State Pagination</h2>
+		<p>Add class .active to let the user know which page he/she is on:</p>
+		<ul class="pagination">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+	
+```
+![image](https://user-images.githubusercontent.com/75599178/172673404-5dbfe32b-26bd-4ac8-a832-e598ef0b55c9.png)
+	
+``` html
+	<!-- Disabled State -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Disabled State Pagination</h2>
+		<p>Add class .disabled if a page for some reason is disabled:</p>
+		<ul class="pagination">
+		    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172673451-4d9974f3-3013-4f38-8118-e31588a1cf9f.png)
+	
+``` html
+	<!-- Pagination Sizing -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Pagination Sizing</h2>
+		<p>Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks.</p>
+		<p>Large:</p>
+		<ul class="pagination pagination-lg">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+
+		<p>Default:</p>
+		<ul class="pagination">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+
+		<p>Small:</p>
+		<ul class="pagination pagination-sm">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		</ul>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172673502-7b41c847-0186-4616-8a58-a25bcfbc83cd.png)
+	
+``` html
+	<!-- Pagination Alignment -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Pagination Alignment</h2>
+		<p>Use utilitiy classes to change the alignment of the pagination:</p>                  
+		<ul class="pagination">
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+		</ul>
+		<ul class="pagination justify-content-center">
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+		</ul>
+		<ul class="pagination justify-content-end">
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+		    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172673560-e606e9e8-eb97-4f4b-b2d2-de25f7d9fbb2.png)
+	
+``` html
+	<!-- Breadcrumbs -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h2>Breadcrumbs</h2>
+		<p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>                  
+		<ul class="breadcrumb">
+		    <li class="breadcrumb-item"><a href="#">Photos</a></li>
+		    <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+		    <li class="breadcrumb-item"><a href="#">Italy</a></li>
+		    <li class="breadcrumb-item active">Rome</li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172673633-ce02b33e-db4d-4a4a-8631-b980f7736bf5.png)
+	
+</details>
+
+### 
+<details>
+	<summary>:bulb:</summary>
+</details>
 
 
 
