@@ -287,3 +287,150 @@
 
 </details>
 
+### Images
+<details>
+  <summary>:bulb:</summary>
+
+``` html
+	<!-- Rounded corner-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Images</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Rounded Corners</h2>
+		<p>The .rounded class adds rounded corners to an image:</p>            
+		<img src="./Images/cat.jpg" class="rounded" alt="cat" width="304" height="236"> 
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172526287-f191c348-54cc-4f06-b792-c3b34137de37.png)
+
+```html
+	<!-- Circle -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Images</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Circle</h2>
+		<p>The .rounded-circle class adds rounded corners to an image:</p>            
+		<img src="./Images/cat.jpg" class="rounded-circle" alt="cat" width="304" height="236"> 
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172526393-83e22406-eef6-4f1a-befd-f1841f1b52ec.png)
+
+``` html 
+	<!-- Thumbnail -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Images</title>
+	</head>
+	<body>
+	    <div class="container">
+		<h2>Thumbnail</h2>
+		<p>The .img-thumbnail class adds rounded corners to an image:</p>            
+		<img src="./Images/cat.jpg" class="img-thumbnail" alt="cat" width="304" height="236"> 
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172526505-b0e5775d-9184-4ae2-ab55-d17920dc6e99.png)
+
+``` html
+	<!-- Aligning Images -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Images</title>
+	</head>
+	<body>
+	    <h2>Aligning images</h2>
+	    <p>Use the float classes to float the image to the left or to the right:</p> 
+	    <img src="./Images/cat.jpg" class="float-start" alt="Paris" width="304" height="236"> 
+	    <img src="./Images/cat.jpg" class="float-end" alt="Paris" width="304" height="236"> 
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172526715-8c5bb424-40e2-4287-85dd-7483f0513828.png)
+
+``` html
+	<!-- Centered Image -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Images</title>
+	</head>
+	<body>
+	    <div>
+		<h2>Centered Image</h2>
+		<p>Center an image by adding the utility classes .mx-auto (margin:auto) and .d-block (display:block) to the image:</p> 
+		<img src="./Images/cat.jpg" class="mx-auto d-block" style="width:20%"> 
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172526884-6a44fe2b-6610-44b9-8c6b-d54769a4fb38.png)
+	
+``` html 
+	<!-- Responsive Images -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Images</title>
+	</head>
+	<body>
+	    <div>
+		<h2>Responsive Images</h2>
+		<p>The .img-fluid class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>
+		<img class="img-fluid" src="./Images/cat.jpg" alt="cat" width="1100" height="500"> 
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172527137-de53b9e7-f6fd-4287-94b0-c53c51da6700.png)
+
+</details>
+
+### 
+<details>
+	<summary>:bulb:</summary>
+</details>
