@@ -2010,7 +2010,297 @@
 ![image](https://user-images.githubusercontent.com/75599178/172761487-082b2ad4-3378-497a-a23e-2ec48572e016.png)
 	
 </details>
+		
+### Dropdown
+		
+<details>
+	<summary>:bulb:</summary>
+	
+``` JS
+	<!-- Dropdowns-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	  <div class="container mt-3 mb-5">
+	    <h2>Dropdowns</h2>
+	    <p>The .dropdown class is used to indicate a dropdown menu.</p>
+	    <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+	    <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>                                          
+	    <div class="dropdown">
+	      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+		Dropdown button
+	      </button>
+	      <ul class="dropdown-menu">
+		<li><a class="dropdown-item" href="#">Link 1</a></li>
+		<li><a class="dropdown-item" href="#">Link 2</a></li>
+		<li><a class="dropdown-item" href="#">Link 3</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172788277-1bbb2036-4fbf-4408-ace0-01316156e754.png)
+	
+``` JS
+	<!-- Dropdown divider-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-5">
+	      <h2>Dropdowns</h2>
+	      <p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
 
+	      <div class="dropdown">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		  Dropdown button
+		</button>
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#">Link 1</a></li>
+		  <li><a class="dropdown-item" href="#">Link 2</a></li>
+		  <li><a class="dropdown-item" href="#">Link 3</a></li>
+		  <li><hr class="dropdown-divider"></li>
+		  <li><a class="dropdown-item" href="#">Another link</a></li>
+		</ul>
+	      </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172788604-f71e324b-27d7-41e7-acaf-5bf6095b1a8d.png)
+
+``` JS
+	<!-- Dropdown header-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Dropdown header</h2>
+	      <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+
+	      <div class="dropdown">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		  Dropdown button
+		</button>
+		<ul class="dropdown-menu">
+		  <li><h5 class="dropdown-header">Dropdown header 1</h5></li>
+		  <li><a class="dropdown-item" href="#">Link 1</a></li>
+		  <li><a class="dropdown-item" href="#">Link 2</a></li>
+		  <li><a class="dropdown-item" href="#">Link 3</a></li>
+		  <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+		  <li><a class="dropdown-item" href="#">Another link</a></li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172789061-4c351c2f-06f7-4654-8902-00198cba930b.png)
+
+``` JS
+	<!-- Dropdown Active state-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Dropdowns</h2>
+	      <p>The .active class adds a blue background color to the active link.</p>
+	      <p>The .disabled class disables a dropdown item (grey text color and a no-parking-sign on hover).</p>
+
+	      <div class="dropdown">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		  Dropdown button
+		</button>
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#">Normal</a></li>
+		  <li><a class="dropdown-item active" href="#">Active</a></li>
+		  <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+		</ul>
+	      </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172789595-fd118e8a-0b8d-4bd7-9028-f719e0dc75aa.png)
+
+``` JS
+	<!-- Dropend - Dropstart-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Dropend - Dropstart</h2>
+	      <p>Add the .dropend class next to the dropdown menu to right-align the dropdown. Note that the caret/arrows is added automatically:</p>
+	      <p>Add the .dropstart class next to the dropdown menu to left-align the dropdown. Note that the caret/arrow is added automatically. Also note that we float the dropdown to the right:</p>
+
+	      <div class="dropdown dropend">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		  Dropend
+		</button>
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#">Normal</a></li>
+		  <li><a class="dropdown-item active" href="#">Active</a></li>
+		  <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+		</ul>
+	      </div>
+
+	      <div class="dropdown dropstart text-end">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		  Dropstart
+		</button>
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#">Normal</a></li>
+		  <li><a class="dropdown-item active" href="#">Active</a></li>
+		  <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+		</ul>
+	      </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172789939-0d298d77-dd0c-4ada-a1b2-884eae9b9520.png)
+![image](https://user-images.githubusercontent.com/75599178/172789998-1245d103-7197-45ec-b6c2-754a26e58896.png)
+
+``` JS
+	<!-- Dropdown Menu Right-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+	      <h2>Dropdown Menu Right</h2>
+	      <p>Add the .dropdown-menu-end class to .dropdown-menu to right-align the dropdown menu.</p>
+
+	      <div class="dropdown dropdown-menu-end">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		  Wide dropdown button to demonstrate this example
+		</button>
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#">Link 1</a></li>
+		  <li><a class="dropdown-item" href="#">Link 2</a></li>
+		  <li><a class="dropdown-item" href="#">Link 3</a></li>
+		</ul>
+	      </div>
+	  </div>
+	</body>
+	</html>
+```		
+![image](https://user-images.githubusercontent.com/75599178/172790350-d1e26129-e7de-4e2e-9212-b8aa295b54d4.png)
+
+``` JS
+	<!-- Dropup-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Dropup</h2>
+	      <p>The .dropup class makes the dropdown menu expand upwards instead of downwards:</p>
+	      <p>It must be room for the dropup menu to grow. That is why we add some extra lorem ipsum text.</p>
+	      <p>Lorem ipsum one more time!</p>
+
+	      <div class="dropup">
+		<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		  Dropup button
+		</button>
+		<ul class="dropdown-menu">
+		  <li><a class="dropdown-item" href="#">Link 1</a></li>
+		  <li><a class="dropdown-item" href="#">Link 2</a></li>
+		  <li><a class="dropdown-item" href="#">Link 3</a></li>
+		</ul>
+	      </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172790685-04dbb40e-4a72-48dc-bc0d-f740a88471bd.png)
+
+``` JS
+	<!-- Dropdown Text-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Dropdown Text</h2>
+	      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+		Dropdown button
+	      </button>
+	      <ul class="dropdown-menu">
+		<li><a class="dropdown-item" href="#">Link 1</a></li>
+		<li><a class="dropdown-item" href="#">Link 2</a></li>
+		<li><a class="dropdown-item" href="#">Link 3</a></li>
+		<li><a class="dropdown-item-text" href="#">Text Link</a></li>
+		<li><span class="dropdown-item-text">Just Text</span></li>
+	      </ul>
+	    </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172790944-982e3810-621e-4e81-a0c6-6a5d905be0f8.png)
+		
+</details>
 
 
 
