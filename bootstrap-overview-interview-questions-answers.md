@@ -1379,7 +1379,7 @@
 ![image](https://user-images.githubusercontent.com/75599178/172673217-b67893a8-8455-4f2c-ba3d-dd63af2c5958.png)
 	
 ``` html
-	<!-- Active State -->>
+	<!-- Active State -->
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -1409,7 +1409,7 @@
 ![image](https://user-images.githubusercontent.com/75599178/172673404-5dbfe32b-26bd-4ac8-a832-e598ef0b55c9.png)
 	
 ``` html
-	<!-- Disabled State -->>
+	<!-- Disabled State -->
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -1438,7 +1438,7 @@
 ![image](https://user-images.githubusercontent.com/75599178/172673451-4d9974f3-3013-4f38-8118-e31588a1cf9f.png)
 	
 ``` html
-	<!-- Pagination Sizing -->>
+	<!-- Pagination Sizing -->
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -1486,7 +1486,7 @@
 ![image](https://user-images.githubusercontent.com/75599178/172673502-7b41c847-0186-4616-8a58-a25bcfbc83cd.png)
 	
 ``` html
-	<!-- Pagination Alignment -->>
+	<!-- Pagination Alignment -->
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -1526,7 +1526,7 @@
 ![image](https://user-images.githubusercontent.com/75599178/172673560-e606e9e8-eb97-4f4b-b2d2-de25f7d9fbb2.png)
 	
 ``` html
-	<!-- Breadcrumbs -->>
+	<!-- Breadcrumbs -->
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -1555,14 +1555,461 @@
 	
 </details>
 
-### 
+### List Groups
+
 <details>
 	<summary>:bulb:</summary>
+	
+``` html
+	<!-- List Group -->>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>Basic List Group</h2>
+		<ul class="list-group">
+		  <li class="list-group-item">First item</li>
+		  <li class="list-group-item">Second item</li>
+		  <li class="list-group-item">Third item</li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750040-8c9d29d6-4a29-4e85-b344-5acd3b8f0004.png)
+	
+``` html
+	<!-- List Group Active State-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>Active Item in a List Group</h2>
+		<ul class="list-group">
+		    <li class="list-group-item active">Active item</li>
+		    <li class="list-group-item">Second item</li>
+		    <li class="list-group-item">Third item</li>
+		</ul>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750075-1377c8ba-6d3d-4824-8b1b-50c7d23b60d1.png)
+	
+``` html
+	<!-- List Group With Linked Items-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>List Group With Linked Items</h2>
+		<div class="list-group">
+		    <a href="#" class="list-group-item list-group-item-action">First item</a>
+		    <a href="#" class="list-group-item list-group-item-action">Second item</a>
+		    <a href="#" class="list-group-item list-group-item-action">Third item</a>
+		</div>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750117-a00cd2d9-dc98-46a4-b84e-5cd4d1c1d286.png)
+
+``` html
+	<!-- List Group With a Disabled Item-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>List Group With a Disabled Item</h2>
+		<p>The disabled class adds a lighter text color to the disabled item. And if used on links, it will remove the default hover effect.</p>
+		<div class="list-group">
+		    <a href="#" class="list-group-item disabled">Disabled item</a>
+		    <a href="#" class="list-group-item disabled">Disabled item</a>
+		    <a href="#" class="list-group-item">Third item</a>
+		</div>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750163-07086951-8961-4981-929f-d27c0d466dab.png)
+	
+``` html
+	<!-- Flush / Remove Borders-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>Flush / Remove Borders</h2>
+		<p>Use the .list-group-flush class to remove some borders and rounded corners:</p>
+	    </div>
+
+	    <div class="container mt-3 mb-3">
+		<ul class="list-group list-group-flush">
+		    <li class="list-group-item">First item</li>
+		    <li class="list-group-item">Second item</li>
+		    <li class="list-group-item">Third item</li>
+		    <li class="list-group-item">Fourth item</li>
+		  </ul>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750213-7a6895ff-1811-4777-9761-6288ab54286a.png)
+
+``` html
+	<!-- Numbered List Groups -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>Numbered List Group</h2>
+		<p>Use the .list-group-numbered class to create list items with numbers in front of them:</p>
+	    </div>
+
+	    <div class="container mt-3 mb-3">
+		<ol class="list-group list-group-numbered">
+		    <li class="list-group-item">First item</li>
+		    <li class="list-group-item">Second item</li>
+		    <li class="list-group-item">Third item</li>
+		</ol>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750244-21069770-587c-42b0-9a0e-e22984672eda.png)
+	
+``` html
+	<!-- Horizontal List Groups -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>Horizontal List Groups</h2>
+		<p>The .list-group-horizontal class displays the list items horizontally instead of vertically:</p>
+	    </div>
+
+	    <div class="container mt-3 mb-3">
+		<ul class="list-group list-group-horizontal">
+		    <li class="list-group-item">First item</li>
+		    <li class="list-group-item">Second item</li>
+		    <li class="list-group-item">Third item</li>
+		    <li class="list-group-item">Fourth item</li>
+		</ul>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750272-c9dc78be-7b07-480f-9a8d-69efe399a42d.png)
+	
+``` html
+	<!-- List Group With Badges -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Pagination | Lists</title>
+	</head>
+	<body>
+	    <div class="container mt-3 mb-3">
+		<h2>List Group With Badges</h2>
+		<p>Combine .badge classes with utility/helper classes to add badges inside the list group:</p>
+	    </div>
+
+	    <div class="container mt-3 mb-3">
+		<ul class="list-group">
+		    <li class="list-group-item d-flex justify-content-between align-items-center">
+		      Inbox
+		      <span class="badge bg-primary rounded-pill">12</span>
+		    </li>
+		    <li class="list-group-item d-flex justify-content-between align-items-center">
+		      Ads
+		      <span class="badge bg-primary rounded-pill">50</span>
+		    </li>
+		    <li class="list-group-item d-flex justify-content-between align-items-center">
+		      Junk
+		      <span class="badge bg-primary rounded-pill">99</span>
+		    </li>
+		</ul>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172750322-50c1cc6d-4495-48ab-ae7c-31bffc38e8af.png)	
+
 </details>
 
+### Cards
 
+<details>
+	<summary>:bulb:</summary>
+	
+``` JS
+	<!-- Basic Card-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Basic Card</h2>
+	      <div class="card">
+		<div class="card-body">Basic card</div>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172761210-e1d306ab-3453-45af-b148-7696be37815f.png)
+		
+``` JS
+	<!-- Header and Footer-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Card Header and Footer</h2>
+	      <div class="card">
+		<div class="card-header">Header</div>
+		<div class="card-body">Content</div> 
+		<div class="card-footer">Footer</div>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172761254-283760d3-bfe4-4e62-b310-ef1c7b038473.png)
 
+``` JS
+	<!-- Cards with Contextual Classes-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Cards with Contextual Classes</h2>
+	      <div class="card">
+		<div class="card-body">Basic card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-primary text-white">
+		<div class="card-body">Primary card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-success text-white">
+		<div class="card-body">Success card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-info text-white">
+		<div class="card-body">Info card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-warning text-white">
+		<div class="card-body">Warning card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-danger text-white">
+		<div class="card-body">Danger card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-secondary text-white">
+		<div class="card-body">Secondary card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-dark text-white">
+		<div class="card-body">Dark card</div>
+	      </div>
+	      <br>
+	      <div class="card bg-light text-dark">
+		<div class="card-body">Light card</div>
+	      </div>
+	    </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172761297-e35ce124-ad07-4365-95e1-26b79ba0b0f3.png)
+		
+``` JS
+	<!-- Card titles, text, and links-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Card titles, text, and links</h2>
+	      <p>Use .card-title to add card titles to any heading element. The .card-text class is used to remove bottom margins for a p element if it is the last child (or the only one) in card-body. The .card-link class adds a blue color to any link, and a hover effect.</p>
+	      <div class="card">
+		<div class="card-body">
+		  <h4 class="card-title">Card title</h4>
+		  <p class="card-text">Some example text. Some example text.</p>
+		  <a href="#" class="card-link">Card link</a>
+		  <a href="#" class="card-link">Another link</a>
+		</div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172761346-9fc04958-489a-4e47-a7d4-0792381b2618.png)
+		
+``` JS
+	<!-- Card Image-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Card Image</h2>
+	      <p>Image at the top (card-img-top):</p>
+	      <div class="card" style="width:400px">
+		<img class="card-img-top" src="./Images/man.png" alt="Card image" style="width:100%">
+		<div class="card-body">
+		  <h4 class="card-title">John Doe</h4>
+		  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+		  <a href="#" class="btn btn-primary">See Profile</a>
+		</div>
+	      </div>
+	      <br>
 
+	      <p>Image at the bottom (card-img-bottom):</p>
+	      <div class="card" style="width:400px">
+		<div class="card-body">
+		  <h4 class="card-title">Jane Doe</h4>
+		  <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+		  <a href="#" class="btn btn-primary">See Profile</a>
+		</div>
+		<img class="card-img-bottom" src="./Images/man.png" alt="Card image" style="width:100%">
+	      </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172761420-5389677c-1cde-4ba8-a85d-ae3266674ef3.png)
+
+![image](https://user-images.githubusercontent.com/75599178/172761445-c3f06179-466a-4730-b985-dc718e0723a3.png)
+
+``` JS
+	<!-- Card Image Overlay-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Cards | Dropdowns</title>
+	</head>
+	<body>
+	    <div class="container mt-3">
+	      <h2>Card Image Overlay</h2>
+	      <p>Turn an image into a card background and use .card-img-overlay to overlay the card's text:</p>
+	      <div class="card img-fluid" style="width:500px">
+		<img class="card-img-top" src="./Images/man.png" alt="Card image" style="width:100%">
+		<div class="card-img-overlay">
+		  <h4 class="card-title">John Doe</h4>
+		  <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+		  <a href="#" class="btn btn-primary">See Profile</a>
+		</div>
+	      </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/172761487-082b2ad4-3378-497a-a23e-2ec48572e016.png)
+	
+</details>
 
 
 
