@@ -1803,7 +1803,7 @@
 <details>
 	<summary>:bulb:</summary>
 	
-``` JS
+``` html
 	<!-- Basic Card-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -1826,7 +1826,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172761210-e1d306ab-3453-45af-b148-7696be37815f.png)
 		
-``` JS
+``` html
 	<!-- Header and Footer-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -1851,7 +1851,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172761254-283760d3-bfe4-4e62-b310-ef1c7b038473.png)
 
-``` JS
+``` html
 	<!-- Cards with Contextual Classes-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -1907,7 +1907,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172761297-e35ce124-ad07-4365-95e1-26b79ba0b0f3.png)
 		
-``` JS
+``` html
 	<!-- Card titles, text, and links-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -1936,7 +1936,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172761346-9fc04958-489a-4e47-a7d4-0792381b2618.png)
 		
-``` JS
+``` html
 	<!-- Card Image-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -1979,7 +1979,7 @@
 
 ![image](https://user-images.githubusercontent.com/75599178/172761445-c3f06179-466a-4730-b985-dc718e0723a3.png)
 
-``` JS
+``` html
 	<!-- Card Image Overlay-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2016,7 +2016,7 @@
 <details>
 	<summary>:bulb:</summary>
 	
-``` JS
+``` html
 	<!-- Dropdowns-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2050,7 +2050,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172788277-1bbb2036-4fbf-4408-ace0-01316156e754.png)
 	
-``` JS
+``` html
 	<!-- Dropdown divider-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2085,7 +2085,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172788604-f71e324b-27d7-41e7-acaf-5bf6095b1a8d.png)
 
-``` JS
+``` html
 	<!-- Dropdown header-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2120,7 +2120,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172789061-4c351c2f-06f7-4654-8902-00198cba930b.png)
 
-``` JS
+``` html
 	<!-- Dropdown Active state-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2154,7 +2154,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172789595-fd118e8a-0b8d-4bd7-9028-f719e0dc75aa.png)
 
-``` JS
+``` html
 	<!-- Dropend - Dropstart-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2200,7 +2200,7 @@
 ![image](https://user-images.githubusercontent.com/75599178/172789939-0d298d77-dd0c-4ada-a1b2-884eae9b9520.png)
 ![image](https://user-images.githubusercontent.com/75599178/172789998-1245d103-7197-45ec-b6c2-754a26e58896.png)
 
-``` JS
+``` html
 	<!-- Dropdown Menu Right-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2233,7 +2233,7 @@
 ```		
 ![image](https://user-images.githubusercontent.com/75599178/172790350-d1e26129-e7de-4e2e-9212-b8aa295b54d4.png)
 
-``` JS
+``` html
 	<!-- Dropup-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2268,7 +2268,7 @@
 ```
 ![image](https://user-images.githubusercontent.com/75599178/172790685-04dbb40e-4a72-48dc-bc0d-f740a88471bd.png)
 
-``` JS
+``` html
 	<!-- Dropdown Text-->
 	<!DOCTYPE html>
 	<html lang="en">
@@ -2302,6 +2302,422 @@
 		
 </details>
 
+### Accordion
 
+<details>
+	<summary>:bulb:</summary>
+	
+``` html
+	<!-- Simple collapse-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Bootstrap Example</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
 
+	<div class="container mt-3">
+	  <h2>Simple Collapsible</h2>
+	  <p>Click on the button to toggle between showing and hiding content.</p>
+	  <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+	  <div id="demo" class="collapse">
+	    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+	    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+	  </div>
+	</div>
 
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173309601-1f45926f-e48d-4980-bd81-7ea48434218c.png)
+
+``` html	
+	<!-- Accordion-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Accordion</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+
+	<div class="container mt-3">
+	  <h2>Accordion Example</h2>
+	  <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+	  <div id="accordion">
+	    <div class="card">
+	      <div class="card-header">
+		<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+		  Collapsible Group Item #1
+		</a>
+	      </div>
+	      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+		<div class="card-body">
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+	      </div>
+	    </div>
+	    <div class="card">
+	      <div class="card-header">
+		<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+		Collapsible Group Item #2
+	      </a>
+	      </div>
+	      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+		<div class="card-body">
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+	      </div>
+	    </div>
+	    <div class="card">
+	      <div class="card-header">
+		<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+		  Collapsible Group Item #3
+		</a>
+	      </div>
+	      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+		<div class="card-body">
+		  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	</body>
+	</html>
+```	
+![image](https://user-images.githubusercontent.com/75599178/173309772-56440cfd-8d26-465d-9010-78e5db0217ce.png)
+
+</details>
+
+### Carousel
+
+<details>
+	<summary>:bulb:</summary>
+
+``` html
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Bootstrap Example</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+
+	<!-- Carousel -->
+	<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+	  <!-- Indicators/dots -->
+	  <div class="carousel-indicators">
+	    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+	    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+	    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	  </div>
+
+	  <!-- The slideshow/carousel -->
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="./Images/1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="./Images/2.jpg" alt="Chicago" class="d-block" style="width:100%">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="./Images/3.jpg" alt="New York" class="d-block" style="width:100%">
+	    </div>
+	  </div>
+
+	  <!-- Left and right controls/icons -->
+	  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon"></span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+	    <span class="carousel-control-next-icon"></span>
+	  </button>
+	</div>
+
+	<div class="container-fluid mt-3">
+	  <h3>Carousel Example</h3>
+	  <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+	</div>
+
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173334128-f4991e09-e432-4d12-910a-684a694fd96c.png)
+
+![image](https://user-images.githubusercontent.com/75599178/173334046-cec2ada8-c017-415b-b23c-e09fb7781634.png)
+
+</details>
+
+### Navigation Tab
+
+<details>
+	<summary>:bulb:</summary>
+	
+``` html
+	<!-- Toggable Tab -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Navigation Bar</title>
+	</head>
+	<body>
+	    <h2>Toggleable Tabs</h2>
+	  <br>
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" role="tablist">
+	    <li class="nav-item">
+	      <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+	    </li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div id="home" class="container tab-pane active"><br>
+	      <h3>HOME</h3>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	    </div>
+	    <div id="menu1" class="container tab-pane fade"><br>
+	      <h3>Menu 1</h3>
+	      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	    </div>
+	    <div id="menu2" class="container tab-pane fade"><br>
+	      <h3>Menu 2</h3>
+	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+	    </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173335115-654e2380-9c19-4860-a9f7-ec86c8ca3b75.png)
+
+``` html
+	<!-- Toggleable Pills -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Navigation Bar</title>
+	</head>
+	<body>
+	    <h2>Toggleable Pills</h2>
+	  <br>
+	    <!-- Nav pills -->
+	    <ul class="nav nav-pills" role="tablist">
+		<li class="nav-item">
+		<a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+		</li>
+	    </ul>
+
+	    <!-- Tab panes -->
+	    <div class="tab-content">
+		<div id="home" class="container tab-pane active"><br>
+		    <h3>HOME</h3>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div id="menu1" class="container tab-pane fade"><br>
+		    <h3>Menu 1</h3>
+		    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div id="menu2" class="container tab-pane fade"><br>
+		    <h3>Menu 2</h3>
+		    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+	    </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173335971-3e203cfd-220d-49f2-81fd-2b94b5f29158.png)
+
+``` html
+	<!---- vertical nav bar -->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	    <title>Navigation Bar</title>
+	</head>
+	<body>
+	  <br>
+	    <!-- vertical nav bar -->
+	    <nav class="navbar bg-light">
+		<div class="container-fluid">
+		  <ul class="navbar-nav">
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Link 1</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Link 2</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Link 3</a>
+		    </li>
+		  </ul>
+		</div>
+	      </nav>
+
+	      <div class="container-fluid mt-3">
+		<h3>Vertical Navbar Example</h3>
+		<p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+	      </div>
+	  </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173336252-1e46386d-0bda-4092-b11a-11398eecade5.png)
+
+``` html
+	<!-- Fixed top nav bar -->
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Navigation Bar</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body style="height:1500px">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Fixed top</a>
+	  </div>
+	</nav>
+
+	<div class="container-fluid" style="margin-top:80px">
+	  <h3>Top Fixed Navbar</h3>
+	  <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+	  <h1>Scroll this page to see the effect</h1>
+	</div>
+
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173344446-77c14684-a834-4198-beb4-aaa96538c22e.png)
+
+``` html
+	<!-- Fixed bottom nav bar-->
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Navigation Bar</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body style="height:1500px">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Fixed bottom</a>
+	  </div>
+	</nav>
+
+	<div class="container-fluid" style="margin-top:80px">
+	  <h3>Top Fixed Navbar</h3>
+	  <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+	  <h1>Scroll this page to see the effect</h1>
+	</div>
+
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173344623-5dff61c4-b183-49eb-974a-2778cab4fd1f.png)
+
+``` html
+	<!-- sticky top nav bar-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Navigation Bar</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body style="height:1500px">
+
+	<br>
+	  <h3>Sticky Navbar</h3>
+	  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
+	  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
+	</div>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Sticky top</a>
+	  </div>
+	</nav>
+
+	<div class="container-fluid"><br>
+	  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+	  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+	  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+	  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+	</div>
+
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173345272-73aefbd2-542d-448e-89c1-32450defabda.png)
+
+</details>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
