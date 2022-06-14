@@ -2706,6 +2706,366 @@
 
 </details>
 
+### Scrollspy
+
+<details>
+	<summary>:bulb:</summary>
+
+``` html
+	<!-- scrollspy-->
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Navigation Bar</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	  <style>
+	    body {
+		position: relative; 
+	    }
+	    </style>
+
+	</head>
+	<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	  <div class="container-fluid">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+		<a class="nav-link" href="#section1">Section 1</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-link" href="#section2">Section 2</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-link" href="#section3">Section 3</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div id="section1" class="container-fluid bg-success text-white" style="padding:600px 20px;">
+	  <h1>Section 1</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>
+
+	<div id="section2" class="container-fluid bg-warning" style="padding:600px 20px;">
+	  <h1>Section 2</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>
+
+	<div id="section3" class="container-fluid bg-secondary text-white" style="padding:600px 20px;">
+	  <h1>Section 3</h1>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+	</div>
+
+	</body>
+	</html>
+
+	<pre>
+	    Example Explained :
+
+	    Add data-bs-spy="scroll" to the element that should be used as the scrollable area (often this is the <body> element).
+
+	    Then add the data-bs-target attribute with a value of the id or the class name of the navigation bar (.navbar). This is to make sure that the navbar is connected with the scrollable area.
+
+	    Note : that scrollable elements must match the ID of the links inside the navbar's list items.
+
+	    The optional data-bs-offset attribute specifies the number of pixels to offset from top when calculating the position of scroll. This is useful when you feel that the links inside the navbar changes the active state too soon or too early when jumping to the scrollable elements. Default is 10 pixels.
+
+	    Requires relative positioning: The element with data-bs-spy="scroll" requires the CSS position property, with a value of "relative" to work properly.
+
+
+	</pre>
+```
+![image](https://user-images.githubusercontent.com/75599178/173503513-e4cd35b6-9b79-425b-bbc3-a8f7465e523c.png)
+![image](https://user-images.githubusercontent.com/75599178/173503650-8d0be7b4-91ec-448e-92bc-8453a0c1b22f.png)
+![image](https://user-images.githubusercontent.com/75599178/173503715-73baf945-318e-413c-ac47-3392413f14dc.png)
+
+</details>
+
+### Modal
+
+<details>
+	<summary>:bulb:</summary>
+	
+``` html
+	<!--Modal-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Modal</title>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h3>Modal Example</h3>
+		<p>Click on the button to open the modal.</p>
+
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+		  Open modal
+		</button>
+	      </div>
+
+	      <!-- The Modal -->
+	      <div class="modal" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+
+		    <!-- Modal Header -->
+		    <div class="modal-header">
+		      <h4 class="modal-title">Modal Heading</h4>
+		      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		    </div>
+
+		    <!-- Modal body -->
+		    <div class="modal-body">
+		      Modal body..
+		    </div>
+
+		    <!-- Modal footer -->
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+		    </div>
+
+		  </div>
+		</div>
+	      </div>
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173524164-ae12b0c4-9955-4add-b98f-3195a340eed7.png)
+	
+``` html
+	<!--Modal-animation-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Modal animation</title>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+	    <div class="container mt-3">
+		<h3>Modal Example</h3>
+		<p>Click on the button to open the modal.</p>
+
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+		  Open modal
+		</button>
+	      </div>
+
+	      <!-- The Modal -->
+	      <div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+
+		    <!-- Modal Header -->
+		    <div class="modal-header">
+		      <h4 class="modal-title">Modal Heading</h4>
+		      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		    </div>
+
+		    <!-- Modal body -->
+		    <div class="modal-body">
+		      Modal body..
+		    </div>
+
+		    <!-- Modal footer -->
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+		    </div>
+
+		  </div>
+		</div>
+	      </div>
+	</body>
+	</html>
+```
+	
+``` html
+	<!--modal size-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Modal size</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+
+	<div class="container mt-3">
+	  <h3>Small Modal Example</h3>
+	  <p>Click on the button to open the modal.</p>
+
+	  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+	    Open modal
+	  </button>
+	</div>
+
+	<!-- The Modal -->
+	<div class="modal" id="myModal">
+	  <div class="modal-dialog modal-sm"> <!--modal-lg  / modal-xl -->
+	    <div class="modal-content">
+
+	      <!-- Modal Header -->
+	      <div class="modal-header">
+		<h4 class="modal-title">Modal Heading</h4>
+		<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+	      </div>
+
+	      <!-- Modal body -->
+	      <div class="modal-body">
+		Modal body..
+	      </div>
+
+	      <!-- Modal footer -->
+	      <div class="modal-footer">
+		<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
+
+
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173524358-cd329709-037c-46ef-9585-bbc4894d5b19.png)
+
+``` html
+	<!--modal scroll-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Modal scroll</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+
+	    <div class="container mt-3">
+		<h2>Modal Scroll Example</h2>
+		<p>Click on the button to open the modal.</p>
+
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+		  Open modal
+		</button>
+	      </div>
+
+	      <!-- The Modal -->
+	      <div class="modal" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+
+		    <!-- Modal Header -->
+		    <div class="modal-header">
+		      <h4 class="modal-title">Modal Heading</h4>
+		      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		    </div>
+
+		    <!-- Modal body -->
+		    <div class="modal-body">
+		      <h3>Some text to enable scrolling..</h3>
+		      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+		    </div>
+
+		    <!-- Modal footer -->
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+		    </div>
+
+		  </div>
+		</div>
+	      </div>
+
+
+	</body>
+	</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/173524660-676037c2-953c-4587-a20c-2f4f1d7a9c2b.png)
+
+``` html
+	<!--modal dialog scroll-->
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Modal scroll</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+
+	    <div class="container mt-3">
+		<h2>Modal Scroll Example</h2>
+		<p>Click on the button to open the modal.</p>
+
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+		  Open modal
+		</button>
+	      </div>
+
+	      <!-- The Modal -->
+	      <div class="modal" id="myModal">
+		<div class="modal-dialog modal-dialog-scrollable">
+		  <div class="modal-content">
+
+		    <!-- Modal Header -->
+		    <div class="modal-header">
+		      <h4 class="modal-title">Modal Heading</h4>
+		      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		    </div>
+
+		    <!-- Modal body -->
+		    <div class="modal-body">
+		      <h3>Some text to enable scrolling..</h3>
+		      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+		    </div>
+
+		    <!-- Modal footer -->
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+		    </div>
+
+		  </div>
+		</div>
+	      </div>
+
+
+	</body>
+	</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173524813-45ba1ec5-7ff2-4b16-b8be-30da80e1ac98.png)
+
+</details>
 		
 		
 		
