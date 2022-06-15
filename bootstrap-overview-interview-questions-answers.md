@@ -3807,8 +3807,446 @@
 
 ![image](https://user-images.githubusercontent.com/75599178/173614735-8471de21-fc30-4112-876a-accb2051e9da.png)
 ![image](https://user-images.githubusercontent.com/75599178/173614816-e0d762cc-28ea-4cf2-9f60-a33b0018d1ae.png)
-</details>		
-		
+	
+</details>	
+	
+### Grid 
+	
+<details>
+	<summary>:bulb:</summary>
+
+The Grid System
+
+Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.
+
+If you do not want to use all 12 columns individually, you can group the columns together to create wider columns.
+
+``` html
+<!--Basic grid-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Basic Grid Structure</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+        
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+          <div class="col-sm-6 bg-primary text-white">50%</div>
+          <div class="col-sm-6 bg-dark text-white">50%</div>
+        </div>
+        <br>
+          
+        <div class="row">
+          <div class="col-sm-4 bg-primary text-white">33.33%</div>
+          <div class="col-sm-4 bg-dark text-white">33.33%</div>
+          <div class="col-sm-4 bg-primary text-white">33.33%</div>
+        </div>
+        <br>
+      
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+          <div class="col-sm bg-primary text-white">25%</div>
+          <div class="col-sm bg-dark text-white">25%</div>
+          <div class="col-sm bg-primary text-white">25%</div>
+          <div class="col-sm bg-dark text-white">25%</div>
+        </div>
+        <br>
+          
+        <div class="row">
+          <div class="col bg-primary text-white">25%</div>
+          <div class="col bg-dark text-white">25%</div>
+          <div class="col bg-primary text-white">25%</div>
+          <div class="col bg-dark text-white">25%</div>
+        </div>
+      </div>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173734387-4b1d9723-d500-41dd-affa-ba756df2399e.png)
+	
+``` html
+<!--Grid Xsmall-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Extra Small Grid</h1>
+        <p>The following example will result in a 33.3%/66.6% split on all devices.</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-1 bg-primary text-white p-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-11 bg-dark text-white p-3">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+        <br>
+        
+        <p>This example will result in a 50%/50% split on all devices.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 bg-primary text-white p-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-6 bg-dark text-white p-3">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173734458-0218c482-4393-4615-8dce-5f587a1e4e55.png)
+	
+``` html
+<!-- Grid small-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Small Grid</h1>
+        <p>The following example will result in a 33.3%/66.6% split on small, medium, large and xlarge devices (<strong>576px and above</strong>). On extra small devices, it will stack (100% width).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <p>Small devices are defined as having a screen width from 576 pixels to 767 pixels.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-sm-8 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+        <br>
+        
+        <p>This example will result in a 50%/50% split on small, medium, large and xlarge devices (<strong>576px and above</strong>). On extra small devices, it will stack (100% width).</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-sm-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173734542-d4867911-7729-4ea6-9c3f-5cfb2397d1c1.png)
+	
+``` html
+<!-- Grid smal + medium-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Medium Grid</h1>
+        <p>The following example will result in a 25%/75% split on small devices and a 50%/50% split on medium (and large, xlarge, xxlarge) devices. On extra small devices, it will automatically stack (100%).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <p>Medium devices are defined as having a screen width from 768 pixels to 991 pixels.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-md-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-sm-9 col-md-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+```
+	
+``` html
+<!-- Grid medium-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Medium Grid</h1>
+        <p>The following example will result in a 50%/50% split on medium, large, xlarge and xxlarge devices (<strong>768px and above</strong>). On small (and extra small) devices, it will automatically stack (100%).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-md-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173734590-c6235e58-a561-45b6-959b-3e17d9424486.png)
+	
+``` html
+<!-- Grid smal + medium +  large-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Large Grid</h1>
+        <p>The following example will result in a 25%/75% split on small devices, a 50%/50% split on medium devices, and a 33%/66% split on large, xlarge and xxlarge devices. On extra small devices, it will automatically stack (100%).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <p>Large devices are defined as having a screen width from 992 pixels to 1199 pixels.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-4 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+```
+	
+``` html
+<!-- Grid large-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>Medium Grid</h1>
+        <p>The following example will result in a 50%/50% split on medium, large, xlarge and xxlarge devices (<strong>768px and above</strong>). On small (and extra small) devices, it will automatically stack (100%).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-lg-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173734640-e054c965-42da-47d6-a634-4b86191c7dbc.png)
+	
+``` html
+<!-- Grid smal + medium +  large + Xlarge-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>XLarge Grid</h1>
+        <p>The following example will result in a 25%/75% split on small devices, a 50%/50% split on medium devices, a 33%/66% split on large devices and a 20%/80% on xlarge and xxlarge devices. On extra small devices, it will automatically stack (100%).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <p>Extra large devices are defined as having a screen width from 1200 pixels and above.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+	
+``` html
+
+<!-- Grid Xlarge-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>XLarge Grid</h1>
+        <p>The following example will result in a 25%/75% split on small devices, a 50%/50% split on medium devices, a 33%/66% split on large devices and a 20%/80% on xlarge and xxlarge devices. On extra small devices, it will automatically stack (100%).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <p>Extra large devices are defined as having a screen width from 1200 pixels and above.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-xl-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173734694-1a816a3e-bdd9-432a-a702-0444367c8b9f.png)
+	
+``` html
+
+<!-- Grid medium + XXlarge-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>XXL Grid</h1>
+        <p>The following example will result in a 50%/50% split on medium, large and extra large devices, and a 25%/75% split on XXL devices. On 
+        small and extra small devices, it will automatically stack (100%):</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-xxl-3 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-md-6 col-xxl-9 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+```
+	
+``` html
+<!-- Grid XXlarge-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid mt-3">
+        <h1>XXL Grid</h1>
+        <p>The following example will result in a 50%/50% split on XXL devices (<strong>1400px and above</strong>). On extra large, large, medium, small and extra small devices, it will automatically stack (100%).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <p>XXL devices are defined as having a screen width from 1400 pixels and above.</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xxl-6 bg-primary text-white">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="col-xxl-6 bg-dark text-white">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/173734735-292f80ae-997b-48fa-8553-150b1229b671.png)
+
+</details>
 		
 		
 		
