@@ -4247,7 +4247,403 @@ If you do not want to use all 12 columns individually, you can group the columns
 ![image](https://user-images.githubusercontent.com/75599178/173734735-292f80ae-997b-48fa-8553-150b1229b671.png)
 
 </details>
-		
+
+### Forms
+<details>
+	<summary>:bulb:</summary>
+	
+``` html
+<!-- Forms-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Stacked form</h2>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/174486973-8679ad85-3f65-4325-b0ac-b8e6878032ab.png)
+
+	
+Also note that we add a .form-label class to each label element to ensure correct padding.
+
+Checkboxes have different markup. They are wrapped around a container element with .form-check, and labels have a class of .form-check-label, while checkboxes and radio buttons use .form-check-input.
+``` html
+<!-- Select menu-->>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Select Menu</h2>
+  <p>To style a select menu in Bootstrap 5, add the .form-select class to the select element:</p>
+  <form action="/action_page.php">
+    <label for="sel1" class="form-label">Select list (select one):</label>
+    <select class="form-select" id="sel1" name="sellist1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <br>
+    
+    <label for="sel2" class="form-label">Mutiple select list (hold shift to select more than one):</label>
+    <select multiple class="form-select" id="sel2" name="sellist2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    
+    <label for="browser" class="form-label">Choose your browser from the list:</label>
+    <input class="form-control" list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    </datalist>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/174488066-c4c018dc-600e-47c9-a544-ff7eccc2581b.png)
+``` html
+
+<!--Checkbox -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Checkboxes</h2>
+  <p>To style a checkbox, use a container element with a .form-check class, and add .form-check-label to labels, and .form-check-input to the input with type="checkbox".</p>
+  <p>The form below contains three checkboxes. The first option is checked by default, and the last option is disabled:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+      <label class="form-check-label" for="check1">Option 1</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+      <label class="form-check-label" for="check2">Option 2</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" disabled>
+      <label class="form-check-label">Option 3</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/174488085-3e8cf79d-4347-4f8e-bbf4-2a4ef4d91010.png)
+
+``` html
+
+<!-- Radio-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Radio buttons</h2>
+  <p>The form below contains three radio buttons. The first option is checked by default, and the last option is disabled:</p>
+  <form action="/action_page.php">
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+      <label class="form-check-label" for="radio1">Option 1</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+      <label class="form-check-label" for="radio2">Option 2</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" disabled>
+      <label class="form-check-label">Option 3</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/174488104-4908e7c6-af53-4e8b-91e2-b253a8b35509.png)
+
+``` html
+
+<!--- Toggle switches-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Toggle Switch</h2>
+  <p>Try to submit the form with and without toggling the switch.</p>
+  <form action="/action_page.php">
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+      <label class="form-check-label" for="mySwitch">Dark Mode</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/174488125-0a224e08-bd4e-4985-abaf-4c99dbc19148.png)
+
+``` html
+
+<!-- Range-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Custom Range</h2>
+  <p>To create a custom range menu, add the .form-range class to the input element with type="range":</p>
+  <form action="/action_page.php">
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" name="points">
+    
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/174488145-c84c24e9-5a43-47a2-8dbf-833320b81d16.png)
+
+``` html
+<!-- Steps -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Steps in a Range</h2>
+  <p>By default, the interval between the range numbers is 1. You can change it by using the step attribute:</p>
+  <form action="/action_page.php">
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" step="10" name="points">
+    
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/174488172-ef5beae9-eb1c-4ced-a0bd-d3d052a689e3.png)
+
+``` html
+
+<!-- Min. Max.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Min and Max Range</h2>
+  <p>Use the min and/or max attribute to specify the minimum/maximum value of a range:</p>
+  <form action="/action_page.php">
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" name="points" min="0" max="4">
+    
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/174488197-4f236063-dd42-4bcb-851f-342bbef7b26b.png)
+
+``` html
+
+<!-- Input-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Input Group Size</h2>
+  <p>Use the .input-group-sm class for small input groups and .input-group-lg for large inputs groups:</p>
+  
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text">Small</span>
+    <input type="text" class="form-control">
+  </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text">Default</span>
+    <input type="text" class="form-control">
+  </div>
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text">Large</span>
+    <input type="text" class="form-control">
+  </div>
+</div>
+
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/174488214-b628d855-a75a-4dfd-9259-50b2a8930ede.png)
+
+``` html
+
+<!-- Form validation-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h3>Form Validation</h3>
+  <p>Try to submit the form.</p>
+    
+  <form action="/action_page.php" class="was-validated">
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+      <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/174488233-ab127682-3056-421c-8510-293608146b6e.png)
+
+</details>		
 		
 		
 		
