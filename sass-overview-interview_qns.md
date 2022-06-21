@@ -313,7 +313,148 @@ header{
 }
 ``` 
 </details>
+<details>
+  <summary>:bulb:</summary>
 
+> ### Variables, Mixins & custom mixins
+<br>
+  
+> Create _variables.scss in css folder.
+  
+``` css
+ /* _variables.scss */
+
+$primaryBtn : rgb(56, 146, 142);
+$textColor  : rgb(58, 42, 42);
+```
+
+``` css
+ /* style.scss */
+
+@import "./variables";
+@import "./header";
+
+
+.contact button{
+    background: $primaryBtn;
+}
+
+```
+> ### Mixins
+<br>
+  
+> Create _mixins.scss file  in css folder.
+``` css
+ /* style.scss */
+
+@import "./variables";
+@import "./header";
+@import "./mixins";
+
+
+.contact button{
+    background: $primaryBtn;
+}
+
+```
+``` css
+ /* _mixins.scss */
+
+@mixin flexProp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+```
+``` css
+ /* _header.scss */
+
+header{
+    background: rgb(88, 192, 114);
+    height: 100vh;
+    color: $textColor;
+
+    @include flexProp();
+
+    button{
+        background: $primaryBtn;
+
+        &:hover{
+            background: rgb(226, 226, 144);
+        }
+    }
+
+    &:hover{
+        background-color: coral;
+    }
+}
+
+```
+![image](https://user-images.githubusercontent.com/75599178/174889770-b71e6fcb-ee93-46a8-bdec-4a7fdbd2a28f.png)
+
+</details>
+<details>
+  <summary>:bulb:</summary>
+  
+``` css
+ /* _mixins.scss */
+
+
+@mixin flexProp ($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background
+}
+
+```
+``` css
+ /* _header.scss */
+
+
+header{
+    @include flexProp(column, rgb(104, 129, 104));
+
+    height: 100vh;
+    // background: #ab99ca;;
+    color: $textColor;
+    button {
+        background: $primaryBtn;
+        height: fit-content;
+        align-items: center;
+        &:hover {
+            background: red;
+        }
+    }
+}
+
+```
+``` css
+ /* style.scss */
+header{
+  //  branch sassy files import
+  @import "./variables";
+  @import "./header";
+  @import "./mixins";
+  
+.contact {
+    @extend header;
+    background: rgb(190, 190, 86);
+    width: 100% - 30%;
+    // padding: 2rem;
+    // min-height: 100vh;
+    // // align-items: center;
+    // .contact button {
+    //     background: rgb(58, 148, 90);
+    // }
+}
+
+```
+![screencapture-file-D-Sass-Exercise-1-html-2022-06-22-02_17_15](https://user-images.githubusercontent.com/75599178/174895098-f7d516cc-a3d5-4f09-9ebb-d0516d0e9fc6.png)
+
+</details>
 
 
 
