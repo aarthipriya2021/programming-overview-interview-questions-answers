@@ -30,6 +30,21 @@
 </details>
 
 ### Sass install
+<details>
+  <summary>:bulb:</summary>
+  * Sass for html page we have to add vscode extension which is sass live compiler.
+
+  * To start, create a folder with two folders inside, CSS and images. Then inside the CSS folder create a file with the Sass extension (style.scss)in my case it's style.scss.
+
+  * Then open it and the file will be detected right away. Below the editor a button will appear named Watch Sass. Just click on it to tell Sass to watch this file and start generating (compiling) code in the CSS file.
+
+  * Once SASS finishes compiling it will create three files in the project's CSS folder: style.css, style.scss, and style.css.map. It tracks all the changes and it is ready to generate CSS code.
+
+  * Then , we will link our CSS file in the index.html file.
+``` css
+<link rel="stylesheet" href="css/style.css">
+ ```
+</details>
 
 
 
