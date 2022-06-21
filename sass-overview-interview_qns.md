@@ -41,6 +41,8 @@
   * Once SASS finishes compiling it will create three files in the project's CSS folder: style.css, style.scss, and style.css.map. It tracks all the changes and it is ready to generate CSS code.
 
   * Then , we will link our CSS file in the index.html file.
+  
+For reference, visit https://www.youtube.com/watch?v=Zz6eOVaaelI.
 ``` css
 <link rel="stylesheet" href="css/style.css">
  ```
@@ -154,6 +156,48 @@ Interface will be :
 ![image](https://user-images.githubusercontent.com/75599178/174791880-5ded9321-c8a2-43b3-882f-9c10bf956fe7.png)
 </details>
 
+<details>
+  <summary>:bulb:</summary>
+Switch the watch sass in task bar of vscode.  
 
+``` html
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <title>SASS Tutorial</title>
+</head>
+<body>
+      <header>
+            <h1>WELCOME</h1>
+            <button>Add Details</button>
+      </header>
+      <div class="contact">
+            
+            <div class="info">
+                  <h1>Contact Info</h1>
+                  <p>This is the page to show the contacts.</p>
+                  <button>Details</button>
+            </div>
+      </div>
+</body>
+</html>
+
+```
+  
+``` css
+  /* style.scss */
+   header{
+    background: rgb(88, 192, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+</details>
 
 
