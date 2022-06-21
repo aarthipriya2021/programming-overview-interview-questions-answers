@@ -156,9 +156,12 @@ Interface will be :
 ![image](https://user-images.githubusercontent.com/75599178/174791880-5ded9321-c8a2-43b3-882f-9c10bf956fe7.png)
 </details>
 
+# Practice
+
 <details>
   <summary>:bulb:</summary>
-Switch the watch sass in task bar of vscode.  
+> Initial stage  
+> Switch the watch sass in task bar of vscode.  
 
 ``` html
   <!DOCTYPE html>
@@ -197,7 +200,71 @@ Switch the watch sass in task bar of vscode.
     align-items: center;
 }
 ```
+![image](https://user-images.githubusercontent.com/75599178/174877844-9a35200a-5ec3-4206-a466-a73080f7da04.png)
 
 </details>
+
+<details>
+  <summary>:bulb:</summary>
+  
+> Variables adding  
+  
+``` css
+  /* style.scss */
+   $primaryBtn : rgb(180, 153, 223); // variable
+
+header{
+    background: rgb(88, 192, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header button{
+    background: $primaryBtn;
+}
+
+.contact button{
+    background: $primaryBtn;
+}
+```
+</details>
+<details>
+  <summary>:bulb:</summary>
+ > Variables adding  
+  
+``` css
+  /* style.scss */
+
+$primaryBtn : rgb(180, 153, 223); // variable
+header{
+    background: rgb(88, 192, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header button{
+    background: $primaryBtn;
+}
+
+.contact button{
+    background: $primaryBtn;
+}
+``` 
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
