@@ -160,6 +160,7 @@ Interface will be :
 
 <details>
   <summary>:bulb:</summary>
+  
 > Initial stage  
 > Switch the watch sass in task bar of vscode.  
 
@@ -231,25 +232,84 @@ header button{
 </details>
 <details>
   <summary>:bulb:</summary>
- > Variables adding  
+  
+ > Complex nesting 
   
 ``` css
   /* style.scss */
 
 $primaryBtn : rgb(180, 153, 223); // variable
+$textColor: rgb(20, 20, 59);
+
 header{
     background: rgb(88, 192, 114);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $textColor;
+
+    button{
+        background: $primaryBtn;
+
+        &:hover{
+            background: rgb(226, 226, 144);
+        }
+    }
+
+    &:hover{
+        background-color: coral;
+    }
 }
 
-header button{
-    background: $primaryBtn;
-}
 
 .contact button{
     background: $primaryBtn;
+}
+``` 
+![image](https://user-images.githubusercontent.com/75599178/174883631-e8607af3-b240-425e-b1f8-d01c9a45453f.png)
+
+</details>
+
+<details>
+  <summary>:bulb:</summary>
+  
+> Separating code into multiple files
+``` css
+  /* style.scss */
+
+$primaryBtn : rgb(180, 153, 223); // variable
+$textColor: rgb(20, 20, 59);
+
+@import "./header";
+
+
+.contact button{
+    background: $primaryBtn;
+}
+``` 
+> Add _header.scss in css folder to organize the codes as project flow.
+> Then add header section styles to _header.scss file and import it in style.scss.  
+``` css
+  /* _header.scss */
+
+header{
+    background: rgb(88, 192, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $textColor;
+
+    button{
+        background: $primaryBtn;
+
+        &:hover{
+            background: rgb(226, 226, 144);
+        }
+    }
+
+    &:hover{
+        background-color: coral;
+    }
 }
 ``` 
 </details>
