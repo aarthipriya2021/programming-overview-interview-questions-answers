@@ -156,6 +156,108 @@ Interface will be :
 ![image](https://user-images.githubusercontent.com/75599178/174791880-5ded9321-c8a2-43b3-882f-9c10bf956fe7.png)
 </details>
 
+# Topics
+
+### Variables
+
+<details>
+  <summary>:bulb:</summary>
+  
+> Sass variables are used to store information that can be reused throughout the stylesheet when you need. You can store things like colors, font stacks, or any CSS value according to your future reusability.  ** The $ symbol is used to make something a variable. **
+``` css
+$pageColor: rgb(178, 224, 197);
+$fontFamily: Helvetica, sans-serif;
+$fontColor:rgb(12, 62, 136);
+
+body{
+    background: 100% $pageColor;
+    font-family: $fontFamily;
+    color: $fontColor;
+}
+```
+</details>
+
+### Opertors
+<details>
+  <summary>:bulb:</summary>  
+
+### 1) Assignment Operator
+
+In Sass, the colon ( : ) operator is used to define a variable.
+
+``` css
+$main-color: lightpink;   
+```
+### 2) Arithmetic Operators
+![image](https://user-images.githubusercontent.com/75599178/175319917-76eff30a-41ff-4453-ac39-074a3a87b9c1.png)
+``` css
+
+h2 {  
+    font-size: 15px + 2em; // Show error due to incompatible units  
+    font-size: 15px + 2; // 17px  
+} 
+2)Multiplication of two numbers of the same unit is not valid CSS:
+
+h2 {  
+    font-size: 5px * 2px; // invalid CSS  
+}  
+3)The division operator is an integral part of the CSS shorthand properties.
+
+font: 16px / 24px Arial sans-serif;  
+background: url("http://example.com") no-repeat fixed center / cover;   
+
+h2 {  
+    font-size: 16px / 24px // Outputs as CSS  
+    font-size: (16px / 24px) // Uses parentheses, does division  
+    font-size: #{$base-size} / #{$line-height}; // Uses interpolation, outputs as CSS  
+    font-size: $base-size / $line-height // Uses variables, does division  
+    opacity: random(4) / 5; // Uses a function, does division  
+    padding-right: 2px / 4px + 3px // Uses an arithmetic expression, does division  
+}  
+
+```
+</details>
+
+### @-Rules and Directives
+
+<details>
+  <summary>:bulb:</summary>
+A list of all the rules and directives used in Sass are given 
+
+![image](https://user-images.githubusercontent.com/75599178/175326333-78f1998f-b850-4003-8fbf-2c90e08a913b.png)
+
+![image](https://user-images.githubusercontent.com/75599178/175326411-335ee2ea-16df-4586-8093-316f5439556d.png)
+
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Practice
 
 <details>
