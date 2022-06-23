@@ -228,8 +228,153 @@ A list of all the rules and directives used in Sass are given
 
 ![image](https://user-images.githubusercontent.com/75599178/175326411-335ee2ea-16df-4586-8093-316f5439556d.png)
 
+### @import 
 
+> CSS provides @import option that makes you able to split your CSS into smaller, more maintainable portions. 
 
+> for Example we dont need to change anything related scss for after watching scss ... 
+``` scss
+// _component.scss
+
+html,  
+body,  
+ul,  
+ol {  
+   margin: 0;  
+  padding: 0;  
+} 
+// --------------------------------------------------------------------------------------
+
+// style.scss (main sass file)
+
+@import "./component";
+
+body {  
+    font: 100% Helvetica, sans-serif;  
+    background-color: #419453;  
+}  
+```
+
+### @media
+> Sass @media directive is used to set style rules to different media types. 
+
+> The Sass @media directive can be nested inside the selector SASS but the main impact is displayed to the top level of the stylesheet.
+``` scss
+// style.scss
+h1,h3{  
+    color: rgb(182, 68, 182);  
+}  
+.style{  
+    width: 500px;  
+
+    @media screen and (orientation: portrait){  
+        width:200px;  
+        margin-left: 80px;  
+    }  
+}  
+```
+### @extend
+> Sass, @extend is used to share a set of CSS properties from one selector to another. It is a very important and useful feature of Sass.
+
+``` scss
+// style.scss
+.message {  
+    border: 1px solid #ccc;  
+    padding: 10px;  
+    color: #333;  
+  }  
+  .success {  
+    @extend .message;  
+    border-color: green;  
+  }  
+  .error {  
+    @extend .message;  
+    border-color: red;  
+  }  
+  .warning {  
+    @extend .message;  
+    border-color: yellow;  
+  } 
+```
+
+### @at-root
+> Sass @at-root directive is a collection of nested rules that are used to style block at the root of the document.
+
+> syntax
+``` scss
+  @at-root (without: ...) and @at-root (with: ...)   
+```
+
+``` scss
+
+// style.scss
+h1, h3{  
+    color: blue;  
+    background-color: pink;  
+
+    @at-root {  
+        .style{  
+        font-size: 20px;  
+        font-style: bold;  
+        color: violet;  
+        }  
+     }  
+}
+```
+
+### @debug 
+
+> Sass @debug directive is used to detect the errors and display the SassScript expressions values to the standard error output stream.
+
+``` scss
+
+// style.scss
+
+$font-sizes: 10px + 20px;  
+$style: (  
+  color: #bdc3c7  
+);  
+.container{  
+  @debug $style;  
+  @debug $font-sizes;  
+}  
+```
+### @warn 
+
+> Sass @warn directive is used when you get a problem and want to give a cautionary advice to the users. It displays the value of a SassScript expression to the standard error output stream.
+
+> There are two specific differences between @warn and @debug:
+<li>Warning can be turned off with the --quiet command-line option or the: quiet Sass option.</li>
+<li>Sass @warn directive provides a printed output along with the message so that the user being warned where the warning is occurred.</li>
+
+``` scss
+
+// style.scss
+$main-color:  #bdc3c7;  
+@warn "Darker: " darken($main-color, 30%);  
+```
+
+### @error 
+
+> Sass @error directive is used when you want to display errors. It displays the SassScript expression values as fatal error including a nice stack trace.
+
+``` scss
+
+// style.scss
+$colors: (  
+  blue: #c0392b,  
+  black: #2980b9,  
+);  
+@function style-variation($style) {  
+  @if map-has-key($colors, $style) {  
+    @return map-get($colors, $style);  
+  }  
+  @error "Invalid color: '#{$style}'.";  
+}  
+.container {  
+  style: style-variation(white);  
+}  
+```
 </details>
 
 
@@ -294,7 +439,7 @@ A list of all the rules and directives used in Sass are given
 
 ```
   
-``` css
+``` scss
   /* style.scss */
    header{
     background: rgb(88, 192, 114);
@@ -312,7 +457,7 @@ A list of all the rules and directives used in Sass are given
   
 > Variables adding  
   
-``` css
+``` scss
   /* style.scss */
    $primaryBtn : rgb(180, 153, 223); // variable
 
@@ -337,7 +482,7 @@ header button{
   
  > Complex nesting 
   
-``` css
+``` scss
   /* style.scss */
 
 $primaryBtn : rgb(180, 153, 223); // variable
@@ -376,7 +521,7 @@ header{
   <summary>:bulb:</summary>
   
 > Separating code into multiple files
-``` css
+``` scss
   /* style.scss */
 
 $primaryBtn : rgb(180, 153, 223); // variable
@@ -391,7 +536,7 @@ $textColor: rgb(20, 20, 59);
 ``` 
 > Add _header.scss in css folder to organize the codes as project flow.
 > Then add header section styles to _header.scss file and import it in style.scss.  
-``` css
+``` scss
   /* _header.scss */
 
 header{
@@ -423,14 +568,14 @@ header{
   
 > Create _variables.scss in css folder.
   
-``` css
+``` scss
  /* _variables.scss */
 
 $primaryBtn : rgb(56, 146, 142);
 $textColor  : rgb(58, 42, 42);
 ```
 
-``` css
+``` scss
  /* style.scss */
 
 @import "./variables";
@@ -446,7 +591,7 @@ $textColor  : rgb(58, 42, 42);
 <br>
   
 > Create _mixins.scss file  in css folder.
-``` css
+``` scss
  /* style.scss */
 
 @import "./variables";
@@ -459,7 +604,7 @@ $textColor  : rgb(58, 42, 42);
 }
 
 ```
-``` css
+``` scss
  /* _mixins.scss */
 
 @mixin flexProp {
@@ -469,7 +614,7 @@ $textColor  : rgb(58, 42, 42);
 }
 
 ```
-``` css
+``` scss
  /* _header.scss */
 
 header{
@@ -499,7 +644,7 @@ header{
 <details>
   <summary>:bulb:</summary>
   
-``` css
+``` scss
  /* _mixins.scss */
 
 
@@ -512,7 +657,7 @@ header{
 }
 
 ```
-``` css
+``` scss
  /* _header.scss */
 
 
@@ -533,7 +678,7 @@ header{
 }
 
 ```
-``` css
+``` scss
  /* style.scss */
 header{
   //  branch sassy files import
