@@ -378,9 +378,109 @@ $colors: (
 </details>
 
 
+### Mixins
 
+<details>
+  <summary>:bulb:</summary>
 
+> Mixins allow you to define styles that can be re-used throughout your stylesheet. Sass Mixins facilitates you to make groups of CSS declarations that you want to reuse repeatedly on your site.
 
+> The mixin can store multiple values or parameters and call function to avoid writing repetitive codes. Mixin names can use underscores and hyphens interchangeably.
+
+``` scss
+// Example
+@mixin border-radius($radius) {  
+  -webkit-border-radius: $radius;  
+     -moz-border-radius: $radius;  
+      -ms-border-radius: $radius;  
+          border-radius: $radius;  
+}  
+.box { @include border-radius(10px); }   
+```
+![image](https://user-images.githubusercontent.com/75599178/175813948-82eca641-59ef-472c-8767-47db1d74045e.png)
+
+### Defining a Mixin
+
+> The @mixin directive defines the mixins. It is used to include optionally the variables and arguments after the name of the mixin.
+``` scss
+@mixin style {  
+  h1{  
+   color: #FF0000 ;  
+      }  
+  }  
+@include style;  
+```
+
+### Including a mixin
+
+> The @include directive is used to include the style defined by the mixin into the document. The name of the mixin is taken and optional arguments are passed into it.
+``` scss
+@mixin style {  
+  @mixin style {  
+.container{  
+ background-color: #77C1EF;  
+ color: #ffffff;  
+    }  
+h3 {  
+ color: #ffffff;  
+ }  
+}  
+@include style;  
+```
+
+### Mixin arguments
+
+> The mixin arguments are SassScript values that are passed when mixin is included and are available as variable.The argument is a name of a variable separated by a comma while defining a mixin. There are two types of mixin arguments in Sass.
+<li>Keyword Arguments</li>
+<li>Variable Arguments</li>
+
+#### Keyword Arguments
+
+> The keyword arguments are used to include in mixins. It specifies that the named arguments can be passed in any order and the default value of arguments can be omitted.|
+
+``` scss
+@mixin bordered($color, $width: 2px) {  
+  color: #77C1EF;  
+  border: $width solid black;  
+  width: 500px;  
+}  
+.style  {  
+  @include bordered($color:#77C1EF, $width: 5px);  
+}   
+```
+<li>
+
+#### Variable Argument
+</li>
+
+> The keyword arguments are used to include in mixins. It specifies that the named arguments can be passed in any order and the default value of arguments can be omitted.
+
+``` scss
+@mixin linear-gradient($direction, $gradients...) {  
+  background-color: nth($gradients, 1);  
+  background-image: linear-gradient($direction, $gradients...);  
+}  
+.style {  
+  @include linear-gradient(to right, magenta, red, orange, yellow, green, blue, purple);  
+}  
+```
+#### Passing content block to a mixin
+
+> The content blocks are passed to the mixin for the placement inside the styles. This functionality is added in Sass version 3.2. Styles are included into the mixin in the @content directive location.
+
+> The block of content is specified in the scope and the scope is passed in the mixin where block is defined.
+
+``` scss
+@mixin element{  
+   @content;  
+}  
+@include element{  
+  .block{  
+    color: blue;  
+  }  
+ }   
+```
+</details>
 
 
 
@@ -700,8 +800,6 @@ header{
 
 ```
 ![screencapture-file-D-Sass-Exercise-1-html-2022-06-22-02_17_15](https://user-images.githubusercontent.com/75599178/174895098-f7d516cc-a3d5-4f09-9ebb-d0516d0e9fc6.png)
-
-</details>
 
 
 
