@@ -827,32 +827,23 @@ header{
 ##### <li>SASS can be used as a plugin for the Rack Enable Network</li>
 </details>
 
-### 4) How many ways can we use SASS?
-<details>
-  <summary>:bulb:</summary>
-
-##### <li>SASS can be used as a Command Line Tool</li>
-##### <li>SASS can be used as a Ruby Module</li>
-##### <li>SASS can be used as a plugin for the Rack Enable Network</li>
-</details>
-
-### 5) Explain the features of SASS?
+### 4) Explain the features of SASS?
 <details>
   <summary>:bulb:</summary>
 
 ##### <li>SASS is more stable, compatible and powerful with versions of CSS.</li>
+##### <li>Nesting is one of the most important features of SASS. As a result of Nesting, the repetitions of the code is almost negligible and it is easier to maintain a document.SASS uses its own syntax and then it gets compiles to readable CSS.</li>
 ##### <li>Nesting is one of the most important features of SASS. As a result of Nesting, the repetitions of the code is almost negligible and it is easier to maintain a document.</li>
-##### <li>SASS uses its own syntax and then it gets compiles to readable CSS.</li>
 </details>
 
-### 6) What is the difference between SCSS and Sass?
+### 5) What is the difference between SCSS and Sass?
 <details>
   <summary>:bulb:</summary>
 
 ![image](https://user-images.githubusercontent.com/75599178/175854973-43ac4be3-377c-464c-8fae-5c7a71486ebf.png)
 </details>
 
-### 7) What is the use of Sass @import function?
+### 6) What is the use of Sass @import function?
 <details>
   <summary>:bulb:</summary>
 
@@ -862,7 +853,7 @@ header{
 ##### <li>@import url("http://check.com/css/test.css");</li>
 </details>
 
-### 8) Which is better, Sass or Less?
+### 7) Which is better, Sass or Less?
 <details>
   <summary>:bulb:</summary>
 
@@ -873,7 +864,7 @@ header{
 ***Above points clearly prove that the SASS is better CSS pre-processor than the LESS.***
 </details>
 
-### 9) Explain the Data Types of Sass supports?
+### 8) Explain the Data Types of Sass supports?
 <details>
   <summary>:bulb:</summary>
 
@@ -884,32 +875,39 @@ header{
 <li>Booleans and Null</li>
 </details>
 
-### 10) What is the use of @extend function in Sass?
+### 9) What is the use of @extend function in Sass?
 <details>
   <summary>:bulb:</summary>
 
 <h5> By using @extend function same style can be copied to the other classes also and there is no need to rewrite the code again.</h5>
 </details>
 
-### 11) Explain @include directive?
+### 10) Explain @include directive?
 <details>
   <summary>:bulb:</summary>
 
 <h5> The @include derivative is related to mixins that means it includes @mixin code. It allows the coder to create reusable code.</h5>
 </details>
 
-### 12) What is the use of @at-root directive in SASS? 
+### 11) What is the use of @at-root directive in SASS? 
 <details>
   <summary>:bulb:</summary>
 
 <h5> Sass @at-root directive is a collection of nested rules that are used to style block at the root of the document.</h5>
 </details>
 
-### 13) What is Mixin function in SASS?
+### 12) What is Mixin function in SASS?
 <details>
   <summary>:bulb:</summary>
 
 <h5> Mixin function helps in making the group of the CSS declarations that need to be used throughout the coding and as result the length of the code reduces.</h5>
+</details>
+
+### 13) What is SASS output style?
+<details>
+  <summary>:bulb:</summary>
+
+<h5> The CSS file that the SASS generates consists of default CSS style which reflects the structure of document. The default CSS styling is good but might not be suitable for all situations.</h5>
 </details>
 
 
