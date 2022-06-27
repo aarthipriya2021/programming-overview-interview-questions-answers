@@ -800,11 +800,117 @@ header{
 
 ```
 ![screencapture-file-D-Sass-Exercise-1-html-2022-06-22-02_17_15](https://user-images.githubusercontent.com/75599178/174895098-f7d516cc-a3d5-4f09-9ebb-d0516d0e9fc6.png)
+</details>
 
+# Interview Questions
 
+### 1) What is Sass?
+<details>
+  <summary>:bulb:</summary>
 
+##### *SASS stands for Syntactically Awesome Style Sheets. SASS is the extension of the CSS which describes the document in a structured format. SASS provides more powerful syntax than CSS.*
+</details>
 
+### 2) What is the difference between Sass and CSS?
+<details>
+  <summary>:bulb:</summary>
 
+![image](https://user-images.githubusercontent.com/75599178/175852463-10b3bc9a-81f0-40ea-a86e-cd072ba661b7.png)
+</details>
+
+### 3) How many ways can we use SASS?
+<details>
+  <summary>:bulb:</summary>
+
+##### <li>SASS can be used as a Command Line Tool</li>
+##### <li>SASS can be used as a Ruby Module</li>
+##### <li>SASS can be used as a plugin for the Rack Enable Network</li>
+</details>
+
+### 4) How many ways can we use SASS?
+<details>
+  <summary>:bulb:</summary>
+
+##### <li>SASS can be used as a Command Line Tool</li>
+##### <li>SASS can be used as a Ruby Module</li>
+##### <li>SASS can be used as a plugin for the Rack Enable Network</li>
+</details>
+
+### 5) Explain the features of SASS?
+<details>
+  <summary>:bulb:</summary>
+
+##### <li>SASS is more stable, compatible and powerful with versions of CSS.</li>
+##### <li>Nesting is one of the most important features of SASS. As a result of Nesting, the repetitions of the code is almost negligible and it is easier to maintain a document.</li>
+##### <li>SASS uses its own syntax and then it gets compiles to readable CSS.</li>
+</details>
+
+### 6) What is the difference between SCSS and Sass?
+<details>
+  <summary>:bulb:</summary>
+
+![image](https://user-images.githubusercontent.com/75599178/175854973-43ac4be3-377c-464c-8fae-5c7a71486ebf.png)
+</details>
+
+### 7) What is the use of Sass @import function?
+<details>
+  <summary>:bulb:</summary>
+
+##### SASS @import directive is used to include one stylesheet inside another stylesheet and in other words, we can say that it imports the .SASS and .scss files.
+##### <li>@import "test.css";</li>
+##### <li>@import "css/test.css";</li>
+##### <li>@import url("http://check.com/css/test.css");</li>
+</details>
+
+### 8) Which is better, Sass or Less?
+<details>
+  <summary>:bulb:</summary>
+
+**1) Cross Browser Support:-**  <h6> In SAAS, CSS transitions can be implemented by writing just one CSS rule and it adds up all the browsing rules for the coder.</h6>
+**2) Mathematical Operations:-** <h6> SASS performs more accurate mathematical operations than LESS</h6>
+**3) Compilation Time:-** <h6>Compilation time of SASS is less than LESS</h6>
+**4) Documentation:-** <h6>SASS documentation is easier to read and understand as compared to LESS</h6>
+***Above points clearly prove that the SASS is better CSS pre-processor than the LESS.***
+</details>
+
+### 9) Explain the Data Types of Sass supports?
+<details>
+  <summary>:bulb:</summary>
+
+<li> Number</li>
+<li>String</li>
+<li>Colour</li>
+<li>Map</li>
+<li>Booleans and Null</li>
+</details>
+
+### 10) What is the use of @extend function in Sass?
+<details>
+  <summary>:bulb:</summary>
+
+<h5> By using @extend function same style can be copied to the other classes also and there is no need to rewrite the code again.</h5>
+</details>
+
+### 11) Explain @include directive?
+<details>
+  <summary>:bulb:</summary>
+
+<h5> The @include derivative is related to mixins that means it includes @mixin code. It allows the coder to create reusable code.</h5>
+</details>
+
+### 12) What is the use of @at-root directive in SASS? 
+<details>
+  <summary>:bulb:</summary>
+
+<h5> Sass @at-root directive is a collection of nested rules that are used to style block at the root of the document.</h5>
+</details>
+
+### 13) What is Mixin function in SASS?
+<details>
+  <summary>:bulb:</summary>
+
+<h5> Mixin function helps in making the group of the CSS declarations that need to be used throughout the coding and as result the length of the code reduces.</h5>
+</details>
 
 
 
