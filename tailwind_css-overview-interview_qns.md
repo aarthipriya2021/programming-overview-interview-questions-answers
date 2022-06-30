@@ -29,16 +29,41 @@
 <details>
   <summary>:bulb:</summary>
 
-  <li>npm init -y</li>
-  <li>npm install tailwindcss</li>
-  <li>Use the @tailwind directive to inject Tailwind’s base, components, and utilities styles into your CSS file.</li>
-  @tailwind base; 
-  @tailwind components; 
+  <li>In terminal, "npm install -D tailwindcss"</li>
+  <li>Then, "npx tailwindcss init"</li>
+  <li>Create src folder , and into this create input.css file and index.html file also. And paste below code in input.css file.</li>
+
+  ``` css
+
+  /* src/input.css */
+  @tailwind base;
+  @tailwind components;
   @tailwind utilities;
-  <li>npx tailwindcss init (This is used to create a config file to customize the designs. It is an optional step.)</li>
-  <li>Create src folder, in that add style.css file.</li>
-  <li>Create dist folder, in that add index.html and style.css file.(here style.css file to use as build file)</li>
-  <li>In package.json, change the "test" key query to "build" and "echo /Error..." to "tailwind build src/style.css -o dist/style.css" which used to make build and give as an output.</li>
+  ```
+  <li>Create dist foler in project . and add output.css file in it.</li>
+  <li>paste below code in index.html file.</li>
+
+  ``` html
+
+  <!doctype html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline font-red-100">
+      Hello world!
+    </h1>
+  </body>
+  </html>
+  ```
+  <li>In terminal, "npm init -y"</li>
+  <li>Then, in package.json add " "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch" "for "test:.." query. </li>
+  <li>Then in config .js file add content as "./src/index.html".</li>
+  <li>After this in terminal "npm run build"</li>
+  <li>Then proceed with Go Live.</li>
 </details>
 
 ### Tailwind CSS Example
@@ -47,7 +72,7 @@
 
 Code | Output
 ------------ | -------------
-![image](https://user-images.githubusercontent.com/75599178/176674623-f8b76200-3b9d-4ae4-9f3c-279eea6eb430.png) | ![image](https://user-images.githubusercontent.com/75599178/176674731-60e09385-cbd4-42f2-95d2-cbd8ba509408.png)
+![image](https://user-images.githubusercontent.com/75599178/176752988-401bec47-b19e-4bd3-841e-6399eb13cffe.png) | ![image](https://user-images.githubusercontent.com/75599178/176752909-a3ad2615-1088-4123-b3b9-f4b13aab9273.png)
 
 
 </details>
