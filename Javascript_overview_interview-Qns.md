@@ -13,3 +13,19 @@
     <li>Simple things are done simply.</li>
     <li>Supported by all major browsers and enabled by default.</li>
 </details>
+
+# Topics
+
+### Variables
+<details>
+  <summary>:bulb:</summary>
+  A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
+
+```JS
+let message;
+message = 'Hello!';
+
+alert(message); // shows the variable content
+```
+</details>
+
