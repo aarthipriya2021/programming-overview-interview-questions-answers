@@ -47,6 +47,10 @@ Redeclaration of the variable | Allowed | Not allowed | Not allowed
 
 <details>
   <summary>:bulb:</summary>
+A primitive
+  <li>Is a value of a primitive type.</li>
+  <li>There are 7 primitive types: string, number, bigint, boolean, symbol, null and undefined.</li>
+
 
 </details>
 
