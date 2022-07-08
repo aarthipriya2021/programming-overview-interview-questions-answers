@@ -238,6 +238,169 @@ function myFunction() {
 ```
 ![image](https://user-images.githubusercontent.com/75599178/177958396-ff5fcdc8-9c28-4017-a2f5-aaa2363415d9.png)
 
+#### <li>Converting to Upper and Lower Case</li>
+
+<li>A string is converted to upper case with toUpperCase()</li>
+<li>A string is converted to lower case with toLowerCase()</li>
+
+``` JS
+<!-- Uppercase -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<html>
+<body>
+<h1>Strings</h1>
+
+<button onclick="myFunction()">Replace it</button>
+
+<p id="upper">Can you open chrome browser?</p>
+
+<script>
+    function myFunction(){
+        let text1 = document.getElementById("upper").innerHTML;
+        document.getElementById("upper").innerHTML = text1.toUpperCase()
+    }
+
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/177996365-1c632f90-340c-4746-99ff-41ff006ed46f.png)
+
+``` JS
+<!-- Smallcase -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<html>
+<body>
+<h1>Strings</h1>
+
+<button onclick="myFunction()">Replace it</button>
+
+<p id="lower">Can you open chrome browser?</p>
+
+<script>
+    function myFunction(){
+        let text1 = document.getElementById("lower").innerHTML;
+        document.getElementById("lower").innerHTML = text1.toLowerCase()
+    }
+
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/177996633-da81fef6-74ae-4044-8977-ee59ed79a33c.png)
+
+> Strings are immutable: Strings cannot be changed, only replaced.
+
+#### <li>concat</li>
+
+<li>The concat() method can be used instead of the plus operator.</li>
+
+``` JS
+<!-- concat -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="demo"></p>
+
+<script>
+let text1 = "Hello";
+let text2 = "World!";
+let text3 = text1.concat(" ",text2);
+document.getElementById("demo").innerHTML = text3;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/177998979-03669755-e8ff-4493-8048-874ffc3f6575.png)
+
+#### <li>trim</li>
+
+<li>The trim() method removes whitespace from both sides of a string.</li>
+
+``` JS
+<!-- trim -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The trim() Method</h2>
+<p>The trim() method removes whitespace from both sides of a string.</p>
+
+<p id="demo"></p>
+
+<script>
+let text1 = "     Hello World!     ";
+let text2 = text1.trim();
+
+document.getElementById("demo").innerHTML =
+"Length text1=" + text1.length + "<br>Length2 text2=" + text2.length;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178003016-aa3add38-af2a-4120-b5ea-42968bf0b864.png)
+
+#### String Search Methods
+
+<h4>JavaScript Search Methods</h4>
+<li>String indexOf()</li>
+<li>String lastIndexOf()</li>
+<li>String startsWith()</li>
+<li>String endsWith()</li>
+
+#### <li>indexOf()</li>
+
+<li>The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string</li>
+
+``` JS
+<!-- indexOf() -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.indexOf("locate");
+</script>
+
+</body>
+</html>
+
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178013526-7c5219d2-2c19-4fd4-9f28-1afe1054079a.png)
 
 
 
