@@ -707,6 +707,55 @@ Array items are separated by commas.
 const cars = ["Saab","Volvo","BMW"]  // cars is array
 ```
 
+#### Creating an Array
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = new Array("Saab", "Volvo", "BMW");
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178105722-f016911f-133b-4ff3-8efe-3293ce1651bb.png)
+
+#### Creating an Array
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = new Array("Saab", "Volvo", "BMW");
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+</body>
+</html>
+
+```
+
+
+
+
+
+#### <li> Array Methods </li>
+
+
+
 </details>
 
 
