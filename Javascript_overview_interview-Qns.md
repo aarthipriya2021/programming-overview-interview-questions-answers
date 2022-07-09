@@ -402,6 +402,91 @@ document.getElementById("demo").innerHTML = str.indexOf("locate");
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178013526-7c5219d2-2c19-4fd4-9f28-1afe1054079a.png)
 
+#### <li>search()</li>
+
+<li>The search() method searches a string for a specified value and returns the position of the match</li>
+
+``` JS
+<!-- search() -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.search("locate");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178099923-0e2e8a0e-1e0c-4e99-9a37-8deb875cda63.png)
+
+#### <li>match()</li>
+
+<li>The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.</li>
+
+``` JS
+<!-- match() -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Search</h2>
+
+<p>Search a string for "ain":</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in SPAIN stays mainly in the plain"; 
+document.getElementById("demo").innerHTML = text.match(/ain/g);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178100530-ec38c854-a564-485c-ae67-3066589f5822.png)
+
+#### <li>includes()</li>
+
+<li>The includes() method searches a string for a match against a regular expression, and returns the matches, as an Array object.</li>
+
+``` JS
+<!-- includes() -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Search</h2>
+
+<p>Check if a string includes "world":</p>
+
+<p id="demo"></p>
+
+<p>The includes() method is not supported in Internet Explorer.</p>
+
+<script>
+let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = text.includes("world");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178100706-8fd5ac68-a782-4dbd-8df5-c48fc88acb73.png)
+
+  
+  
 
 
 #### <li> Numbers </li>
