@@ -485,9 +485,6 @@ document.getElementById("demo").innerHTML = text.includes("world");
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178100706-8fd5ac68-a782-4dbd-8df5-c48fc88acb73.png)
 
-  
-  
-
 
 #### <li> Numbers </li>
 JavaScript has only one type of numbers.
@@ -502,6 +499,206 @@ let x3 = 3.14;
 let y = 123e5;      // 12300000
 let z = 123e-5;     // 0.00123
 ```
+
+#### <li> Number Methods </li>
+
+#### <li>toString()</li>
+
+<li>The toString() method returns a number as a string.</li>
+<li>All number methods can be used on any type of numbers (literals, variables, or expressions)</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>The toString() method converts a number to a string.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178102220-11728681-6117-4fb7-8dc9-b99a3e9730ce.png)
+
+#### <li>toExponential()</li>
+
+<li>The toString() method returns a number as a string.</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>toExponential() returns a string, with a number rounded and written using exponential notation.</p>
+
+<p>An optional parameter defines the number of digits behind the decimal point.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 9.656;
+document.getElementById("demo").innerHTML =
+  x.toExponential() + "<br>" + 
+  x.toExponential(2) + "<br>" + 
+  x.toExponential(4) + "<br>" + 
+  x.toExponential(6);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178102409-3926e4a9-18f8-4cc0-b7b3-764f4263283d.png)
+
+#### <li>toFixed()</li>
+
+<li>toFixed() returns a string, with the number written with a specified number of decimals</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>The toFixed() method rounds a number to a given number of digits.</p>
+<p>For working with money, toFixed(2) is perfect.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 9.656;
+document.getElementById("demo").innerHTML =
+  x.toFixed(0) + "<br>" +
+  x.toFixed(2) + "<br>" +
+  x.toFixed(4) + "<br>" +
+  x.toFixed(6);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178102453-99205a98-f117-41e6-98ac-c57570474803.png)
+
+#### <li>Converting Variables to Numbers</li>
+
+<li>The Number() method</li>
+<li>The parseInt() method</li>
+<li>The parseFloat() method</li>
+
+![image](https://user-images.githubusercontent.com/75599178/178102559-46a11067-da95-4728-9d35-1d689dd32538.png)
+
+#### The Number() Method
+> Example 1:
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Global Methods</h2>
+
+<p>The Number() method converts variables to numbers:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+  Number(true) + "<br>" +
+  Number(false) + "<br>" +
+  Number("10") + "<br>" + 
+  Number("  10") + "<br>" +
+  Number("10  ") + "<br>" +
+  Number(" 10  ") + "<br>" +
+  Number("10.33") + "<br>" + 
+  Number("10,33") + "<br>" +
+  Number("10 33") + "<br>" +
+  Number("John");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178103960-cb631550-2780-43ec-8702-88770bef40c3.png)
+
+#### The parseInt() Method
+
+> Example 2:
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Global Functions</h2>
+<h2>parseInt()</h2>
+<p>The global JavaScript function parseInt() converts strings to numbers:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+  parseInt("-10") + "<br>" +
+  parseInt("-10.33") + "<br>" +
+  parseInt("10") + "<br>" +
+  parseInt("10.33") + "<br>" +
+  parseInt("10 6") + "<br>" +  
+  parseInt("10 years") + "<br>" +  
+  parseInt("years 10");  
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178104645-92ed9a00-b50c-4c41-8b35-7ab7078e060c.png)
+
+#### The parseFloat() Method
+
+> Example 3:
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Global Methods</h2>
+
+<p>The parseFloat() method converts strings to numbers:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+  parseFloat("10") + "<br>" +
+  parseFloat("10.33") + "<br>" +
+  parseFloat("10 6") + "<br>" +  
+  parseFloat("10 years") + "<br>" +
+  parseFloat("years 10");    
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178104751-a61651d9-9dee-478f-9d6f-e7bf12d091f8.png)
+
 #### <li> Arrays </li>
 JavaScript arrays are written with square brackets.
 Array items are separated by commas.
