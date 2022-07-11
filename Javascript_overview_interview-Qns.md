@@ -1067,7 +1067,36 @@ document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178326337-e214e5d4-2927-4232-97d8-31d11d611929.png)
 
-#### slice()
+#### sort()
+
+<li>The sort() method sorts an array alphabetically</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>The sort() method sorts an array alphabetically:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178327234-c87a6f44-410a-4aea-942e-cfc66178f4f5.png)
+
+#### reverse()
 
 <li>The slice() method slices out a piece of an array into a new array.</li>
 
@@ -1076,16 +1105,18 @@ document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
 <html>
 <body>
 
-<h2>JavaScript Array Methods</h2>
-<h2>slice()</h2>
-<p>This example slices out a part of an array starting from array element 1 ("Orange"):</p>
+<h2>JavaScript Array Sort</h2>
+<p>The sort() method sorts an array alphabetically:</p>
 
-<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
 
 <script>
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fruits.slice(1);
-document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
 </script>
 
 </body>
