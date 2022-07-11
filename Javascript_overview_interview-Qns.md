@@ -1006,7 +1006,94 @@ document.getElementById("demo").innerHTML = myChildren;
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178277933-6f6ebfd8-400e-42a6-9047-d21071ee4676.png)
 
+#### splice()
+
+<li>The splice() method can be used to add new items to an array</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<h2>splice()</h2>
+
+<p>The splice() method adds new elements to an array, and returns an array with the deleted elements (if any):</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = "Original Array:<br> " + fruits;
+let removed = fruits.splice(2, 2, "Lemon", "Kiwi"); 
+document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+document.getElementById("demo3").innerHTML = "Removed Items:<br> " + removed; 
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178326065-c44bb714-b222-42ab-b192-cbe094b65bad.png)
+
+![image](https://user-images.githubusercontent.com/75599178/178325956-0a438e94-76d6-4561-87ff-98e92aeeb1b5.png)
+
+#### slice()
+
+<li>The slice() method slices out a piece of an array into a new array.</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<h2>slice()</h2>
+<p>This example slices out a part of an array starting from array element 1 ("Orange"):</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178326337-e214e5d4-2927-4232-97d8-31d11d611929.png)
+
+#### slice()
+
+<li>The slice() method slices out a piece of an array into a new array.</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<h2>slice()</h2>
+<p>This example slices out a part of an array starting from array element 1 ("Orange"):</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
+document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+</script>
+
+</body>
+</html>
+
+```
 </details>
+
 
 
 
