@@ -1098,7 +1098,7 @@ document.getElementById("demo2").innerHTML = fruits;
 
 #### reverse()
 
-<li>The slice() method slices out a piece of an array into a new array.</li>
+<li>The reverse() method reverses the elements in an array.</li>
 
 ``` JS
 <!DOCTYPE html>
@@ -1123,6 +1123,95 @@ document.getElementById("demo2").innerHTML = fruits;
 </html>
 
 ```
+![image](https://user-images.githubusercontent.com/75599178/178327727-b2b74e27-7fa9-4c58-a2de-ea9061e04631.png)
+
+#### Numeric Sort
+<li>Ascending order</li>
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>Sort the array in ascending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo1").innerHTML = points;  
+
+points.sort(function(a, b){return a - b});
+document.getElementById("demo2").innerHTML = points;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178328161-6a60d477-c121-4837-8edd-b4779be5b2ba.png)
+
+#### Numeric Sort
+
+<li>Desscending order</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>Sort the array in descending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo1").innerHTML = points;
+
+points.sort(function(a, b){return b - a});
+document.getElementById("demo2").innerHTML = points;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178328666-75b9f8ba-8574-4178-96e2-8da48a3c9925.png)
+
+#### Sorting an Array in Random Order
+
+<li>Sorting an Array in Random Order</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>Click the button (again and again) to sort the array in random order.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  points.sort(function(a, b){return 0.5 - Math.random()});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178328937-19b7086b-4cf8-4682-ae15-34932cf68236.png)
+
 </details>
 
 
