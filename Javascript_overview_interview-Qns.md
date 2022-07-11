@@ -43,13 +43,11 @@ Redeclaration of the variable | Allowed | Not allowed | Not allowed
 
 </details>
 
-### Primitives
+### Data types
 
 <details>
   <summary>:bulb:</summary>
-A primitive
-  <li>Is a value of a primitive type.</li>
-  <li>There are 7 primitive types: string, number, bigint, boolean, symbol, null and undefined.</li>
+
 
 #### <li> Strings </li>
 A string (or a text string) is a series of characters like "John Doe".
@@ -749,12 +747,264 @@ document.getElementById("demo").innerHTML = cars;
 ```
 
 
-
-
-
 #### <li> Array Methods </li>
 
+#### toString()
 
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>toString()</h2>
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178266325-14f2375c-0b47-4634-893d-155d4dbf7f93.png)
+
+#### join()
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>join()</h2> 
+<p>The join() method joins array elements into a string.</p>
+<p>It this example we have used " * " as a separator between the elements:</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178271178-f3015e17-d06a-4e09-acd0-a61031418fb2.png)
+
+
+#### pop()
+
+<li>Popping items out of an array, or pushing items into an array.</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<h2>pop()</h2>
+<p>The pop() method removes the last element from an array.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178267408-2f52bea2-b76b-469a-aa5a-8240cd29f871.png)
+
+#### push()
+
+<li>The push() method adds a new element to an array (at the end)</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>push()</h2>
+<p>The push() method appends a new element to an array:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.push("Kiwi");
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178274531-3563124a-77e8-4493-8613-5f991a050278.png)
+
+#### shift()
+
+<li>The shift() method removes the first array element and "shifts" all other elements to a lower index.</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>shift()</h2>
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178275051-5657a144-e525-4fc6-b771-48078302c22e.png)
+
+
+#### unshift()
+
+<li>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>unshift()</h2>
+<p>The unshift() method adds new elements to the beginning of an array:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.unshift("Lemon");
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178276283-f786b1d4-3995-4fc9-b74d-cedc2780861a.png)
+
+#### Array length
+
+<li>The length property provides an easy way to append new elements to an array without using the push() method.</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<p>The length property provides an easy way to append new elements to an array without using the push() method:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits[fruits.length] = "Kiwi";
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178277027-0c29ecaf-8b2c-4126-9d6a-1cf0f3d0b2a5.png)
+
+#### Array delete()
+
+<li>The length property provides an easy way to append new elements to an array without using the push() method.</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<p>Deleting elements leaves undefined holes in an array:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo1").innerHTML =
+"The first fruit is: " + fruits[0];
+
+delete fruits[0];
+
+document.getElementById("demo2").innerHTML =
+"The first fruit is: " + fruits[0];
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178277619-80c52fbb-cc6b-4141-a2b6-338089ba6ba1.png)
+
+#### Merging (Concatenating) Arrays
+
+<li>The concat() method creates a new array by merging (concatenating) existing arrays</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<h2>concat()</h2>
+<p>The concat() method merges (concatenates) arrays:</p>
+
+<p id="demo"></p>
+
+<script>
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+
+document.getElementById("demo").innerHTML = myChildren;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178277933-6f6ebfd8-400e-42a6-9047-d21071ee4676.png)
 
 </details>
 
