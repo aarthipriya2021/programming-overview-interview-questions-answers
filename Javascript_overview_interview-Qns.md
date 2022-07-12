@@ -1214,6 +1214,149 @@ function myFunction() {
 
 #### <li>Date and Time</li>
 
+#### <li>JavaScript new Date()</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+<p>Using new Date(milliseconds), creates a new date object as January 1, 1970, 00:00:00 Universal Time (UTC) plus the milliseconds:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178442188-a0daf489-bdc2-4307-825f-8966b86ad697.png)
+
+#### <li>JavaScript toString()</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript toString()</h2>
+<p>The toString() method converts a date to a string:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toString();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178443069-2d958c2e-6d59-43b7-98d9-0115f1407e49.png)
+
+#### <li>JavaScript toUTCString()</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Date()</h2>
+<p>The toUTCString() method converts a date to a UTC string (a date display standard):</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178443297-fa37efa5-ce60-4275-8f9e-cc57bf55e980.png)
+
+#### <li>JavaScript toUTCString()</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript toDateString()</h2>
+<p>The toDateString() method converts a date to a date string:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178443456-7f362eb0-5fba-4d8c-b234-6ddbe826cf95.png)
+
+#### <li>JavaScript toUTCString()</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript toISOString()</h2>
+<p>The toISOString() method converts a date to a date string, using the ISO standard format:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toISOString();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178443597-c88d020c-e663-48ab-8c0d-07beb2fe7c64.png)
+
+#### <li>Booleans</li>
+
+![image](https://user-images.githubusercontent.com/75599178/178444096-e3503e47-bf3b-49bf-97e1-9fb5b040c1fb.png)
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"Even the string 'false' is " + Boolean('false') + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178444404-95b5a775-6b71-4d5d-bd33-6d324deb01ab.png)
+
 </details>
 
 
