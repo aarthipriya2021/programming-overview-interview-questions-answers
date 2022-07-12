@@ -1359,6 +1359,92 @@ document.getElementById("demo").innerHTML =
 
 </details>
 
+### Math, random,comparison
+
+<details>
+  <summary>:bulb:</summary>
+
+
+### Math
+
+> The Math object is static.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math Constants</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178453331-600e8e25-e3d4-4bf6-a340-c75d16b04058.png)
+
+#### <li>Math</li>
+
+> The Math object is static.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.ceil()</h2>
+
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+<p>Math.ceil() rounds a number <strong>up</strong> to its nearest integer:</p>
+<p>Math.floor(x) returns the value of x rounded <strong>down</strong> to its nearest integer:</p>
+<p>Math.trunc(x) returns the integer part of x:</p>
+<p>Math.random() returns a random number between 0 and 1:</p>
+<p>Math.min() returns the lowest value in a list of arguments:</p>
+<p>Math.abs(x) returns the absolute (positive) value of x:</p>
+<p>Math.sqrt(x) returns the square root of x:</p>
+<p>Math.pow(x,y) returns the value of x to the power of y:</p>
+
+<p id="demo_1"></p>
+<p id="demo_2"></p>
+<p id="demo_3"></p>
+<p id="demo_4"></p>
+<p id="demo_5"></p>
+<p id="demo_6"></p>
+<p id="demo_7"></p>
+<p id="demo_8"></p>
+
+
+<script>
+document.getElementById("demo_1").innerHTML = Math.round(4.4);
+document.getElementById("demo_2").innerHTML = Math.ceil(4.4);
+document.getElementById("demo_3").innerHTML = Math.floor(4.7);
+document.getElementById("demo_4").innerHTML = Math.trunc(4.7);
+document.getElementById("demo_5").innerHTML = Math.min(0, 150, 30, 20, -8, -200);
+document.getElementById("demo_6").innerHTML = Math.abs(-4.7);
+document.getElementById("demo_7").innerHTML = Math.sqrt(64);
+document.getElementById("demo_8").innerHTML = Math.pow(8,2);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178455359-62defeb7-1dc0-47b8-84c3-ad3b4ecbb9cf.png)
+
+</details>
 
 
 
