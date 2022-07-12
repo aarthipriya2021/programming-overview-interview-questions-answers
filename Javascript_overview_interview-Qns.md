@@ -1444,6 +1444,10 @@ document.getElementById("demo_8").innerHTML = Math.pow(8,2);
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178455359-62defeb7-1dc0-47b8-84c3-ad3b4ecbb9cf.png)
 
+#### <li>Comparison</li>
+
+![image](https://user-images.githubusercontent.com/75599178/178459169-83df8246-e53c-4348-a8a3-b53cbeeba422.png)
+
 </details>
 
 
