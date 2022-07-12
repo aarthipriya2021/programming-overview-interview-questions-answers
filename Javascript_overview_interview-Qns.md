@@ -1453,6 +1453,200 @@ document.getElementById("demo_8").innerHTML = Math.pow(8,2);
 <details>
   <summary>:bulb:</summary>
 
+![image](https://user-images.githubusercontent.com/75599178/178487683-5ee72db5-1e41-407e-9ee3-467c6b8f4226.png)
+
+#### Syntax
+
+``` JS
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+
+```
+#### Example:-
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178488628-35419b90-201f-4870-8c8c-72f78d5de6f6.png)
+
+#### Switch 
+
+##### Syntax
+
+``` JS
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178489544-00327d83-0acc-496d-a2f9-fe196c1da97c.png)
+
+#### Example
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178489776-ba103df6-6006-40de-bf4c-dbfbedb42c11.png)
+
+#### the break keyword
+
+> When JavaScript reaches a break keyword, it breaks out of the switch block.
+
+> This will stop the execution inside the switch block.
+
+> It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+
+#### The default Keyword
+
+> he default keyword specifies the code to run if there is no case match.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178491144-6c4d1ab2-e8e6-4b2e-b0d3-b51c0300471d.png)
+
+#### Strict Comparison
+
+> Switch cases use strict comparison (===).
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = "0";
+
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178491558-a8078e77-48fa-4a91-b2a9-3d1a46b3f3ff.png)
 
 </details>
 
