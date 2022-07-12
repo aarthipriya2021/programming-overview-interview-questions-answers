@@ -1449,7 +1449,6 @@ document.getElementById("demo_8").innerHTML = Math.pow(8,2);
 
 ### if, else, and else if
 
-
 <details>
   <summary>:bulb:</summary>
 
@@ -1650,5 +1649,9 @@ document.getElementById("demo").innerHTML = text;
 
 </details>
 
+### Loops
 
+<details>
+  <summary>:bulb:</summary>
 
+</details>
