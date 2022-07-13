@@ -1653,5 +1653,47 @@ document.getElementById("demo").innerHTML = text;
 
 <details>
   <summary>:bulb:</summary>
+<li>Loops can execute a block of code a number of times.</li>
+![image](https://user-images.githubusercontent.com/75599178/178744644-f0f7d302-a9a8-49bb-b018-93fbce6680f3.png)
+
+#### The For Loop
+
+#### <li>Syntax</li>
+
+``` JS
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+```
+*Statement 1* is executed (one time) before the execution of the code block.
+*Statement 2 *defines the condition for executing the code block.
+*Statement 3* is executed (every time) after the code block has been executed.
+
+#### <li>Example</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178748468-654e08b3-37f4-464e-b8a6-1cc691ead3a1.png)
 
 </details>
