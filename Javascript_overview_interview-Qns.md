@@ -1814,4 +1814,80 @@ function myFunction(value) {
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178795612-cc3a75ff-45a6-4e60-8963-3fd827ab968e.png)
 
+#### The While Loop
+> Loops can execute a block of code as long as a specified condition is true.
+
+#### <li>Syntax</li>
+
+``` JS
+while (condition) {
+  // code block to be executed
+}
+```
+#### Example
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+let i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178796184-436ae138-7891-4048-8c43-9cf916512686.png)
+
+#### The Do While Loop
+#### <li>Syntax</li>
+
+``` JS
+do {
+  // code block to be executed
+}
+while (condition);
+```
+#### Example
+> The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Do While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = ""
+let i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178796541-5d0c7c13-ca88-4dc2-971c-d92890f0a1ef.png)
+
 </details>
