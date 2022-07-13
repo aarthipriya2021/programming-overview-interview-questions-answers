@@ -2042,6 +2042,61 @@ document.getElementById("demo").innerHTML = fruits.get("apples");
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178803825-2a51f03a-f278-4a09-a44e-3efcf32aacbc.png)
 
+#### <li>The new Map() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Creating a Map from an Array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+</script>
+
+</body>
+</html>
+
+```
+#### <li>The set() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Using Map.set():</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178804708-87daf1ef-bc82-4077-80f7-7c4f1d0f7724.png)
+
 </details>
 
 
