@@ -1891,3 +1891,108 @@ document.getElementById("demo").innerHTML = text;
 ![image](https://user-images.githubusercontent.com/75599178/178796541-5d0c7c13-ca88-4dc2-971c-d92890f0a1ef.png)
 
 </details>
+
+### Sets
+
+<details>
+  <summary>:bulb:</summary>
+
+> A JavaScript Set is a collection of unique values.
+
+> Each value can only occur once in a Set.
+
+#### Essential Set Methods
+![image](https://user-images.githubusercontent.com/75599178/178798670-aa0227a4-5843-405a-97eb-5c80ab42aeb4.png)
+
+#### Essential Set Methods
+You can create a JavaScript Set by:
+<li>Passing an Array to new Set()</li>
+<li>Create a new Set and use add() to add values</li>
+<li>Create a new Set and use add() to add variables</li>
+
+#### <li>The new Set() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Sets</h2>
+<p>Create a Set from an Array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Set
+const letters = new Set(["a","b","c","d"]);
+
+// Display set.size
+document.getElementById("demo").innerHTML = letters.size;
+</script>
+
+</body>
+</html>
+
+```
+
+#### <li>The add() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Sets</h2>
+<p>Adding equal elements to a Set:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Set
+const letters = new Set();
+
+// Add values to the Set
+letters.add("a");
+letters.add("b");
+letters.add("c");
+letters.add("c");
+letters.add("c");
+letters.add("c");
+letters.add("c");
+letters.add("c");
+
+// Display set.size
+document.getElementById("demo").innerHTML = letters.size;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178801261-a7daf0b2-f1c7-4c04-aa8a-0d4c0040f76f.png)
+
+#### <li>The values() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Sets</h2>
+<p>Set.values() returns a Set Iterator:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Set
+const letters = new Set(["a","b","c"]);
+
+// Display set.size
+document.getElementById("demo").innerHTML = letters.values();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178801485-97389db4-ae3a-40bd-923d-3210a206f411.png)
+
+
+</details>
