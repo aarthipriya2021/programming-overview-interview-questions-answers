@@ -1904,7 +1904,7 @@ document.getElementById("demo").innerHTML = text;
 #### Essential Set Methods
 ![image](https://user-images.githubusercontent.com/75599178/178798670-aa0227a4-5843-405a-97eb-5c80ab42aeb4.png)
 
-#### Essential Set Methods
+#### How to create new set
 You can create a JavaScript Set by:
 <li>Passing an Array to new Set()</li>
 <li>Create a new Set and use add() to add values</li>
@@ -1994,5 +1994,55 @@ document.getElementById("demo").innerHTML = letters.values();
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178801485-97389db4-ae3a-40bd-923d-3210a206f411.png)
 
+</details>
+
+
+### Maps
+
+<details>
+  <summary>:bulb:</summary>
+
+> A Map holds key-value pairs where the keys can be any datatype.
+
+> A Map remembers the original insertion order of the keys.
+
+#### Essential Set Methods
+![image](https://user-images.githubusercontent.com/75599178/178803671-eedf25d9-a07d-4c9c-8a3b-18b8a1f9172e.png)
+
+#### How to create new map
+You can create a JavaScript Map by:
+<li>Passing an Array to new Map()</li>
+<li>Create a Map and use Map.set()</li>
+
+#### <li>The add() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Creating a Map from an Array:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178803825-2a51f03a-f278-4a09-a44e-3efcf32aacbc.png)
 
 </details>
+
+
+
