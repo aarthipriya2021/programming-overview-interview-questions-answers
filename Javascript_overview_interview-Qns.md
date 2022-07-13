@@ -1654,6 +1654,7 @@ document.getElementById("demo").innerHTML = text;
 <details>
   <summary>:bulb:</summary>
 <li>Loops can execute a block of code a number of times.</li>
+
 ![image](https://user-images.githubusercontent.com/75599178/178744644-f0f7d302-a9a8-49bb-b018-93fbce6680f3.png)
 
 #### The For Loop
@@ -1665,9 +1666,9 @@ for (statement 1; statement 2; statement 3) {
   // code block to be executed
 }
 ```
-*Statement 1* is executed (one time) before the execution of the code block.
-*Statement 2 *defines the condition for executing the code block.
-*Statement 3* is executed (every time) after the code block has been executed.
+**Statement 1** is executed (one time) before the execution of the code block.<br>
+**Statement 2**defines the condition for executing the code block.<br>
+**Statement 3** is executed (every time) after the code block has been executed.<br>
 
 #### <li>Example</li>
 
