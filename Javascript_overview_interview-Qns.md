@@ -1697,4 +1697,121 @@ document.getElementById("demo").innerHTML = text;
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178748468-654e08b3-37f4-464e-b8a6-1cc691ead3a1.png)
 
+#### The For In Loop
+#### <li>Syntax</li>
+
+``` JS
+for (key in object) {
+  // code block to be executed
+}
+```
+#### Example
+``` JS
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For In Loop</h2>
+<p>The for in statement loops through the properties of an object:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {fname:"John", lname:"Doe", age:25}; 
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/178794759-9a13da85-7629-45bc-ba08-967cb3c37c7e.png)
+
+Example Explanation:<br>
+![image](https://user-images.githubusercontent.com/75599178/178794861-742f95a6-d619-45f1-974a-3131842f7fff.png)
+
+#### For In Over Arrays
+#### <li>Syntax</li>
+
+``` JS
+for (variable in array) {
+  code
+}
+```
+#### Example
+
+``` JS
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For In</h2>
+<p>The for in statement can loops over array values:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+for (let x in numbers) {
+  txt += numbers[x] + "<br>"; 
+}
+
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178795213-e7e356ee-d4b8-482a-be7d-1b5653a29ab5.png)
+
+> It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.
+
+#### Array.forEach()
+#### <li>Syntax</li>
+
+``` JS
+for (variable in array) {
+  code
+}
+```
+#### Example
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.forEach()</h2>
+<p>Calls a function once for each array element.</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value) {
+  txt += value + "<br>"; 
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178795612-cc3a75ff-45a6-4e60-8963-3fd827ab968e.png)
+
 </details>
