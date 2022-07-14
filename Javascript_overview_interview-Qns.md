@@ -1996,7 +1996,6 @@ document.getElementById("demo").innerHTML = letters.values();
 
 </details>
 
-
 ### Maps
 
 <details>
@@ -2068,6 +2067,8 @@ document.getElementById("demo").innerHTML = fruits.get("apples");
 </html>
 
 ```
+![image](https://user-images.githubusercontent.com/75599178/178950904-152c5ac6-cb64-4c69-8cc4-37f59abaff77.png)
+
 #### <li>The set() Method</li>
 
 ``` JS
@@ -2216,5 +2217,135 @@ document.getElementById("demo").innerHTML = fruits.has("apples");
 
 </details>
 
+### Type Conversion
 
+<details>
+  <summary>:bulb:</summary>
+
+#### <li>Converting Strings to Numbers</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript typeof Operator</h2>
+
+<p>Strings to number conversion</p>
+
+<p id="demo_1"></p>
+<p id="demo_2"></p>
+<p id="demo_3"></p>
+<p id="demo_4"></p>
+
+<script>
+document.getElementById("demo_1").innerHTML = Number("3.14");
+document.getElementById("demo_2").innerHTML = Number(" ");
+document.getElementById("demo_3").innerHTML = Number("");
+document.getElementById("demo_4").innerHTML = Number("99 88");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178977740-728cfceb-3362-47c9-ac6c-e955e3a2ba2a.png)
+
+#### <li>Converting Numbers to Strings</li>
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>The toString() method converts a number to a string.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178977970-d8c5ba11-34dd-47a9-8d50-cb63fc8b4c18.png)
+
+#### <li>Converting Dates to Numbers</li>
+
+``` JS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date to number</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        d = new Date()
+        document.getElementById("demo").innerHTML = d.getTime()
+    </script>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/178978293-8738e6cd-723a-4da2-81cd-ca594ffb96f8.png)
+
+#### <li>Converting Dates to Strings</li>
+
+``` JS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date to number</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        d = new Date()
+        document.getElementById("demo").innerHTML = d.toString()
+    </script>
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/178978744-4684444a-1c39-4a2a-a163-bbac5a8d5851.png)
+![image](https://user-images.githubusercontent.com/75599178/178978799-9c38e0ec-c172-4a83-a75a-fce7a35d53d5.png)
+
+#### <li>Converting Booleans to Numbers and Booleans to strings</li>
+
+``` JS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bools to Number & Bools to strings</title>
+</head>
+<body>
+    <p id="demo_1"></p>
+    <p id="demo_2"></p>
+    <script>
+        
+        document.getElementById("demo_1").innerHTML = Number(true)
+        document.getElementById("demo_2").innerHTML = false.toString()
+    </script>
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178979861-f652de15-f7d6-40c8-b6a1-6de9dc61f493.png)
+
+</details>
 
