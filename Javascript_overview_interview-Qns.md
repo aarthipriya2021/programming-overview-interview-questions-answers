@@ -2095,7 +2095,124 @@ document.getElementById("demo").innerHTML = fruits.get("apples");
 </html>
 
 ```
-![image](https://user-images.githubusercontent.com/75599178/178804708-87daf1ef-bc82-4077-80f7-7c4f1d0f7724.png)
+![image](https://user-images.githubusercontent.com/75599178/178945539-83a7c58f-40bc-40f0-b447-822229f6c5ab.png)
+
+#### <li>The get() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Using Map.set():</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map();
+
+// Set Map Values
+fruits.set("apples", 500);
+fruits.set("bananas", 300);
+fruits.set("oranges", 200);
+
+document.getElementById("demo").innerHTML = fruits.get("apples");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178949601-b0d9890c-2861-42b3-8b42-b955a6274aa0.png)
+
+#### <li>The size Property</li>
+
+``` JS
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Maps</h2>
+<p>Using Map.size:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.size;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178949659-5c59d30e-f02f-4be3-b952-c9cdd78642e8.png)
+
+#### <li>The delete() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Maps</h2>
+<p>Deleting Map elements:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// Delete an Element
+fruits.delete("apples");
+
+document.getElementById("demo").innerHTML = fruits.size;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178949923-d83100d2-476b-43d3-ad26-efbc7a314f0f.png)
+
+#### <li>The has() Method</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Maps</h2>
+<p>Using Map.has():</p>
+
+<p id="demo"></p>
+
+<script>
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+document.getElementById("demo").innerHTML = fruits.has("apples");
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/178950395-21d5f178-0a57-4c56-8960-1522a7db5923.png)
 
 </details>
 
