@@ -2349,3 +2349,77 @@ document.getElementById("demo").innerHTML =
 
 </details>
 
+### Scope
+
+<details>
+  <summary>:bulb:</summary>
+JavaScript has 3 types of scope:
+<li>Block scope</li>
+<li>Function scope</li>
+<li>Global scope</li>
+
+#### <li>Block Scope</li>
+
+> The block scope restricts a variable's access to the block in which it is declared.
+
+![image](https://user-images.githubusercontent.com/75599178/179144507-7c387b3f-e67a-472c-a9c0-645b8591f863.png)
+
+Variables declared with the var keyword can NOT have block scope.
+
+Variables declared inside a { } block can be accessed from outside the block.
+
+![image](https://user-images.githubusercontent.com/75599178/179144578-965e333d-a12e-4316-a977-162324c42e1a.png)
+
+#### <li>local Scope</li>
+> Variables declared within a JavaScript function, become LOCAL to the function.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Scope</h2>
+
+<p><b>carName</b> is undefined outside myFunction():</p>
+
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  let carName = "Volvo";
+  document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+}
+
+document.getElementById("demo2").innerHTML = typeof carName;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179147067-76d20a12-2729-4b18-aa7a-59322e20895f.png)
+
+#### <li>Function Scope</li>
+
+> Variables declared with var, let and const are quite similar when declared inside a function.They all have Function Scope.
+
+![image](https://user-images.githubusercontent.com/75599178/179147340-a5249d6a-799a-45f1-81d6-13f5995d7c88.png)
+![image](https://user-images.githubusercontent.com/75599178/179147371-a75c99cf-7552-42ce-b849-1855acfdf0c0.png)
+![image](https://user-images.githubusercontent.com/75599178/179147423-df8c9a64-71c3-47b7-8350-6167db974dac.png)
+
+#### <li>Global Scope</li>
+
+Variables declared Globally (outside any function) have Global Scope.<br>
+  
+Global variables can be accessed from anywhere in a JavaScript program.<br>
+  
+Variables declared with var, let and const are quite similar when declared outside a block.<br>
+  
+They all have Global Scope
+</details>
+
+
