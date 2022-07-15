@@ -2422,4 +2422,9 @@ Variables declared with var, let and const are quite similar when declared outsi
 They all have Global Scope
 </details>
 
+### Hoisting
 
+<details>
+  <summary>:bulb:</summary>
+
+</details>
