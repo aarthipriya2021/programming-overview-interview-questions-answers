@@ -2422,9 +2422,111 @@ Variables declared with var, let and const are quite similar when declared outsi
 They all have Global Scope
 </details>
 
-### Hoisting
+### Errors
 
 <details>
   <summary>:bulb:</summary>
+
+#### Throw, and Try...Catch...Finally
+
+> The try statement defines a code block to run (to try).<br>
+The catch statement defines a code block to handle any error.<br>
+The finally statement defines a code block to run regardless of the result.<br>
+The throw statement defines a custom error.
+
+> Errors can be coding errors made by the programmer, errors due to wrong input, and other unforeseeable things.
+
+#### JavaScript try and catch
+
+``` JS
+try {
+  Block of code to try
+}
+catch(err) {
+  Block of code to handle errors
+}
+```
+#### Example 
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Error Handling</h2>
+
+<p>How to use <b>catch</b> to display an error.</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179418139-03d99032-7c1d-4333-97e3-ab2dd569a4ad.png)
+
+#### The finally Statement
+
+> The finally statement lets you execute code, after try and catch, regardless of the result.
+
+``` JS
+try {
+  Block of code to try
+}
+catch(err) {
+  Block of code to handle errors
+}
+finally {
+  Block of code to be executed regardless of the try / catch result
+}
+```
+#### Example
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript try catch, finally</h2>
+
+<script>
+function get() {
+  try {
+    console.log("Inside try");
+    throw new Error("Return error");
+    return 10;
+  } catch(e){
+    console.log("Inside catch");
+    return 20
+  } finally{
+    console.log("Inside finally");
+    return 30;
+  }
+  
+  console.log("Outside try...catch...finally");
+  return 40;
+}
+
+console.log("The value is ", get());
+</script>
+
+</body>
+</html>
+```
+![image](https://user-images.githubusercontent.com/75599178/179418451-2bae59de-28e4-4336-9d7f-3e90f90f2dfb.png)
+
+
+
+
+
 
 </details>
