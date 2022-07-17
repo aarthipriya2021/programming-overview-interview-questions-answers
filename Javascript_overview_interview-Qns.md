@@ -2420,6 +2420,7 @@ Global variables can be accessed from anywhere in a JavaScript program.<br>
 Variables declared with var, let and const are quite similar when declared outside a block.<br>
   
 They all have Global Scope
+> var x = 2;       // Global scope <br> <br> let x = 2;       // Global scope <br> <br> const x = 2;       // Global scope
 </details>
 
 ### Errors
@@ -2561,7 +2562,7 @@ catch(err) {
 ```
 ![image](https://user-images.githubusercontent.com/75599178/179418660-188cb5f4-14b1-45d8-8bea-d97502edfa49.png)
 
-#### <li> Reference Error</li>
+#### <li>Reference Error</li>
 
 > A ReferenceError is thrown if you use (reference) a variable that has not been declared.
 
@@ -2594,5 +2595,101 @@ catch(err) {
 ```
 ![image](https://user-images.githubusercontent.com/75599178/179418748-dc51e416-9b07-4f01-9e4f-4427f9635dae.png)
 
+#### <li>Syntax Error</li>
+
+> A SyntaxError is thrown if you try to evaluate code with a syntax error..
+
+**Example**
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>You cannot evaluate code that contains a syntax error:</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+  eval("alert('Hello)");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179419051-e4df82b1-bb26-454a-b307-66eba6f01f76.png)
+
+#### <li>Type Error</li>
+
+> A TypeError is thrown if you use a value that is outside the range of expected types.
+
+**Example**
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>You cannot convert a number to upper case:</p>
+
+<p id="demo"></p>
+
+<script>
+let num = 1;
+try {
+  num.toUpperCase();
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179419155-b36b5527-ebd2-4638-9976-347693e4ce41.png)
+
+#### <li>URI (Uniform Resource Identifier) Error</li>
+
+> A URIError is thrown if you use illegal characters in a URI function.
+
+**Example**
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>Some characters cannot be decoded with decodeURI():</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+  decodeURI("%%%");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179419212-5778fe2f-e791-49b1-913e-35644ec0b171.png)
 
 </details>
