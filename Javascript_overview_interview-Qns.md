@@ -2524,9 +2524,75 @@ console.log("The value is ", get());
 ```
 ![image](https://user-images.githubusercontent.com/75599178/179418451-2bae59de-28e4-4336-9d7f-3e90f90f2dfb.png)
 
+#### Error Name Values
+![image](https://user-images.githubusercontent.com/75599178/179418506-f7e2e90d-fb7a-4cf1-bfc8-7432ace8326d.png)
 
+#### Error Name Values
+#### <li> Range Error</li>
 
+> A RangeError is thrown if you use a number that is outside the range of legal values.
 
+**Example**
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>You cannot set the number of significant digits of a number to 500:</p>
+
+<p id="demo">
+
+<script>
+let num = 1;
+try {
+  num.toPrecision(500);
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179418660-188cb5f4-14b1-45d8-8bea-d97502edfa49.png)
+
+#### <li> Reference Error</li>
+
+> A ReferenceError is thrown if you use (reference) a variable that has not been declared.
+
+**Example**
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Errors</h2>
+
+<p>You cannot use the value of a non-existing variable:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;
+try {
+  x = y + 1;
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179418748-dc51e416-9b07-4f01-9e4f-4427f9635dae.png)
 
 
 </details>
