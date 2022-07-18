@@ -3512,6 +3512,85 @@ The constructor method is a special method:
     <li>It is used to initialize object properties</li>
 If you do not define a constructor method, JavaScript will add an empty constructor method.
 
+**Example**
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Method</h2>
+
+<p>Pass a parameter into the "age()" method.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+let date = new Date();
+let year = date.getFullYear();
+
+let myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML=
+"My car is " + myCar.age(year) + " years old.";
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179572684-6c3a11c4-5643-47b8-bb6e-cd419ae681a2.png)
+
+**Inheritance**
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Inheritance</h2>
+
+<p>Use the "extends" keyword to inherit all methods from another class.</p>
+<p>Use the "super" method to call the parent's constructor function.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  present() {
+    return 'I have a ' + this.carname;
+  }
+}
+
+class Model extends Car {
+  constructor(brand, mod) {
+    super(brand);
+    this.model = mod;
+  }
+  show() {
+    return this.present() + ', it is a ' + this.model;
+  }
+}
+
+let myCar = new Model("Ford", "Mustang");
+document.getElementById("demo").innerHTML = myCar.show();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179576241-08d52cd7-4ca9-4c8b-ad66-a882448d3d55.png)
 
 </details > 
   
