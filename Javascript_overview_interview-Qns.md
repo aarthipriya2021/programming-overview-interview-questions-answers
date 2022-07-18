@@ -2693,3 +2693,94 @@ catch(err) {
 ![image](https://user-images.githubusercontent.com/75599178/179419212-5778fe2f-e791-49b1-913e-35644ec0b171.png)
 
 </details>
+
+### Hoisting
+
+<details>
+  <summary>:bulb:</summary>
+
+> Hoisting is the default behaviour of moving all the declarations at the top of the code before the code execution. <br> Declaration -> Initialisation/Agreement -> Usage
+
+**Example**
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x; // Declare x
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;           // Display x in the element
+</script>
+
+</body>
+</html> 
+
+``` 
+![image](https://user-images.githubusercontent.com/75599178/179448533-a85307c1-196f-4e59-8bf4-03d5f9f45b4e.png)
+  
+**The let and const Keywords**
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Hoisting</h2>
+<p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+<p id="demo"></p>
+
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179449353-1095b809-7361-4467-8915-4857344a2d96.png)
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Hoisting</h2>
+
+<p>With <b>const</b>, you cannot use a variable before it is declared.</p>
+<p>Try to remove the //.</p>
+
+<p id="demo"></p>
+
+<script>
+carName = "Volvo";
+//const carName;
+document.getElementById("demo").innerHTML = carName;
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179449390-e9ed5092-49e5-4960-a956-ab41b2ad655d.png)
+![image](https://user-images.githubusercontent.com/75599178/179449428-feb20081-016c-4626-8f38-a66be6c667ca.png)
+
+</details>  
+  
+  
+  
+  
+  
+  
+  
