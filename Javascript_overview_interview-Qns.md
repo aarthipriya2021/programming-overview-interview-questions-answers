@@ -1105,28 +1105,39 @@ document.getElementById("demo2").innerHTML = fruits;
 <html>
 <body>
 
-<h2>JavaScript Array Sort</h2>
-<p>The sort() method sorts an array alphabetically:</p>
+<h2>JavaScript Array Sort Reverse</h2>
+
+<p>The reverse() method reverses the elements in an array.</p>
+<p>By combining sort() and reverse() you can sort an array in descending order:</p>
 
 <p id="demo1"></p>
 <p id="demo2"></p>
 
 <script>
+// Create and display an array:
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo1").innerHTML = fruits;
 
+// First sort the array
 fruits.sort();
+
+// Then reverse it:
+fruits.reverse();
+
 document.getElementById("demo2").innerHTML = fruits;
 </script>
 
 </body>
 </html>
 
+
 ```
-![image](https://user-images.githubusercontent.com/75599178/178327727-b2b74e27-7fa9-4c58-a2de-ea9061e04631.png)
+![image](https://user-images.githubusercontent.com/75599178/179484922-7ffe146f-d4b9-4375-9b73-219f4d3e5063.png)
 
 #### Numeric Sort
+
 <li>Ascending order</li>
+
 ``` JS
 <!DOCTYPE html>
 <html>
@@ -2777,8 +2788,7 @@ document.getElementById("demo").innerHTML = carName;
 ![image](https://user-images.githubusercontent.com/75599178/179449428-feb20081-016c-4626-8f38-a66be6c667ca.png)
 
 </details>  
-  
-![image](https://user-images.githubusercontent.com/75599178/179461424-21f41252-dbdd-421e-8962-9af68b4422be.png)
+ 
 
 ### this Keyword
 
@@ -2849,6 +2859,128 @@ document.getElementById("demo").innerHTML = x;
 ```
 ![image](https://user-images.githubusercontent.com/75599178/179463201-250b86d7-27d6-4991-a6fe-9678b32c363e.png)
 
+#### <li>this in a Function (Default)</li>
+
+> In a function, the global object is the default binding for this. <br> In a browser window the global object is [object Window]
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+
+<p>In a function, by default, <b>this</b> refers to the global object.</p>
+
+<p>Strict mode does not allow default binding, so <b>this</b> is:</p>
+<p id="demo"></p>
+
+<script>
+"use strict";
+document.getElementById("demo").innerHTML = myFunction();
+
+function myFunction() {
+  return this;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179483130-193cfeb3-ffd9-4a05-a210-2b78a99a1928.png)
+
+#### <li>this in a Function (Strict)</li>
+
+> JavaScript strict mode does not allow default binding. <br> So, when used in a function, in strict mode, this is undefined.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+
+<p>In a function, by default, <b>this</b> refers to the global object.</p>
+
+<p>Strict mode does not allow default binding, so <b>this</b> is:</p>
+<p id="demo"></p>
+
+<script>
+"use strict";
+document.getElementById("demo").innerHTML = myFunction();
+
+function myFunction() {
+  return this;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179483524-ec4334ff-5635-42cb-bc06-6d4540bac42f.png)
+
+
+#### <li>this in Event Handlers</li>
+
+> In HTML event handlers, this refers to the HTML element that received the event.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+
+<button onclick="this.style.display='none'">Click to Remove Me!</button>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179483831-47a7e869-d582-4050-b9df-b3693d1102ed.png)
+
+#### <li>Function Borrowing</li>
+
+> With the bind() method, an object can borrow a method from another object.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Function bind()</h1>
+
+<p>This example creates 2 objects (person and member).</p>
+<p>The member object borrows the fullname method from person:</p> 
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
+
+document.getElementById("demo").innerHTML = fullName();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179484295-8572d5da-d774-4b86-9d77-9cfb56b110d1.png)
 
 </details>  
   
