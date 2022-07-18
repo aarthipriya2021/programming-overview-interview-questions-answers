@@ -1368,13 +1368,83 @@ document.getElementById("demo").innerHTML =
 ```
 ![image](https://user-images.githubusercontent.com/75599178/178444404-95b5a775-6b71-4d5d-bd33-6d324deb01ab.png)
 
+#### <li>Objects</li>
+> A JavaScript object is a collection of named values
+#### <li>Creating a JavaScript Object</li>
+  With JavaScript, you can define and create your own objects.
+
+  There are different ways to create new objects:
+
+  <li>Create a single object, using an object literal.</li>
+  <li>Create a single object, with the keyword new.</li>
+  <li>Define an object constructor, and then create objects of the constructed type.</li>
+  <li>Create an object using Object.create().</li>
+
+#### <li>Using an Object Literal</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Creating a JavaScript Object:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {};
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179585016-24d5449f-0187-408a-b3b5-fd387489667d.png)
+
+#### <li>JavaScript Keyword new</li>
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Creating a JavaScript Object:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue"; 
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179586964-9784148d-e6b1-442b-b7ef-6e1901d92644.png)
+
+
 </details>
 
 ### Math, random,comparison
 
 <details>
   <summary>:bulb:</summary>
-
 
 ### Math
 
@@ -3593,7 +3663,14 @@ document.getElementById("demo").innerHTML = myCar.show();
 ![image](https://user-images.githubusercontent.com/75599178/179576241-08d52cd7-4ca9-4c8b-ad66-a882448d3d55.png)
 
 </details > 
-  
+
+### Javascript Async
+
+<details>
+  <summary>:bulb:</summary>
+
+
+</details>  
   
   
   
