@@ -3423,7 +3423,29 @@ function myFunction(){
 
 > The variable add is assigned to the return value of a self-invoking function. <br> The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression. <br> This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope. <br> This is called a JavaScript closure. It makes it possible for a function to have "private" variables. <br> The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
 </details>
-  
+ 
+### Classes
+
+<details>
+  <summary>:bulb:</summary>
+ECMAScript 2015, also known as ES6, introduced JavaScript Classes. <br> JavaScript Classes are templates for JavaScript Objects.
+
+#### <li>Syntax</li>
+``` JS
+class ClassName {
+  constructor() { ... }
+}
+```
+#### <li>Example</li>
+``` JS
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+```
+</details > 
   
   
   
