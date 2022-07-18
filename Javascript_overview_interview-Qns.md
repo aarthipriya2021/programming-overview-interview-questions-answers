@@ -2984,4 +2984,378 @@ document.getElementById("demo").innerHTML = fullName();
 
 </details>  
   
+ ### Function
+
+<details>
+  <summary>:bulb:</summary>
+
+> JavaScript functions are defined with the function keyword. <br> You can use a function declaration or a function expression.
+
+#### <li>Function Declarations</li>
+
+**syntax**
+
+``` JS
+function functionName(parameters) {
+  // code to be executed
+}
+```
+**Example**
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+var x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179511570-ff54cde6-a489-4054-9c38-12df708f0c19.png)
+
+#### <li>Function() Constructor</li>
+
+> Functions can also be defined with a built-in JavaScript function constructor called Function().
+
+**Example**
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>JavaScript has an built-in function constructor.</p>
+<p id="demo"></p>
+
+<script>
+const myFunction = new Function("a", "b", "return a * b");
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179512540-30ac49b2-eb42-43ab-ac6a-cfb4f4174a13.png)
+
+#### <li>Function Hoisting</li>  
+> JavaScript functions can be called before they are declared .
+**Example**
+``` JS
+myFunction(5);
+
+function myFunction(y) {
+  return y * y;
+}
+``` 
+#### <li>Arguments length</li>  
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The arguments.length property returns the number of arguments received by the function:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a, b) {
+  return arguments.length;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179513546-c7343bfb-491b-4140-af84-123ae19b7d26.png)
+
+#### <li>Arrow Functions</li>  
+
+> Arrow functions allows a short syntax for writing function expressions. <br> You don't need the function keyword, the return keyword, and the curly brackets.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrow Functions</h2>
+
+<p>With arrow functions, you don't have to type the function keyword, the return keyword, and the curly brackets.</p>
+
+<p>Arrow functions are not supported in IE11 or earlier.</p>
+
+<p id="demo"></p>
+
+<script>
+const x = (x, y) => x * y;
+document.getElementById("demo").innerHTML = x(5, 5);
+</script>
+
+</body>
+</html>
+
+```  
+![image](https://user-images.githubusercontent.com/75599178/179515341-1caed37f-f2ef-4dcc-a5fd-94ff7abd04b1.png)
+  
+#### <li>Function Parameters</li>  
+
+> Function parameters are the names listed in the function definition.<br> Function arguments are the real values passed to (and received by) the function.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Setting a default value to a function parameter (y=2).</p>
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y = 2) {
+  return x * y;
+}
+document.getElementById("demo").innerHTML = myFunction(4);
+</script>
+
+</body>
+</html>
+
+```    
+![image](https://user-images.githubusercontent.com/75599178/179516103-da616bc8-64df-4f2d-bb28-d79fb5a2636d.png)
+  
+#### <li>Function vs Method</li>  
+
+Method : Method is a function when object is associated with it.
+``` JS
+var obj = {
+name : "John snow",
+work : function someFun(paramA, paramB) {
+    // some code..
+}
+```
+Function : When no object is associated with it , it comes to function.
+``` JS
+function fun(param1, param2){
+// some code...
+}
+```  
+#### <li>Method Reuse</li>    
+With the call() method, you can write a method that can be used on different objects.
+
+#### <li>The JavaScript call() Method</li>      
+> The call() method is a predefined JavaScript method. <br> It can be used to invoke (call) a method with an owner object as an argument (parameter).  
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>This example calls the fullName method of person, using it on person1:
+</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+document.getElementById("demo").innerHTML = person.fullName.call(person1); 
+</script>
+
+</body>
+</html>
+
+```  
+![image](https://user-images.githubusercontent.com/75599178/179524283-8bf717f0-e072-45fd-9f33-623c2a028609.png)
+
+#### <li>The call() Method with Arguments</li>      
+> The call() method is a predefined JavaScript method. <br> It can be used to invoke (call) a method with an owner object as an argument (parameter).  
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>This example calls the fullName method of person, using it on person1:
+</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.call(person1, "Oslo", "Norway"); 
+</script>
+
+</body>
+</html>
+
+```   
+![image](https://user-images.githubusercontent.com/75599178/179525746-3d0c6fa5-37af-45b6-9e28-41dd18e15e59.png)
+  
+#### <li>JavaScript apply() Method</li>   
+> The apply() method is similar to the call().
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.apply(person1); 
+</script>
+
+</body>
+</html>
+
+```  
+![image](https://user-images.githubusercontent.com/75599178/179528867-a61209ea-0ae7-4e97-b32b-f37154b20063.png)
+
+#### <li>The Difference Between call() and apply()</li>   
+> The call() method takes arguments separately.<br> The apply() method takes arguments as an array.
+
+#### <li>The apply() Method with Arguments</li>   
+**apply()**  
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.apply(person1, ["Oslo", "Norway"]); 
+</script>
+
+</body>
+</html>
+
+```  
+**call()**  
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>This example calls the fullName method of person, using it on person1:
+</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.call(person1, "Oslo", "Norway"); 
+</script>
+
+</body>
+</html>
+
+```  
+![image](https://user-images.githubusercontent.com/75599178/179529878-83aab008-a9bc-4c76-a3a4-27cb66c8be92.png)
+
+</details>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
