@@ -3273,7 +3273,9 @@ document.getElementById("demo").innerHTML = person.fullName.apply(person1);
 > The call() method takes arguments separately.<br> The apply() method takes arguments as an array.
 
 #### <li>The apply() Method with Arguments</li>   
+
 **apply()**  
+
 ``` JS
 <!DOCTYPE html>
 <html>
@@ -3341,6 +3343,85 @@ document.getElementById("demo").innerHTML = person.fullName.call(person1, "Oslo"
 ```  
 ![image](https://user-images.githubusercontent.com/75599178/179529878-83aab008-a9bc-4c76-a3a4-27cb66c8be92.png)
 
+
+#### <li>Function bind()</li>
+
+> With the bind() method, an object can borrow a method from another object.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Function bind()</h1>
+
+<p>This example creates 2 objects (person and member).</p>
+<p>The member object borrows the fullname method from person:</p> 
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
+
+document.getElementById("demo").innerHTML = fullName();
+</script>
+
+</body>
+</html>
+
+```  
+![image](https://user-images.githubusercontent.com/75599178/179568649-e7c964aa-28ba-4823-a1d4-76744b6a3091.png)
+
+#### <li>JavaScript Closures</li>
+
+> A closure is a function having access to the parent scope, even after the parent function has closed.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Closures</h2>
+
+<p>Counting with a local variable.</p>
+
+<button type="button" onclick="myFunction()">Count!</button>
+
+<p id="demo">0</p>
+
+<script>
+const add = (function () {
+  let counter = 0;
+  return function () {counter += 1; return counter;}
+})();
+
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+</body>
+</html>
+
+``` 
+![image](https://user-images.githubusercontent.com/75599178/179570301-458ba0b6-4824-4c0a-9dff-85b6a11ec623.png)
+
+**Explanation for closure example**
+
+> The variable add is assigned to the return value of a self-invoking function. <br> The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression. <br> This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope. <br> This is called a JavaScript closure. It makes it possible for a function to have "private" variables. <br> The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
 </details>
   
   
