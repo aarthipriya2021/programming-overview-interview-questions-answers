@@ -3669,7 +3669,81 @@ document.getElementById("demo").innerHTML = myCar.show();
 <details>
   <summary>:bulb:</summary>
 
+### JS Callback
+> A callback is a function passed as an argument to another function <br> This technique allows a function to call another function <br> A callback function can run after another function has finished
 
+**Example**
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Function Sequence</h2>
+
+<p>JavaScript functions are executed in the sequence they are called.</p>
+
+<p id="demo"></p>
+
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myFirst() {
+  myDisplayer("Hello");
+}
+
+function mySecond() {
+  myDisplayer("Goodbye");
+}
+
+myFirst();
+mySecond();
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179669951-697d0ca0-b5c1-48e9-8694-908f968b5e06.png)
+
+**JavaScript Callbacks**
+
+> A callback is a function passed as an argument to another function.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Callbacks</h2>
+
+<p>Do a calculation and then display the result.</p>
+
+<p id="demo"></p>
+
+<script>
+function myDisplayer(something) {
+  document.getElementById("demo").innerHTML = something;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179670745-a0e1d24c-6b46-4884-9305-abdfeb23a1a9.png) <br>
+In the example above, myDisplayer is the name of a function. <br> It is passed to myCalculator() as an argument.
+
+**When to Use a Callback?** <br>
+*Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).*
 </details>  
   
   
