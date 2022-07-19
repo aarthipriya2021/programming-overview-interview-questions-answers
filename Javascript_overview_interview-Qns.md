@@ -4001,9 +4001,12 @@ getFile();
 
 There are two data types: <br>
   <li>Primitive type</li>
-  <li>Non-Primitive type</li>
+  <li>Non-Primitive type</li><br>
 
-**1.Primitive type:** <br>
+> Primitive data types can store only a single value. To store multiple and complex values, non-primitive data types are used.
+
+**1.Primitive type** <br>
+
 **String** => It represents a series of characters and is written with quotes. <br>
 **Number** =>  It represents a number and can be written with or without decimals. <br>
 **BigInt** => BigInt is a numeric data type that can represent integers in the arbitrary precision format.  <br>
@@ -4013,7 +4016,98 @@ There are two data types: <br>
 **Symbol** => It is used to store an anonymous and unique value.<br>
 ![image](https://user-images.githubusercontent.com/75599178/179768514-d183dad1-7a43-4c48-8077-cb9b4d9038da.png)
 
+**2. Non-primitive types** <br>
+
+**Objects and Arrays**
+![image](https://user-images.githubusercontent.com/75599178/179811971-9b39f364-72ed-443b-a2ab-82cbfa80d95a.png)
+
 </details>  
+  
+### 2. Explain Hoisting in javascript.
+<details>
+  <summary>:bulb:</summary>    
+  
+*Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.*
+
+**Examples:**<br>
+
+![image](https://user-images.githubusercontent.com/75599178/179813267-a4df0302-1300-4447-9a5d-f654a8e182c8.png)
+![image](https://user-images.githubusercontent.com/75599178/179813337-9b2d60d6-e523-4e56-932c-09fb9e1992cf.png)
+
+</details>  
+ 
+ 
+### 3. Difference between “ == “ and “ === “ operators.
+<details>
+  <summary>:bulb:</summary>    
+ 
+*The difference between both the operators is that “==” is used to compare values whereas, “ === “ is used to compare both values and types.*  
+![image](https://user-images.githubusercontent.com/75599178/179813989-5d2686a6-045a-4d06-bde4-d80acce593e7.png)
+  
+</details>    
+  
+### 4. Difference between var and let keyword in javascript.
+<details>
+  <summary>:bulb:</summary>      
+  
+![image](https://user-images.githubusercontent.com/75599178/179814535-8229418e-0492-4ed5-bd3e-17b2a486c7df.png)
+  
+</details>     
+  
+### 5. Is javascript a statically typed or a dynamically typed language?  
+<details>
+  <summary>:bulb:</summary>    
+
+*JavaScript is a dynamically typed language. *  
+Variables in JS are not associated with any type.<br> A variable can hold the value of any data type. 
+</details>     
+  
+### 6. What is NaN property in JavaScript?  
+<details>
+  <summary>:bulb:</summary>    
+
+*NaN property represents the “Not-a-Number” value. It indicates a value that is not a legal number.*
+![image](https://user-images.githubusercontent.com/75599178/179816562-24639335-edf5-4364-b474-35a06e0f1966.png)
+  
+</details>   
+  
+### 7. Explain passed by value and passed by reference.  
+<details>
+  <summary>:bulb:</summary>  
+    
+*In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.*  <br>
+
+![image](https://user-images.githubusercontent.com/75599178/179817006-4c72569b-b919-46f7-8b58-6fa7038885e4.png)
+
+ In above example, variable y is directly assigned, byt z is not like that. It returns onlyby memory. 
+</details>  
+  
+### 8. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
+<details>
+  <summary>:bulb:</summary> 
+
+*Strict Mode is a feature in JavaScript that was introduced in ECMAScript 5. It eliminates some JavaScript silent errors by changing them to throw errors.*  
+ 
+Characteristics of strict mode in javascript:
+<li>The 'use strict' keyword is used to define strict mode at the start of the script. Strict mode is supported by all browsers.</li>
+<li>Duplicate arguments are not allowed by developers.</li> 
+</details>   
+  
+### 9. Explain Higher Order Functions in javascript.
+<details>
+  <summary>:bulb:</summary> 
+*Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.*
+  
+</details>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
