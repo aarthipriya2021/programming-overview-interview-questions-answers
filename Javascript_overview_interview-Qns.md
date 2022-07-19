@@ -3744,6 +3744,29 @@ In the example above, myDisplayer is the name of a function. <br> It is passed t
 
 **When to Use a Callback?** <br>
 *Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).*
+
+### Asynchronous JavaScript
+> Functions running in parallel with other functions are called asynchronous <br> A good example is JavaScript setTimeout() 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </details>  
   
   
