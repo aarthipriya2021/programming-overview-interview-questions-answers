@@ -3992,8 +3992,28 @@ getFile();
  ![image](https://user-images.githubusercontent.com/75599178/179738825-c2592de6-d1c9-4230-97eb-301cead3e1f2.png)
    
 </details>  
-  
-  
+
+# Interview Questions
+
+### 1. What are the different data types present in javascript?
+<details>
+  <summary>:bulb:</summary>  
+
+There are two data types: <br>
+  <li>Primitive type</li>
+  <li>Non-Primitive type</li>
+
+**1.Primitive type:** <br>
+**String** => It represents a series of characters and is written with quotes. <br>
+**Number** =>  It represents a number and can be written with or without decimals. <br>
+**BigInt** => BigInt is a numeric data type that can represent integers in the arbitrary precision format.  <br>
+**Boolean** =>  It represents a logical entity and can have only two values : true or false. <br>
+**Undefined** => When a variable is declared but not assigned, it has the value of undefined <br>
+**Null** => It represents a non-existent or a invalid value.<br>
+**Symbol** => It is used to store an anonymous and unique value.<br>
+![image](https://user-images.githubusercontent.com/75599178/179768514-d183dad1-7a43-4c48-8077-cb9b4d9038da.png)
+
+</details>  
   
   
   
