@@ -4093,11 +4093,88 @@ Characteristics of strict mode in javascript:
 <li>Duplicate arguments are not allowed by developers.</li> 
 </details>   
   
-### 9. Explain Higher Order Functions in javascript.
+### 9. Explain First class function & Higher Order Functions in javascript.
 <details>
   <summary>:bulb:</summary> 
+
+#### <li>First class function</li>
+*A programming language said to have if first class function can be treated like other variable, and also  can be passed as an argument or returned by another functions.*
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+const Arithmetics = {
+	add:(a, b) => {
+		return `${a} + ${b} = ${a+b}`;
+	},
+	subtract:(a, b) => {
+		return `${a} - ${b} = ${a-b}`
+	},
+	multiply:(a, b) => {
+		return `${a} * ${b} = ${a*b}`
+	},
+	division:(a, b) => {
+		if(b!=0) return `${a} / ${b} = ${a/b}`;
+		return `Cannot Divide by Zero!!!`;
+	}
+
+}
+
+console.log(Arithmetics.add(100, 100));
+console.log(Arithmetics.subtract(100, 7));
+console.log(Arithmetics.multiply(5, 5));
+console.log(Arithmetics.division(100, 5));
+
+</script>
+
+</body>
+</html> 
+
+```
+![image](https://user-images.githubusercontent.com/75599178/179897996-41aa52f2-fdee-4f5a-841c-6409eaab0860.png)
+
+  #### <li>Higher Order Functions</li>
 *Functions that operate on other functions, either by taking them as arguments or by returning them, are called higher-order functions.*
-  
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+
+<script>
+function greet(name){
+	return `Hi!! ${name} `;
+}
+
+function greet_name(greeting,message,name){
+	console.log(`${greeting(name)} ${message}`);
+}
+
+greet_name(greet,'Welcome To GeeksForGeeks','JavaScript');
+
+</script>
+
+</body>
+</html> 
+
+```  
+![image](https://user-images.githubusercontent.com/75599178/179898208-465fcc9e-42c2-4efd-9986-636b738fb9f9.png)
+
+**<li>Key Differences between First-Order Function and Higher-Order Function:-</li>**
+
+First-Order Function | Higher-Order Function
+-------------------- | ---------------------
+Function are treated as a variable that can be assigned to any other variable or passed as an argument. | Function receives another function as an argument or returns First-order a new function or both.
+The “first-class” concept only has to do with functions in programming languages. | The “higher-order” concept can be applied to functions in general, like functions in the mathematical sense.
+The presence of the First-class function implies the presence of a higher-order function. | The presence of a Higher-order function does not imply the presence of a First-order function.
 </details>  
   
   
