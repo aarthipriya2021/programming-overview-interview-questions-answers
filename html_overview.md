@@ -38,3 +38,12 @@ HTML elements which do not have closing tags or do not need to be closed are Voi
 <summary>:bulb:</summary>
 HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
 </details>
+
+#### 4. What is the advantage of collapsing white space?
+<details>
+<summary>:bulb:</summary>
+<li>Collapsing white spaces decreases the transmission time between the server and the client because collapsing features remove unnecessary bytes that are occupied by the white spaces.</li>
+<li>By mistake, if you leave extra white space, the browser will ignore it and display the UI perfectly.</li>
+
+</details>
+
