@@ -70,8 +70,9 @@ In HTML some characters are reserved like ‘<’, ‘>’, ‘/’, etc. To use
 #### 7. What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?
 <details>
 <summary>:bulb:</summary>
-Class attribute -  Multiple elements can associate.
-Id attribute - Only one element can have.
+
+**Class attribute** -  Multiple elements can associate. <br>
+**Id attribute** - Only one element can have.
 
 </details>
 
