@@ -92,16 +92,30 @@ Every webpage has different layout structure, But globally accepted way to struc
 
 </details>
 
-#### 8. Describe HTML layout structure.
+#### 9.How to optimize website assets loading?
 <details>
 <summary>:bulb:</summary>
-Every webpage has different layout structure, But globally accepted way to structure the webpage  such as:
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>CDN hosting : A Content Delivery Network is geographically distributed servers to help the reduce latency.</li>
+<li>File compression : This is a method that reduces the size of an asset to reduce the data transfer.</li>
+<li>File Concatenation : This reduces the api calls.</li>
+<li>Lazy loading : Instead of loading all th assets at once, the non-critical assets can be loaded on a need basis.</li>
+</details>
+
+#### 10. What are the various formatting tags in html?
+<summary>:bulb:</summary>
+``` html
+1. <b> - makes text bold
+2. <i> - makes text italic
+3. <em> - makes text italic but with added semantics importance
+4. <big> - increases the font size of the text by one unit
+5. <small> - decreases the font size of the text by one unit
+6. <sub> - makes the text a subscript
+7. <sup> - makes the text a superscript
+8. <del> - displays as strike out text
+9. <strong> - marks the text as important
+10. <mark> - highlights the text
+11. <ins> - displays as added text
+```
 </details>
 
 
