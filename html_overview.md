@@ -102,7 +102,9 @@ Every webpage has different layout structure, But globally accepted way to struc
 </details>
 
 #### 10. What are the various formatting tags in html?
+<details>
 <summary>:bulb:</summary>
+
 ``` html
 1. <b> - makes text bold
 2. <i> - makes text italic
@@ -118,17 +120,177 @@ Every webpage has different layout structure, But globally accepted way to struc
 ```
 </details>
 
+#### 11. What are the different kinds of Doctype available?
+<details>
+<summary>:bulb:</summary>
+<li>Strict Doctype</li>
+<li>Tansitional Doctype</li>
+<li>Frameset Doctype</li>
+</details>
 
+#### 12. What are the different kinds of Doctype available?
+<details>
+<summary>:bulb:</summary>
 
+``` html
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   ...
+   ...
+ </head>
+ ...
+</html>
+```
+</details>
 
+#### 13. Difference between ![image](https://user-images.githubusercontent.com/75599178/183624976-50c05934-a408-49df-a2df-e6eaf7bb97c3.png)
 
+<details>
+<summary>:bulb:</summary>
 
+<li>b tag , i tag are stands for bold and italic.Apart from this these tags dont say anything about the text. <br> </li>
+<li>em tag , strong tag are stands semantic tags it represents that the span of text is strong and importance an emphatic stress respectively than the rest of the text.</li>
+</details>
 
+#### 14. What is the significance of <head> and <body> tag in HTML?
 
+<details>
+<summary>:bulb:</summary>
+<head> tag provide the information about web page or document like meata data, characterset,..etc.Also it can be only one head tag in the entire html and it should be represents the before of the body tag also. <br>
 
+<body> tag defines the body of the html documnt. All the contents needs to be displayed on web page like images, videos, links, texts are useing with respecct of their tags in body tag part. Also only one body tag is in html document , which is should be after the head tag.
 
+</details>
 
+#### 15. Can we display a web page inside a web page or Is nesting of webpages possible?
 
+<details>
+<summary>:bulb:</summary>
+Yes, we can display a web page inside another web page. HTML provides a tag <iframe> using which we can achieve this functionality.
+
+``` html
+<iframe src=”https://youtube.com" />
+```
+</details>
+
+#### 16.How is Cell Padding different from Cell Spacing?
+
+<details>
+<summary>:bulb:</summary>
+Cell spacing: Cell spacing is space or gap  is space between two consecutive cells <br>
+Cell padding: Cell padding is space inside the cell which  is space between content border/edge of the cell.
+</details>
+
+#### 17. How can we club two or more rows or columns into a single row or column in an HTML table?
+
+<details>
+<summary>:bulb:</summary>
+HTML provides two table attributes “rowspan” and “colspan” to make a cell span to multiple rows and columns respectively.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/183661662-eb61a12d-277e-4789-ad77-7259eb9eaa4c.png)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two columns</h2>
+<p>To make a cell span more than one column, use the colspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/183662222-7a0eb506-e8d0-4279-a92f-c50d472ae259.png)
+
+</details>
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
 
 
 
