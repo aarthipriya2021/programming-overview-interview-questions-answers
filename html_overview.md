@@ -264,9 +264,19 @@ table, th, td {
 
 </details>
                                  
-                                 
-                                 
-                                 
+#### 18. Is it possible to change an inline element into a block level element?
+
+<details>
+<summary>:bulb:</summary>
+Yes, it is possible using the “display” property with its value as “block”, to change the inline element into a block-level element                               
+</details>                                 
+ 
+#### 19. In how many ways can we position an HTML element? Or what are the permissible values of the position attribute?
+
+<details>
+<summary>:bulb:</summary>
+Yes, it is possible using the “display” property with its value as “block”, to change the inline element into a block-level element                               
+</details>                                   
                                  
                                  
                                  
