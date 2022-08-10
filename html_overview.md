@@ -370,16 +370,42 @@ HTML provides a <script> tag using which we can run the javascript code and make
 
 <details>
 <summary>:bulb:</summary>
-1. Place library scripts or event scripts in the head section. <br>
-2. Place normal scripts that do not write anything on the page, in the head section until there is any performance issue.performance issue.<br>
-3. Place scripts that render something on the web page at the bottom of the body section
+The HTML form is used to collect the user inputs. HTML provides a form tag to create forms. To take input from the user we use the <input> tag inside form so that all collected user data can be sent to server for processing.
+
+``` html
+<form action="/submit_data.php">
+   <label>Enter your name: </label>
+   <input type="text" name="name" /> 
+   <label>Enter Mobile number </label>
+   <input type="number" name="mobile_no"/>
+   <input type="submit" value="Submit">
+</form>
+```
+
 </details>                                     
                                               
+#### 28.  How can we include audio or video in a webpage?   
+
+<details>
+<summary>:bulb:</summary>
+HTML5 provides two tags: <audio> and <video> tags using which we can add the audio or video directly in the webpage.
+</details>                                    
                                  
+#### 29.  Inline and block elements in HTML5? 
+
+<details>
+<summary>:bulb:</summary>
+![image](https://user-images.githubusercontent.com/75599178/183951806-ae4e8979-4a81-400b-abba-7397c3bcb429.png)
+</details>                                 
                                  
-                                 
-                                 
-                                 
+#### 30.  What is the difference between <figure> tag and <img> tag?
+
+<details>
+<summary>:bulb:</summary>
+figure tag : The figure tag is used to semantically organize the content of images, videos, audios or even charts or tables, block of codes in the HTML document.  <br>
+img tag : The image tag is used to add an image to an HTML page.
+</details> 
+                             
                                  
                                  
 
