@@ -278,7 +278,17 @@ Yes, it is possible using the “display” property with its value as “block�
 Yes, it is possible using the “display” property with its value as “block”, to change the inline element into a block-level element                               
 </details>                                   
                                  
-                                 
+#### 20. In how many ways can we position an HTML element? Or what are the permissible values of the position attribute?
+
+<details>
+<summary>:bulb:</summary>
+1.Static :  This is not positioned in special way. It is positioned on flow of the document.<br>
+2.Absolute : This is positioned relative to the nearest positioned ancestor.<br>
+3.Fixed : This is positioned relative to the viewport, which means it always in the same place even if the page is scrolled.Position of the element might be top, bottom, right, left.<br>
+4.Relative : This is positioned according to normal flow of the document and positioned relative to its original/normal position.<br>
+5.Initial : This resets the property to its default value.<br>
+6.Inherit : Here the element inherits or takes the property of its parent.                              
+</details>                                    
                                  
                                  
                                  
