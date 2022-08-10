@@ -288,20 +288,93 @@ Yes, it is possible using the “display” property with its value as “block�
 <details>
 <summary>:bulb:</summary>
 When we use the attribute “visibility: hidden” for an HTML element then that element will be hidden from the webpage but still takes up space. Whereas, if we use the “display: none” attribute for an HTML element then the element will be hidden, and also it won’t take up any space on the webpage.                              
+</details>     
+
+#### 21. In how many ways you can display HTML elements ?
+
+<details>
+<summary>:bulb:</summary>
+1.inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect <br>  
+2.block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width	.<br>
+3.inline-block: This property is similar to inline, except by using the display as inline-block, we can actually format the element using height and width values. <br>
+4.flex:  It displays the container and element as a flexible structure. It follows flexbox property.<br>
+5.inline-flex: It displays the flex container as an inline element while its content follows the flexbox properties.<br>
+6.grid: It displays the HTML elements as a grid container.<br>
+7.none: Using this property we can hide the HTML element.                           
 </details>                                   
                                  
+#### 22.How to specify the link in HTML and explain the target attribute?
+
+<details>
+<summary>:bulb:</summary>
+        HTML provides anchor tag , it has one attribute like target, which is used to denote the target link where do we want to open .
+1._self: default value. It opens in the same windoe<br> 
+2._blank: opens in new window.<br>
+3._parent: opens in parents frame<br>
+4._top: opens in full-bodyy window.<br>                 
+</details>                                      
                                  
+#### 23. In how many ways can we specify the CSS styles for the HTML element?
+
+<details>
+<summary>:bulb:</summary>
+        
+1.Inline: We can use style attribute in html document.<br> 
+2.Internal: We can use <style> tag inside of head tag. And inside of style tag we can use style properties with respect of "id" or "class"attribute  of html element.<br>
+3.External: we can link the external css file to html document in header section using link tag with related "id" or "class".<br>  
+![image](https://user-images.githubusercontent.com/75599178/183922868-8d630c48-bc72-4393-bbf7-4b881fb8e6ec.png)
+         
+</details>                                    
                                  
+#### 24. Difference between link tag <link> and anchor tag <a>?
+
+<details>
+<summary>:bulb:</summary>
+anchor tag : used to create hyperlinkto other web pages. <br>
+link tag : used to refer other documents or other file.      
+</details>                                        
                                  
+#### 25. How to include javascript code in  html ? 
+
+<details>
+<summary>:bulb:</summary>
+HTML provides a <script> tag using which we can run the javascript code and make our HTML page more dynamic.   
+
+``` html
+<!DOCTYPE html>
+<html>
+   <body>
+    <h1>
+          <span>This is a demo for </span>
+          <u><span id="demo"></span></u>
+   </h1>
+   <script>
+       document.getElementById("demo").innerHTML = "script Tag"
+   </script>
+   </body>
+</html>
+```
+</details>                                  
+                          
                                  
+#### 26. When to use scripts in the head and when to use scripts in the body?       
+
+<details>
+<summary>:bulb:</summary>
+1. Place library scripts or event scripts in the head section. <br>
+2. Place normal scripts that do not write anything on the page, in the head section until there is any performance issue.performance issue.<br>
+3. Place scripts that render something on the web page at the bottom of the body section
+</details>                                     
                                  
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
+#### 27. What are forms and how to create forms in HTML?       
+
+<details>
+<summary>:bulb:</summary>
+1. Place library scripts or event scripts in the head section. <br>
+2. Place normal scripts that do not write anything on the page, in the head section until there is any performance issue.performance issue.<br>
+3. Place scripts that render something on the web page at the bottom of the body section
+</details>                                     
+                                              
                                  
                                  
                                  
