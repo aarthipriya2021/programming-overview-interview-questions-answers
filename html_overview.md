@@ -270,15 +270,8 @@ table, th, td {
 <summary>:bulb:</summary>
 Yes, it is possible using the “display” property with its value as “block”, to change the inline element into a block-level element                               
 </details>                                 
- 
+               
 #### 19. In how many ways can we position an HTML element? Or what are the permissible values of the position attribute?
-
-<details>
-<summary>:bulb:</summary>
-Yes, it is possible using the “display” property with its value as “block”, to change the inline element into a block-level element                               
-</details>                                   
-                                 
-#### 20. In how many ways can we position an HTML element? Or what are the permissible values of the position attribute?
 
 <details>
 <summary>:bulb:</summary>
@@ -290,7 +283,12 @@ Yes, it is possible using the “display” property with its value as “block�
 6.Inherit : Here the element inherits or takes the property of its parent.                              
 </details>                                    
                                  
-                                 
+#### 20. What is the difference between “display: none” and “visibility: hidden”, when used as attributes to the HTML element.
+
+<details>
+<summary>:bulb:</summary>
+When we use the attribute “visibility: hidden” for an HTML element then that element will be hidden from the webpage but still takes up space. Whereas, if we use the “display: none” attribute for an HTML element then the element will be hidden, and also it won’t take up any space on the webpage.                              
+</details>                                   
                                  
                                  
                                  
