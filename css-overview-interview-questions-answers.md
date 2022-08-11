@@ -172,9 +172,39 @@ An overall block is given to class selector while id selectors take only a singl
 3. In complex situations, you can use selectors and grouping methods to apply styles. <br>
 </details>
 
+#### 15. What RWD?
 
+<details>
+<summary>:bulb:</summary>
+Responsive Web Design. This technique is used to display the website on different devices like, mobiles, tablets, laptops, desktop.
+</details>
 
+#### 16. What is css box model and its elements.
 
+<details>
+<summary>:bulb:</summary>
+CSS box model is used to define the design and layout of elements of css. <br>
+![image](https://user-images.githubusercontent.com/75599178/184180252-64816840-f292-4582-ad53-154781e5df70.png)
 
+1. Margin - It removes the area around border. It is transparent.<br>
+2. Border - It represents area around padding .<br>
+3. Padding - It removes the area around the content. It i stransparent.<br>
+4. Content - It represents like text, images.
+</details>
 
+#### 17. What is the float property of css ? 
+
+<details>
+<summary>:bulb:</summary>
+The css float property is used to move the image to the right or left along with the texts to be wrapped around it.
+![image](https://user-images.githubusercontent.com/75599178/184190114-853751d8-1fc9-4d8f-a721-679ea179185b.png)
+
+</details>
+
+#### 18. What is thye purpose of z-index?
+
+<details>
+<summary>:bulb:</summary>
+The z-index helps to specify the stack order of elements in that may overlap one another. The z-index value is zero , it may  either positive or negative. 
+</details>
 
