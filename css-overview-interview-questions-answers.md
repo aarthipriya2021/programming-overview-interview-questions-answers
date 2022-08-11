@@ -101,6 +101,7 @@ img.trans {
 <details>
 <summary>:bulb:</summary>
 It matches elements of any type. An asterish("*") is ususally denoted as universal selector.
+
 ``` css
 <style>    
 * {    
@@ -146,6 +147,7 @@ The background-attachment property controlls the image scroll in the background.
 <summary>:bulb:</summary>
 An overall block is given to class selector while id selectors take only a single element differing from other elements.
 **CSS Class Selector**
+
 ``` css
 <style>    
 .center {    
@@ -154,13 +156,17 @@ An overall block is given to class selector while id selectors take only a singl
 }    
 </style>  
 ```
+
 **CSS id selector**
+
+``` css
 <style>    
 #para1 {    
     text-align: center;    
     color: blue;    
 }    
-</style>    
+</style> 
+```   
 </details>
 
 #### 14. What are the advantages of External Style Sheets?
@@ -184,6 +190,7 @@ Responsive Web Design. This technique is used to display the website on differen
 <details>
 <summary>:bulb:</summary>
 CSS box model is used to define the design and layout of elements of css. <br>
+
 ![image](https://user-images.githubusercontent.com/75599178/184180252-64816840-f292-4582-ad53-154781e5df70.png)
 
 1. Margin - It removes the area around border. It is transparent.<br>
@@ -197,6 +204,7 @@ CSS box model is used to define the design and layout of elements of css. <br>
 <details>
 <summary>:bulb:</summary>
 The css float property is used to move the image to the right or left along with the texts to be wrapped around it.
+
 ![image](https://user-images.githubusercontent.com/75599178/184190114-853751d8-1fc9-4d8f-a721-679ea179185b.png)
 
 </details>
