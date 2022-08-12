@@ -15,20 +15,19 @@ CSS stands for Cascading Style Sheet. It determines the how the website or conte
 
 <details>
 <summary>:bulb:</summary>
-1. Bandwidth <br>
-2. Site-wide consistency <br>
-3. Page reformatting <br>
+1. Separation of content from presentation - CSS provides a way to present the same content in multiple presentation formats in mobile or desktop or laptop.<br>
+2. Easy to maintain - CSS, built effectively can be used to change the look and feel complete by making small changes. To make a global change, simply change the style, and all elements in all the web pages will be updated automatically. <br>
+3. Bandwidth - Used effectively, the style sheets will be stored in the browser cache and they can be used on multiple pages, without having to download again. <br>
 4. Accessibility <br>
-5. Content separated from presentation <br>
 </details>
 
 #### 3. What are the limitations of CSS?
 
 <details>
 <summary>:bulb:</summary>
-1. No expressions <br>
-2. Limitations of vertical control <br>
-3. No column declaration <br>
+1. Browser compatibility <br>
+2. Cross browser issue <br>
+3. There is no parent selector <br>
 </details>
 
 #### 4. What is Embedded Style Sheet?
@@ -216,3 +215,36 @@ The css float property is used to move the image to the right or left along with
 The z-index helps to specify the stack order of elements in that may overlap one another. The z-index value is zero , it may  either positive or negative. 
 </details>
 
+#### 19. What is CSS Preprocesor ? What are Sass, Less and Stylus?
+
+<details>
+<summary>:bulb:</summary>
+Css preprocessor is a tool used to extend the basic functionality of default vanilla css through its own scripting language. It helps to use complex logical syntax like variables, functions,mixins.<br><br>
+
+##### SASS :
+SASS is the acronym for "Syntactically Awesome Style Sheets". 
+
+###### SASS vs SCSS
+1. SASS is based on indentation and SCSS(Sassy CSS) is not.<br>
+2.SASS uses .sass extension while SCSS uses .scss extension. <br>
+3.SASS doesnt use curly brackets or semicolons. SCSS just like the CSS.
+   
+SASS SYNTAX | SCSS SYNTAX
+------------ | -------------    
+![image](https://user-images.githubusercontent.com/75599178/184363604-190c71d8-0693-441b-b80d-bc1e6611df9f.png) | ![image](https://user-images.githubusercontent.com/75599178/184363682-6abdc43d-33e8-445b-a7dd-8d6776fb5388.png)
+
+</details>     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
