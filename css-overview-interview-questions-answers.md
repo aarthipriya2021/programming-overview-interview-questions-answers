@@ -215,7 +215,7 @@ The css float property is used to move the image to the right or left along with
 The z-index helps to specify the stack order of elements in that may overlap one another. The z-index value is zero , it may  either positive or negative. 
 </details>
 
-#### 19. What is CSS Preprocesor ? What are Sass, Less and Stylus?
+#### 19. What is CSS Preprocesor ? What are Sass, Less ?
 
 <details>
 <summary>:bulb:</summary>
@@ -226,18 +226,49 @@ SASS is the acronym for "Syntactically Awesome Style Sheets".
 
 ###### SASS vs SCSS
 1. SASS is based on indentation and SCSS(Sassy CSS) is not.<br>
-2.SASS uses .sass extension while SCSS uses .scss extension. <br>
-3.SASS doesnt use curly brackets or semicolons. SCSS just like the CSS.
+2. SASS uses .sass extension while SCSS uses .scss extension. <br>
+3. SASS doesnt use curly brackets or semicolons. SCSS just like the CSS.
    
 SASS SYNTAX | SCSS SYNTAX
 ------------ | -------------    
 ![image](https://user-images.githubusercontent.com/75599178/184363604-190c71d8-0693-441b-b80d-bc1e6611df9f.png) | ![image](https://user-images.githubusercontent.com/75599178/184363682-6abdc43d-33e8-445b-a7dd-8d6776fb5388.png)
 
+##### LESS :
+LESS is the acronym for "Leaner Style Sheets".  LESS is easy to add to any javascript projects by using .less.<br>
+LESS syntax is the same as the SCSS with some exceptions. LESS uses @to define the variable. 
 </details>     
     
+#### 20. What are Pseudo elements and Pseudo classes ?
+
+<details>
+<summary>:bulb:</summary>
+
+**PSEUDO ELEMENTS :** It is keyword added selector, that lets you style a specific part of the selected element(s) .
+
+**Example:**
+1. ::before <br>
+2. ::after <br>
+3. ::first-line <br>
+4. ::first-letter 
+
+**PSEUDO ELEMENTS :** It is keyword added selector, that specifies the state of selected elements.
     
+**Example:**
+1. :link<br>
+2. :active <br>
+3. :hover <br>
+4. :focus 
+</details>    
     
-    
+#### 21. What is flexbox?
+
+<details>
+<summary>:bulb:</summary>
+Flexbox is flexible box.  It allows elements to align the distribute space within a container.
+
+![screencapture-flexboxsheet-2022-08-12-22_51_53](https://user-images.githubusercontent.com/75599178/184412716-300159bd-c869-46d5-a893-5e0b683e7442.png)
+
+</details>    
     
     
     
