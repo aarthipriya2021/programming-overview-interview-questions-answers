@@ -267,7 +267,14 @@ LESS syntax is the same as the SCSS with some exceptions. LESS uses @to define t
 <summary>:bulb:</summary>
 Flexbox is flexible box.  It allows elements to align the distribute space within a container.
 
-![screencapture-flexboxsheet-2022-08-12-22_51_53](https://user-images.githubusercontent.com/75599178/184412716-300159bd-c869-46d5-a893-5e0b683e7442.png)
+![image](https://user-images.githubusercontent.com/75599178/184688918-c5440039-9bd9-43f5-b5c0-51ec16c4ea07.png)
+
+![image](https://user-images.githubusercontent.com/75599178/184688987-15bd1caf-4730-4fc6-9a4c-3b0fd1b1b932.png)
+
+![image](https://user-images.githubusercontent.com/75599178/184689061-4c58199f-9ca8-44e9-9ff1-e42b0a7931c2.png)
+
+![image](https://user-images.githubusercontent.com/75599178/184689112-e27226ac-1ae5-47cc-8f44-6dd02b96fe48.png)
+
 
 </details>    
     
@@ -312,7 +319,7 @@ Accessibility refers to how software and hardware combinations are designed to m
 #### 26. Difference between flexbox and grid ?  
 <details>
 <summary>:bulb:</summary>
-Grid - Grid layout is two dimensional layout, it can handle both rows and columns.    
+Grid - Grid layout is two dimensional layout, it can handle both rows and columns.    <br>
 Flexbox - Grid layout is one dimensional layout, it can handle either row or column.       
 </details>      
     
@@ -320,6 +327,7 @@ Flexbox - Grid layout is one dimensional layout, it can handle either row or col
 <details>
 <summary>:bulb:</summary>
 Calc() function allows us to perform mathematical operations on property values.  Instead of declaring , for example static pixel values for an elements width, we can use calc() to specify that width is the result of the addition of two or more numeric values.  
+
 ``` css
 .foo {
 	Width: calc(100px + 50px)
