@@ -282,7 +282,91 @@ Flexbox is flexible box.  It allows elements to align the distribute space withi
 
 ![image](https://user-images.githubusercontent.com/75599178/184654507-634e4bd5-b6e7-4359-86ed-7c4bb602506e.png)
                         
+</details>  
+
+#### 23. Can you name the four types of @media properties ? 
+<details>
+<summary>:bulb:</summary>
+1. All => Default property. Used for all media-type devices.<br>
+2. Screen => Used for computer screen, mobile screen.<br>
+3. Print => Used for printers.<br>
+4. Speech => Used for screen readers.
+                
 </details>         
+    
+#### 24. What is the grid system?
+<details>
+<summary>:bulb:</summary>
+CSS Grid Layout is most powerful layout system available in cs. It is said to be a 2-dimensional system, mening it can handle both columns and rows .
+ 
+![screencapture-grid-malven-co-2022-08-15-22_10_37](https://user-images.githubusercontent.com/75599178/184678137-6b5f975c-d45b-4bdf-998b-f1d575f35c2d.png)
+               
+</details>         
+    
+#### 25. What does accessability mean ? 
+<details>
+<summary>:bulb:</summary>
+Accessibility refers to how software and hardware combinations are designed to make a system accessible to person with disabilities, such as visual impairment, hearing loss, or limited dexirity.               
+</details>     
+    
+#### 26. Difference between flexbox and grid ?  
+<details>
+<summary>:bulb:</summary>
+Grid - Grid layout is two dimensional layout, it can handle both rows and columns.    
+Flexbox - Grid layout is one dimensional layout, it can handle either row or column.       
+</details>      
+    
+#### 27. How does calc work ?  
+<details>
+<summary>:bulb:</summary>
+Calc() function allows us to perform mathematical operations on property values.  Instead of declaring , for example static pixel values for an elements width, we can use calc() to specify that width is the result of the addition of two or more numeric values.  
+``` css
+.foo {
+	Width: calc(100px + 50px)
+}
+```
+</details>      
+    
+#### 27. Difference between css variables and preprocessors variables ?  
+<details>
+<summary>:bulb:</summary>
+1. CSS variables can be used without the need for a preprocessor. Currently, all the major browsers support the CSS variables.<br> 
+2. CSS variable cascade. But the preprocessor variables don’t cascade. (“Cascading” refers to the process of going through the style declarations )<br>
+3. CSS variable can be accessed and manipulated in javascript.      <br>
+</details> 
+
+#### 28. What does *{ box-sizing} and advantages?  
+<details>
+<summary>:bulb:</summary>
+1. It makes every element in the document include the padding and border in the element's inner dimensio for the height and width computation.. <br>
+2. In box-sizing:border-box , the height of an element is now calculated by the content's height + vertical padding + vertical border width. <br>
+3. CSS variable can be accessed and manipulated in javascript.      
+</details>      
+    
+#### 29. Whatdoes !important mean in css ? 
+<details>
+<summary>:bulb:</summary>
+The style is having the important will have the highest precedence and it overrides the cascaded property.
+
+``` css
+p {
+ 	color: red !important;
+ }
+ #thing {
+ 	color: green;
+ } 
+ <p id="thing">Will be RED.</p>
+```
+</details>     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
