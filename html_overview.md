@@ -127,11 +127,11 @@ Every webpage has different layout structure, But globally accepted way to struc
 <details>
 <summary>:bulb:</summary>
 <li>Strict Doctype</li>
-<li>Tansitional Doctype</li>
+<li>Transitional Doctype</li>
 <li>Frameset Doctype</li>
 </details>
 
-#### 12. What are the different kinds of Doctype available?
+#### 12. Please explain how to indicate the character set being used by a document in HTML?
 <details>
 <summary>:bulb:</summary>
 
@@ -157,13 +157,12 @@ Every webpage has different layout structure, But globally accepted way to struc
 <li>em tag , strong tag are stands semantic tags it represents that the span of text is strong and importance an emphatic stress respectively than the rest of the text.</li>
 </details>
 
-#### 14. What is the significance of <head> and <body> tag in HTML?
+#### 14. What is the significance of head and body tag in HTML?
 
 <details>
 <summary>:bulb:</summary>
-<head> tag provide the information about web page or document like meata data, characterset,..etc.Also it can be only one head tag in the entire html and it should be represents the before of the body tag also. <br>
-
-<body> tag defines the body of the html documnt. All the contents needs to be displayed on web page like images, videos, links, texts are useing with respecct of their tags in body tag part. Also only one body tag is in html document , which is should be after the head tag.
+1. Head tag provide the information about web page or document like meta data, characterset,..etc. Also it can be only one head tag in the entire html and it should be represents the before of the body tag also. <br>
+2. Body tag defines the body of the html document. All the contents needs to be displayed on web page like images, videos, links, texts are using with respect of their tags in body tag part. Also only one body tag is in html document , which is should be after the head tag.
 
 </details>
 
@@ -298,7 +297,7 @@ When we use the attribute “visibility: hidden” for an HTML element then that
 <details>
 <summary>:bulb:</summary>
 1.inline: Displays an element as an inline element (like <span>). Any height and width properties will have no effect <br>  
-2.block: Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width	.<br>
+2.block: Displays an element as a block element (like p tag). It starts on a new line, and takes up the whole width	.<br>
 3.inline-block: This property is similar to inline, except by using the display as inline-block, we can actually format the element using height and width values. <br>
 4.flex:  It displays the container and element as a flexible structure. It follows flexbox property.<br>
 5.inline-flex: It displays the flex container as an inline element while its content follows the flexbox properties.<br>
@@ -391,13 +390,14 @@ The HTML form is used to collect the user inputs. HTML provides a form tag to cr
 
 <details>
 <summary>:bulb:</summary>
-HTML5 provides two tags: <audio> and <video> tags using which we can add the audio or video directly in the webpage.
+HTML5 provides two tags: audio and video tags using which we can add the audio or video directly in the webpage.
 </details>                                    
                                  
 #### 29.  Inline and block elements in HTML5? 
 
 <details>
 <summary>:bulb:</summary>
+
 ![image](https://user-images.githubusercontent.com/75599178/183951806-ae4e8979-4a81-400b-abba-7397c3bcb429.png)
 </details>                                 
                                  
