@@ -30,7 +30,10 @@ For Example :  ![image](https://user-images.githubusercontent.com/75599178/18347
 #### 3. What are void elements in HTML?
 <details>
 <summary>:bulb:</summary>
-HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
+ 
+HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example 
+
+![image](https://user-images.githubusercontent.com/75599178/184640587-fadc6afb-e81a-46b9-8041-28b62154d21e.png).
 </details>
 
 #### 4. What is the advantage of collapsing white space?
