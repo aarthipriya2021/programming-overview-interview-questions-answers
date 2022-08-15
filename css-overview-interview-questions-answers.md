@@ -63,6 +63,7 @@ h1 {
 
 <details>
 <summary>:bulb:</summary>
+CSS selectors are used to select the content you want to style. 
 1. CSS Element Selector <br>
 2. CSS Id Selector <br>
 3. CSS Class Selector <br>
@@ -194,7 +195,7 @@ CSS box model is used to define the design and layout of elements of css. <br>
 
 1. Margin - It removes the area around border. It is transparent.<br>
 2. Border - It represents area around padding .<br>
-3. Padding - It removes the area around the content. It i stransparent.<br>
+3. Padding - It removes the area around the content. It is transparent.<br>
 4. Content - It represents like text, images.
 </details>
 
@@ -208,7 +209,7 @@ The css float property is used to move the image to the right or left along with
 
 </details>
 
-#### 18. What is thye purpose of z-index?
+#### 18. What is the purpose of z-index?
 
 <details>
 <summary>:bulb:</summary>
