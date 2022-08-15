@@ -271,8 +271,18 @@ Flexbox is flexible box.  It allows elements to align the distribute space withi
 
 </details>    
     
-    
-    
+#### 22. Explain CSS position property ? 
+<details>
+<summary>:bulb:</summary>
+1.Static :  This is not positioned in special way. It is positioned on flow of the document.<br>
+2.Absolute : This is positioned relative to the nearest positioned ancestor.<br>
+3.Fixed : This is positioned relative to the viewport, which means it always in the same place even if the page is scrolled.Position of the element might be top, bottom, right, left.<br>
+4.Relative : This is positioned according to normal flow of the document and positioned relative to its original/normal position.<br>
+5.Sticky : Sticky positioning is a hybrid of relative and fixed positioning. 
+
+![image](https://user-images.githubusercontent.com/75599178/184654507-634e4bd5-b6e7-4359-86ed-7c4bb602506e.png)
+                        
+</details>         
     
     
     
