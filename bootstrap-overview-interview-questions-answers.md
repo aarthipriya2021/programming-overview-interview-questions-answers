@@ -4645,7 +4645,16 @@ Checkboxes have different markup. They are wrapped around a container element wi
 
 </details>		
 		
-		
+# Interview questions
+
+### What is bootstrap?
+<details>
+  <summary>:bulb:</summary>
+    <ul>
+           <li> Bootstrap is a CSS framework directed at responsive, mobile-first front-end web development.</li>
+           <li> Bootstrap 5 is the newest version of Bootstrap. </li>
+    </ul>
+</details>		
 		
 		
 		
