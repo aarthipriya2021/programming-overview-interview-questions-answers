@@ -4647,7 +4647,7 @@ Checkboxes have different markup. They are wrapped around a container element wi
 		
 # Interview questions
 
-### What is bootstrap?
+### 1. What is bootstrap?
 <details>
   <summary>:bulb:</summary>
     <ul>
@@ -4656,11 +4656,165 @@ Checkboxes have different markup. They are wrapped around a container element wi
     </ul>
 </details>		
 		
+### 2. What is bootstrap?
+<details>
+  <summary>:bulb:</summary>
+    <ul>
+           <li> Bootstrap is simple to use and anyone with a basic understanding of HTML and CSS can get started.</li>
+           <li> Bootstrap responsive css adapt all devices like mobile, desktop  and tablet </li>
+	   <li> Bootstrap 4 is compatible with all browsers including chrome, firefox, internet explorer. </li>
+    </ul>
+</details>		
 		
+### 3. What is bootstrap Container, and how does it work ?
+<details>
+  <summary>:bulb:</summary>
+    Bootstrap container is a handy class, it establish the width for the layout. <br>
+1.  The .container class creates a fixed-width container that is responsive. <br>
+2.  The .container-fluid class creates a full-width container .
+
+![image](https://user-images.githubusercontent.com/75599178/184876580-df9e6ed5-9655-450c-b955-566c2681201e.png)
+</details>
+
+### 4. What are the default Bootstrap text settings?
+<details>
+  <summary>:bulb:</summary>
+-  The default font size in Bootstrap 4 is 16px, with a line-height of 1.5. <br>
+-  The default font family is "Helvetica Neue," which includes Helvetica, Arial, and other sans-serif fonts. <br>
+-  Margin-top: 0 and margin-bottom: 1rem are also set on all <p> elements (16px by default).
+
+</details>
+			
+### 5. What do you know about bootstrap grid system ?
+<details>
+  <summary>:bulb:</summary>
+The bootstrap grid system is a mobile-first, responsiv grid system that scales up to 12 columns as the device. <br>
+There are five classes in bootstrap 4 grid system. <br>
+
+-  .col- for extra small devices, whose screen width is less than 576px. <br>
+-  .col-sm- for small devices, whose screen width is equal to or greate than 576px. <br>
+-  .col-md- for medium devices, whose screen width is equal to or than 768px. <br>
+-  .col-lg- for large devices, whose screen width is equal to or than 992px. <br>
+-  .col-xl- for extra large devices, whose screen width is equal to or than 1200px. <br>
+
+![image](https://user-images.githubusercontent.com/75599178/184878484-7037f860-df28-4085-9572-1481afcc8d98.png)
+</details>
+
+### 6. What is difference between Bootstrap 4 and Bootstrap 5?
+<details>
+  <summary>:bulb:</summary>
+
+Parameter | Bootstrap 4 | Bootstrap 5
+----------|-------------|------------
+Grid System | 5 tier grid systems (xs,sm,md,lg,xl) | 6 tier grid systems (xs, sm,md,lg,xl,xxl)
+Color | It has limited colors. | Extra colors have been added with the looks.
+BS Icons | BS 4 doesn't have own its icon | BS 5 have icons.
+Jumbotrons | BS 4 supports the jumbotron. | BS 5 doesn't supports the jumbotrons.
+Vertical classes | Relative positioning of column is allowed. | Relative positioning of column is not allowed.
+
+</details>		
+
+### 7. What is breadcrumb in bootstrap ?
+<details>
+  <summary>:bulb:</summary>
+Breadcrumbs are a wonderful way to show the website's hierarchy-based informayion. <br>
+Breadcrumbs can show thow the dates of categories, tags in the case of blogs. It shows the current page navigation hierarchy.
+<br>
+In Bootstrap, a breadcrumb is essentially an unordered list with the class .breadcrumb. CSS adds the separator for you automatically.
+
+``` css
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+  </ol>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+```
+</details>		
+
+### 8. How can you use Bootstrap to make thumbnails ?
+<details>
+  <summary>:bulb:</summary>
+Wrap an image in an <a> tag with the class .thumbnail. It will add a grey border and four pixels of padding . 
+
+``` css
+<div class = "row">
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+</div>
+```
+</details>	
+	
+### 9. What is a lead ?
+<details>
+  <summary>:bulb:</summary>
+Make a paragraph stand out by adding . The .lead class is used to achieve this and it makes the font larger, taller, and lighter in weight.
+
+![image](https://user-images.githubusercontent.com/75599178/184895832-cd316395-26d2-4fbd-a839-157b380a6b70.png)
+
+</details>	
+	
+### 10. In Bootstrap, how do you make navigation elements ?
+<details>
+  <summary>:bulb:</summary>
+Begin by creating an unordered list using the base class of .nav. The .nav-tabs class shold be added.
+
+</details>		
+	
+### 11. What contextual classes can be used to style the panels?
+<details>
+  <summary>:bulb:</summary>
+The Bootstrap Contextual Class allows you to change the background color of your table rows or individual cells. <br>
+To make a panel more meaningful to a specific context, use contextual state classes like panel-primary, panel-success, panel-info, panel-warning, and panel-danger.
+</details>		
+	
 		
-		
-		
-		
-		
-		
-		
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
