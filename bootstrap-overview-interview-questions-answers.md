@@ -4803,9 +4803,274 @@ The Bootstrap Contextual Class allows you to change the background color of your
 To make a panel more meaningful to a specific context, use contextual state classes like panel-primary, panel-success, panel-info, panel-warning, and panel-danger.
 </details>		
 	
+### 12. How can one create a alert in bootstrap ?
+<details>
+  <summary>:bulb:</summary>
+Create a wrapper div and add class .alert and one of the contextual classes to create a basic part . (.alert-success, .alert-info..etc.)
+
+![image](https://user-images.githubusercontent.com/75599178/184942863-45b01420-7738-40de-8c0b-6e44288edf22.png)
+
+</details>		
+
+### 13. What is a bootstrap card and how would you create ?
+<details>
+  <summary>:bulb:</summary>
+Create a wrapper div and add class .card . It has options for headers, footers, content and colors, among other things.
+
+``` css
+<div class="card">
+ <div class="card-header">Header</div>
+ <div class="card-body">Body</div>
+ <div class="card-footer">Footer</div>
+</div>
+```
+
+![image](https://user-images.githubusercontent.com/75599178/184944011-c9fd50ce-d20c-41f5-a051-c26c5a585ea4.png)
+
+</details>	
+	
+### 14. What is a bootstrap card and how would you create ?
+<details>
+  <summary>:bulb:</summary>
+Create a wrapper div and add class .card . It has options for headers, footers, content and colors, among other things.
+
+``` css
+<div class="card" style="width:400px">
+ <img class="card-img-top" src="img_avatar.png" alt="Card image">
+ <div class="card-body">
+   <h4 class="card-title">Richard Taylor</h4>
+   <p class="card-text">Some example text.</p>
+   <a href="#" class="btn btn-primary">See Profile</a>
+ </div>
+</div>
+```
+
+![image](https://user-images.githubusercontent.com/75599178/184944173-1277626c-5ed9-4888-b89d-3e9fcb9e53c4.png)
+
+</details>	
 		
+### 15. What are the two types of spinners that you can create using Bootstrap ?
+<details>
+  <summary>:bulb:</summary>
+Use the .spinner-border class to make a spinner/loader.
+
+``` css
+<div class= "spinner-border" ></div>
+```
+
+If you want the spinner/loader to grow instead of "spin", use the .spinner-grow class.
+
+``` css
+<div class= "spinner-grow" ></div>
+```
+</details>	
+	
+### 16. Discuss bootstrap table and various classes that can change the appearance of the table .
+<details>
+  <summary>:bulb:</summary>
+- The .table class gives a table some basic styling. <br>
+- The .table-striped class gives zebra sstriped to the table. <br>
+- The .table-bordered class adds borders to cells on all sides. <br>
+- On table rows, the .table-hover class adds a hover effect. <br>
+
+![image](https://user-images.githubusercontent.com/75599178/184948093-0b867ab6-db99-496e-a5c7-4eef61e18401.png)
+
+</details>		
+	
+### 17. Discuss bootstrap table and various classes that can change the appearance of the table .
+<details>
+  <summary>:bulb:</summary>
+- The .table class gives a table some basic styling. <br>
+- The .table-striped class gives zebra sstriped to the table. <br>
+- The .table-bordered class adds borders to cells on all sides. <br>
+- On table rows, the .table-hover class adds a hover effect. <br>
+
+![image](https://user-images.githubusercontent.com/75599178/184948093-0b867ab6-db99-496e-a5c7-4eef61e18401.png)
+
+</details>		
+	
+### 18. Write the code to create basic toast.
+<details>
+  <summary>:bulb:</summary>
+	When something happens, the toast component acts as alert box that only appears for a few seconds.(when user clicks a btn, submits a form.)
+
+``` css
+<div class= "toast" >
+ <div class= "toast-header" >
+   Toast Header
+ </div>
+ <div class="toast-body">
+   Toast Body Text
+ </div>
+</div>
+```
+</details>	
+
+### 19. What are glyphicons ?
+<details>
+  <summary>:bulb:</summary>
+	Glyphicons are icon fonts that you can use your website.
+
+``` css
+<span class = "glyphicon glyphicon-search" ></span>
+```
+</details>	
+	
+### 20. What is bootstrap pagination and how are they classified ?
+<details>
+  <summary>:bulb:</summary>
+If website has lot of pages , it may require pagination to display the reults for users.
+
+``` css
+<ul class="pagination">
+   <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+   <li class="page-item"><a class="page-link" href="#">1</a></li>
+   <li class="page-item"><a class="page-link" href="#">2</a></li>
+   <li class="page-item"><a class="page-link" href="#">3</a></li>
+   <li class="page-item"><a class="page-link" href="#">4</a></li>
+   <li class="page-item"><a class="page-link" href="#">Next</a></li>
+ </ul>
+```
+![image](https://user-images.githubusercontent.com/75599178/184950398-6986107b-782a-4856-b3b1-a0fb2a287291.png)
+
+**.pagination:** This class is required to enable pagination on your page.
+
+**.disabled, .active:** Use .disabled for unclickable links and .active to indicate the current page when customising links.
+
+**.pagination-Ig** and **.pagination-sm:** use these to get different size items.
+</details>		
+
+### 21. What are badges? Which class will you use to make your badge look more rounded?
+<details>
+  <summary>:bulb:</summary>
+Badges are used to supplement any content with additional information. To make rectangular badges, use the .badge class with a contextual class (like .badge-secondary) within <span> elements. To make the badges more rounded, we use the .badge-pill class. 
+
+![image](https://user-images.githubusercontent.com/75599178/184952294-870ba1d5-6367-4258-a49d-f9be3f6f9f7f.png)
+</details>
+
+### 22. What are Bootstrap collapsing elements?
+<details>
+  <summary>:bulb:</summary>
+Collapse javascript plugin used to hide and show the content when clicked button or link.
+
+``` css
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+```
+![image](https://user-images.githubusercontent.com/75599178/184953093-c70febed-a331-47b8-a51e-33950f8220d9.png)
+
+</details>	
+	
+### 23. In Bootstrap, what is a scrollspy?
+<details>
+  <summary>:bulb:</summary>
+It's an auto-updating process . Based on your scrolling position, the .active class will update from one nav part to next part. 
+</details>	
+	
+### 24. In Bootstrap, what is a jumbotron?
+<details>
+  <summary>:bulb:</summary>
+What is a jumbotron in Bootstrap?
+A jumbotron indicates a big box for calling extra attention to some special content or information. A jumbotron is displayed as a grey box with rounded corners.  
+</details>	
+	
+### 25. In Bootstrap, what is a jumbotron?
+<details>
+  <summary>:bulb:</summary>
+What is a jumbotron in Bootstrap?
+A jumbotron indicates a big box for calling extra attention to some special content or information. A jumbotron is displayed as a grey box with rounded corners.  
+</details>	
+	
+### 26. In Bootstrap, what is a jumbotron?
+<details>
+  <summary>:bulb:</summary>
+What is a jumbotron in Bootstrap?
+A jumbotron indicates a big box for calling extra attention to some special content or information. A jumbotron is displayed as a grey box with rounded corners.  
+</details>	
+	
+### 27. Discuss properties of flexbox.
+<details>
+  <summary>:bulb:</summary>
+
+**- Enable flex behaviors :** <br>
+To make a flexible container and convert direct children elements into flex items, use the "display" utility.
+![image](https://user-images.githubusercontent.com/75599178/184959074-8a686dfa-85d8-45bb-98da-ef1ac85844bc.png)
+
+**- Direction :** <br>
+To show the flex items horizontally, use .flex-row (side by side). To right-align the horizontal direction, use .flex-row-reverse.<br>
+Use .flex-column to display flex items vertically (on top of each other), or .flex-column-reverse to display them in the other direction.
+
+**- Justify content:** <br>
+To adjust the alignment of flex elements, use the.justify-content-* classes. Start (default), end, center, between, and around are all valid classes.
+
+![image](https://user-images.githubusercontent.com/75599178/184961054-2faad356-c035-49c9-b367-389da79c74a5.png)
+
+**- Align items :** <br>
+You can change the vertical alignment of single rows of flex items with the .align-items-* classes. .align-items-start, .align-items-end, .align-items-center, .align-items-baseline, and .align-items-stretch (default) are valid classes.
+
+**- Auto margins:** <br>
+You can easily add auto margins to flex items with .mr-auto which pushes items to the right, or by using .ml-auto which pushes items to the left.
 
 	
+**- Grow :** <br>
+You can use .flex-grow-1 on a flex item to take up the unused space. In the example below, the second flex item uses all the available space since we have used the .flex-grow-1 class with the second flex item.
+![image](https://user-images.githubusercontent.com/75599178/184961523-d8e08f40-b315-4eae-a2b7-962ae93bbaa1.png)
+
+**- Fill :** <br>
+You can use .flex-fill on flex items to make them into equal widths.
+
+**- Wrap :** <br>
+With .flex-nowrap (default), .flex-wrap, or .flex-wrap-reverse, you can control how flex items wrap in a flex container.
+
+![image](https://user-images.githubusercontent.com/75599178/184961812-0484d248-6398-4be3-b627-4368c4d71d5f.png)
+
+**- Align content :** <br>
+You can change the vertical alignment of gathered flex items with the .align-content-* classes. .align-content-start (default), .align-content-end, .align-content-center, .align-content-baseline, and .align-content-stretch are valid classes.
+
+</details>	
 	
 	
 	
