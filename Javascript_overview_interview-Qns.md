@@ -3995,7 +3995,33 @@ getFile();
 
 # Interview Questions
 
-### 1. What are the different data types present in javascript?
+### 1. What is javascript?
+<details>
+  <summary>:bulb:</summary>
+   Javascript is the scripting challenge, It is light weight, object-oriented language. It is widely used in client-side validdation. 
+</details>  
+  
+### 2. List some features of JavaScript.
+<details>
+  <summary>:bulb:</summary>
+1. Light weight<br>
+2. Opensource, cross-platform<br>
+3. Interpreted programming challenge<br>
+</details>  
+  
+### 3. Advantages and disadvantages.
+<details>
+  <summary>:bulb:</summary>
+
+Advantages | Disadvantages
+---------- | -------------
+Server interaction less | No support for multi threading
+Feedback to the visitors immediate | No support for multi processing
+Interactive is high , Interfaces are rich | No dupport for networking applications.
+
+</details>   
+
+### What are the different data types present in javascript?
 <details>
   <summary>:bulb:</summary>  
 
@@ -4023,7 +4049,7 @@ There are two data types: <br>
 
 </details>  
   
-### 2. Explain Hoisting in javascript.
+### Explain Hoisting in javascript.
 <details>
   <summary>:bulb:</summary>    
   
@@ -4037,7 +4063,7 @@ There are two data types: <br>
 </details>  
  
  
-### 3. Difference between “ == “ and “ === “ operators.
+### Difference between “ == “ and “ === “ operators.
 <details>
   <summary>:bulb:</summary>    
  
@@ -4046,7 +4072,7 @@ There are two data types: <br>
   
 </details>    
   
-### 4. Difference between var and let keyword in javascript.
+### Difference between var and let keyword in javascript.
 <details>
   <summary>:bulb:</summary>      
   
@@ -4054,7 +4080,7 @@ There are two data types: <br>
   
 </details>     
   
-### 5. Is javascript a statically typed or a dynamically typed language?  
+### Is javascript a statically typed or a dynamically typed language?  
 <details>
   <summary>:bulb:</summary>    
 
@@ -4062,7 +4088,7 @@ There are two data types: <br>
 Variables in JS are not associated with any type.<br> A variable can hold the value of any data type. 
 </details>     
   
-### 6. What is NaN property in JavaScript?  
+###  What is NaN property in JavaScript?  
 <details>
   <summary>:bulb:</summary>    
 
@@ -4071,7 +4097,7 @@ Variables in JS are not associated with any type.<br> A variable can hold the va
   
 </details>   
   
-### 7. Explain passed by value and passed by reference.  
+### Explain passed by value and passed by reference.  
 <details>
   <summary>:bulb:</summary>  
     
@@ -4082,7 +4108,7 @@ Variables in JS are not associated with any type.<br> A variable can hold the va
  In above example, variable y is directly assigned, byt z is not like that. It returns onlyby memory. 
 </details>  
   
-### 8. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
+### What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
 <details>
   <summary>:bulb:</summary> 
 
@@ -4093,7 +4119,7 @@ Characteristics of strict mode in javascript:
 <li>Duplicate arguments are not allowed by developers.</li> 
 </details>   
   
-### 9. Explain First class function & Higher Order Functions in javascript.
+### Explain First class function & Higher Order Functions in javascript.
 <details>
   <summary>:bulb:</summary> 
 
@@ -4176,12 +4202,8 @@ Function are treated as a variable that can be assigned to any other variable or
 The “first-class” concept only has to do with functions in programming languages. | The “higher-order” concept can be applied to functions in general, like functions in the mathematical sense.
 The presence of the First-class function implies the presence of a higher-order function. | The presence of a Higher-order function does not imply the presence of a First-order function.
 </details>  
-  
-  
-  
-  
-  
-  
+
+
   
   
   
