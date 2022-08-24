@@ -4021,7 +4021,7 @@ Interactive is high , Interfaces are rich | No dupport for networking applicatio
 
 </details>   
 
-### What are the different data types present in javascript?
+### 4. What are the different data types present in javascript?
 <details>
   <summary>:bulb:</summary>  
 
@@ -4049,11 +4049,11 @@ There are two data types: <br>
 
 </details>  
   
-### Explain Hoisting in javascript.
+### 5. Explain Hoisting in javascript.
 <details>
   <summary>:bulb:</summary>    
   
-*Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.*
+Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
 
 **Examples:**<br>
 
@@ -4062,8 +4062,66 @@ There are two data types: <br>
 
 </details>  
  
+### 6. Define named function in javascript.
+<details>
+  <summary>:bulb:</summary>    
+  
+The function which has named at the time of definition is called a named function.
+
+``` JS
+function msg()  
+{  
+  document.writeln("Named Function");  
+}  
+msg();  
+```
+
+</details>  
  
-### Difference between “ == “ and “ === “ operators.
+### 7. Define named anonymous function in javascript.
+<details>
+  <summary>:bulb:</summary>    
+  
+The function which has no name. These functions are declared dynamically at runtime using the function operator instead of the function declaration.
+
+``` JS
+var display=function()  
+{  
+  document.writeln("Anonymous Function");  
+}  
+display();  
+```
+
+</details>  
+
+### 8. Define closure.
+<details>
+  <summary>:bulb:</summary>    
+  
+In JavaScript, we need closures when a variable which is defined outside the scope in reference is accessed from some inner scope. <br>
+
+JavaScript variables can belong to the local or global scope.<br>
+
+Global variables can be made local (private) with closures.
+
+``` JS
+A function can access all variables defined inside the function(a is a local variable.), like this:<br>
+
+function myFunction() {
+  let a = 4;
+  return a * a;
+}
+
+But a function can also access variables defined outside the functiona is a global variable., like this:<br>
+let a = 4;
+function myFunction() {
+  return a * a;
+}
+```
+
+</details>  
+
+### 9. Difference between “ == “ and “ === “ operators.
 <details>
   <summary>:bulb:</summary>    
  
@@ -4072,7 +4130,7 @@ There are two data types: <br>
   
 </details>    
   
-### Difference between var and let keyword in javascript.
+### 10. Difference between var and let keyword in javascript.
 <details>
   <summary>:bulb:</summary>      
   
@@ -4080,7 +4138,7 @@ There are two data types: <br>
   
 </details>     
   
-### Is javascript a statically typed or a dynamically typed language?  
+### 11. Is javascript a statically typed or a dynamically typed language?  
 <details>
   <summary>:bulb:</summary>    
 
@@ -4088,7 +4146,7 @@ There are two data types: <br>
 Variables in JS are not associated with any type.<br> A variable can hold the value of any data type. 
 </details>     
   
-###  What is NaN property in JavaScript?  
+###  12. What is NaN property in JavaScript?  
 <details>
   <summary>:bulb:</summary>    
 
@@ -4096,7 +4154,16 @@ Variables in JS are not associated with any type.<br> A variable can hold the va
 ![image](https://user-images.githubusercontent.com/75599178/179816562-24639335-edf5-4364-b474-35a06e0f1966.png)
   
 </details>   
-  
+
+###  12. How to use external Javascript file? 
+<details>
+  <summary>:bulb:</summary>    
+  I'm assuming that js file name is message.js, place the following script tag inside the head tag.
+``` JS
+<script type="text/javascript" src="message.js"></script>  
+```
+</details>   
+    
 ### Explain passed by value and passed by reference.  
 <details>
   <summary>:bulb:</summary>  
@@ -4105,7 +4172,7 @@ Variables in JS are not associated with any type.<br> A variable can hold the va
 
 ![image](https://user-images.githubusercontent.com/75599178/179817006-4c72569b-b919-46f7-8b58-6fa7038885e4.png)
 
- In above example, variable y is directly assigned, byt z is not like that. It returns onlyby memory. 
+ In above example, variable y is directly assigned, but z is not like that. It returns only by memory. 
 </details>  
   
 ### What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
