@@ -4142,7 +4142,7 @@ function myFunction() {
 <details>
   <summary>:bulb:</summary>    
 
-*JavaScript is a dynamically typed language. *  
+JavaScript is a dynamically typed language.  
 Variables in JS are not associated with any type.<br> A variable can hold the value of any data type. 
 </details>     
   
@@ -4159,6 +4159,7 @@ Variables in JS are not associated with any type.<br> A variable can hold the va
 <details>
   <summary>:bulb:</summary>    
   I'm assuming that js file name is message.js, place the following script tag inside the head tag.
+
 ``` JS
 <script type="text/javascript" src="message.js"></script>  
 ```
