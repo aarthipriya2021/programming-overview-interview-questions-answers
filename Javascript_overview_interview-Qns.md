@@ -4358,7 +4358,7 @@ The “first-class” concept only has to do with functions in programming langu
 The presence of the First-class function implies the presence of a higher-order function. | The presence of a Higher-order function does not imply the presence of a First-order function.
 </details>  
 
-### 121. What does isNaN() function?
+### 21. What does isNaN() function?
 <details>
   <summary>:bulb:</summary> 
 The isNaN() returns true if the variable value is not anumber.
@@ -4380,16 +4380,60 @@ console.log(number('1000'));
 
 </details>  
   
+### 22. Difference between Client side JavaScript and Server side JavaScript?
+<details>
+  <summary>:bulb:</summary> 
+**Client-side Javascript** an extended version of JS that enables the enhancement and manipulation of client browsers and web ages.
+**Server-side Javascript** an extended version of JS that enables the backend access to databases , file systems and servers..
+</details>    
   
   
+### 23. Difference between event.preventDefault() and event.stopPropagation() methods in JavaScript?
+<details>
+  <summary>:bulb:</summary> 
+**preventDefault** Prevents the default browser behaviour for a given element.<br>
+**stopPropagation** stops an event from bubbling or propagating up the dom tree.<br>
+**For example:** If you use it in a form element, it prevents it from submitting. If used in an anchor element, it prevents it from navigating. If used in a contextmenu, it prevents it from showing or displaying.
+
+On the other hand, the event.stopPropagation() method is used to stop the propagation of an event or stop the event from occurring in the bubbling or capturing phase.
+</details>     
   
+### 24. Difference  between undefined value and null value?
+<details>
+  <summary>:bulb:</summary> 
+**Undefined value** A value that is not defined and has no keyword is known as undefined value.<br>
+**Null value** A value that explicitly specified by the keyword "null" is known as null value.<br>
+
+</details>     
   
+### 25.  How to set the cursor to wait in JavaScript?
+<details>
+  <summary>:bulb:</summary> 
+
+``` JS
+<script>
+window,document.body.style.cursor = "wait"
+</script>
+```
+</details>  
   
-  
-  
-  
-  
-  
+### 26.  What is negative infinity?
+<details>
+  <summary>:bulb:</summary> 
+Negative infinity is anumber in JS which is derived by dividing the negative number by the zero.
+``` JS
+<script>
+var num=-5;  
+function display()  
+{  
+  document.writeln(num/0);  
+}  
+display();  
+//expected output: -Infinity  
+</script>
+```
+</details>  
+    
   
   
   
