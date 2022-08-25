@@ -4572,6 +4572,98 @@ Password: <input type="password" name="password"><br/>
 ```
 </details> 	
 	
+### 30.  How to submit a form using JavaScript by clicking a link?
+<details>
+  <summary>:bulb:</summary> 
+
+``` JS
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2 style="color:green">GeeksforGeeks</h2>
+	<b>Submit form details</b>
+
+	<form id="form__submit" action="form.php" method="post">
+		<label>NAME: </label><br />
+		<input type="text" name="name" /><br />
+		<label>AGE: </label><br />
+		<input type="number" name="age" /><br />
+		<label>CITY: </label><br />
+		<input type="text" name="city" /><br /><br />
+		<a href="#" onclick="submitForm()">Submit Here</a>
+	</form>
+
+	<script>
+		function submitForm() {
+			let form = document.getElementById("form__submit");
+			form.submit();
+		}
+	</script>
+</body>
+
+</html>
+
+```
+</details>    
+	
+### 31.  What is this keyword in JavaScript?
+<details>
+  <summary>:bulb:</summary> 
+The this keyword is a reference variable that refers to the current object.
+
+``` JS
+<script>
+<html>
+<body>
+<script>  
+var address=    
+{    
+company:"Javatpoint",    
+city:"Noida",    
+state:"UP",    
+fullAddress:function()    
+{    
+return this.company+" "+this.city+" "+this.state;    
+}    
+};    
+var fetch=address.fullAddress();    
+document.writeln(fetch);   
+
+</script>
+```
+</details> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
