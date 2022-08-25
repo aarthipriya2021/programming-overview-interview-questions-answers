@@ -4164,8 +4164,95 @@ Variables in JS are not associated with any type.<br> A variable can hold the va
 <script type="text/javascript" src="message.js"></script>  
 ```
 </details>   
-    
-### Explain passed by value and passed by reference.  
+
+###  13. Is JavaScript case sensitive language? 
+<details>
+  <summary>:bulb:</summary>    
+  Yes, JavaScript is a case sensitive language. For example:
+
+``` JS
+Var msg = "JavaScript is a case-sensitive language"; //Here, var should be used to declare a variable  
+function display()   
+{  
+document.writeln(msg); // It will not display the result.  
+}   
+display();  
+
+Above code is executed as error. But if we modify "Var" to "var" it gives result.
+```
+</details>   	
+	
+###  14. What is BOM? 
+<details>
+  <summary>:bulb:</summary>    
+  The Browser Object Model in js includes the properties and methods for js to interact with the web browser.<br>
+BOM provides you a window objecs, for example to show the width and height of the window.It also includes the window.screen object to show the width and height of the scrreen.
+
+``` JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Window</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Browser inner window width: " + window.innerWidth + "px<br>" +
+"Browser inner window height: " + window.innerHeight + "px";
+</script>
+
+</body>
+</html>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/186610812-2e5a1c82-19af-4f9e-a7ea-cc3d55df2979.png)
+
+</details>  	
+	
+###  15. Is JavaScript case sensitive language? 
+<details>
+  <summary>:bulb:</summary>    
+  Yes, JavaScript is a case sensitive language. For example:
+
+``` JS
+Var msg = "JavaScript is a case-sensitive language"; //Here, var should be used to declare a variable  
+function display()   
+{  
+document.writeln(msg); // It will not display the result.  
+}   
+display();  
+
+Above code is executed as error. But if we modify "Var" to "var" it gives result.
+```
+![image](https://user-images.githubusercontent.com/75599178/186611066-b5022092-7fb3-4e03-86c6-20f8361689d0.png)
+
+</details>	
+	
+	
+###  16. How to write a comment in JavaScript?
+<details>
+  <summary>:bulb:</summary>    
+1. Single Line Comment: It is represented by // (double forward slash)<br>
+2. Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment here */
+
+</details>	
+		
+###  17. How to create a function in JavaScript?
+<details>
+  <summary>:bulb:</summary>    
+To create a function in JavaScript, follow the following syntax.
+
+``` JS
+function function_name(){  
+//function body  
+}  
+```
+</details>	
+	
+	
+### 18. Explain passed by value and passed by reference.  
 <details>
   <summary>:bulb:</summary>  
     
@@ -4176,7 +4263,7 @@ Variables in JS are not associated with any type.<br> A variable can hold the va
  In above example, variable y is directly assigned, but z is not like that. It returns only by memory. 
 </details>  
   
-### What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
+### 19. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
 <details>
   <summary>:bulb:</summary> 
 
@@ -4187,7 +4274,7 @@ Characteristics of strict mode in javascript:
 <li>Duplicate arguments are not allowed by developers.</li> 
 </details>   
   
-### Explain First class function & Higher Order Functions in javascript.
+### 20. Explain First class function & Higher Order Functions in javascript.
 <details>
   <summary>:bulb:</summary> 
 
@@ -4271,7 +4358,27 @@ The “first-class” concept only has to do with functions in programming langu
 The presence of the First-class function implies the presence of a higher-order function. | The presence of a Higher-order function does not imply the presence of a First-order function.
 </details>  
 
+### 121. What does isNaN() function?
+<details>
+  <summary>:bulb:</summary> 
+The isNaN() returns true if the variable value is not anumber.
 
+``` JS
+function number(num) {  
+  if (isNaN(num)) {  
+    return "Not a Number";  
+  }  
+  return "Number";  
+}  
+console.log(number('1000F'));  
+// expected output: "Not a Number"  
+  
+console.log(number('1000'));  
+// expected output: "Number"  
+```
+![image](https://user-images.githubusercontent.com/75599178/186629057-ba008784-41ff-4d0b-aa03-07b91deca91b.png)
+
+</details>  
   
   
   
