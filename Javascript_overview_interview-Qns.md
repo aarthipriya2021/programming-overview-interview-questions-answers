@@ -4383,6 +4383,7 @@ console.log(number('1000'));
 ### 22. Difference between Client side JavaScript and Server side JavaScript?
 <details>
   <summary>:bulb:</summary> 
+
 **Client-side Javascript** an extended version of JS that enables the enhancement and manipulation of client browsers and web ages.
 **Server-side Javascript** an extended version of JS that enables the backend access to databases , file systems and servers..
 </details>    
@@ -4391,6 +4392,7 @@ console.log(number('1000'));
 ### 23. Difference between event.preventDefault() and event.stopPropagation() methods in JavaScript?
 <details>
   <summary>:bulb:</summary> 
+
 **preventDefault** Prevents the default browser behaviour for a given element.<br>
 **stopPropagation** stops an event from bubbling or propagating up the dom tree.<br>
 **For example:** If you use it in a form element, it prevents it from submitting. If used in an anchor element, it prevents it from navigating. If used in a contextmenu, it prevents it from showing or displaying.
@@ -4401,6 +4403,7 @@ On the other hand, the event.stopPropagation() method is used to stop the propag
 ### 24. Difference  between undefined value and null value?
 <details>
   <summary>:bulb:</summary> 
+
 **Undefined value** A value that is not defined and has no keyword is known as undefined value.<br>
 **Null value** A value that explicitly specified by the keyword "null" is known as null value.<br>
 
@@ -4421,6 +4424,7 @@ window,document.body.style.cursor = "wait"
 <details>
   <summary>:bulb:</summary> 
 Negative infinity is anumber in JS which is derived by dividing the negative number by the zero.
+
 ``` JS
 <script>
 var num=-5;  
@@ -4434,8 +4438,156 @@ display();
 ```
 </details>  
     
+### 27.  What are the pop-up boxes available in javascript?
+<details>
+  <summary>:bulb:</summary> 
+
+1. Alert box <br>
+2. Prompt box <br>
+3. Confirm box
+
+``` JS
+/*alert => shows a message. */
+<script type="text/javascript">  
+function msg(){  
+ alert("Hello Alert Box");  
+}  
+</script>  
+<input type="button" value="click" onclick="msg()"/>  
+
+```
+![image](https://user-images.githubusercontent.com/75599178/186677982-bd22fb57-9954-4cb7-ae9e-2bea481cd5f5.png)
+
+
+``` JS
+/* prompt => shows a message asking the user to input text. */
+<script type="text/javascript">  
+function msg(){  
+var v= prompt("Who are you?");  
+alert("I am "+v);  
   
+}  
+</script>  
   
+<input type="button" value="click" onclick="msg()"/>  
+
+```
+![image](https://user-images.githubusercontent.com/75599178/186677500-55e5c107-6a1f-4bb8-9f8f-409522eee238.png)
+
+![image](https://user-images.githubusercontent.com/75599178/186677590-761a9a9f-3fd7-46a6-82d8-f02ce0cf4bbc.png)
+
+``` JS
+/* prompt => shows a message asking the user to input text. */
+<script type="text/javascript">  
+function msg(){  
+var v= confirm("Are u sure?");  
+if(v==true){  
+alert("ok");  
+}  
+else{  
+alert("cancel");  
+}  
+  
+}  
+</script>  
+  
+<input type="button" value="delete record" onclick="msg()"/>
+
+```
+![image](https://user-images.githubusercontent.com/75599178/186677761-4f16e37e-d877-4e9d-bade-e48964b86852.png)
+
+![image](https://user-images.githubusercontent.com/75599178/186677827-7fd0a182-fc28-49d9-9cba-a6e9dae9441a.png)
+
+</details>  
+      
+### 28.  How to submit a form using JavaScript by clicking a link?
+<details>
+  <summary>:bulb:</summary> 
+
+``` JS
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h2 style="color:green">GeeksforGeeks</h2>
+	<b>Submit form details</b>
+
+	<form id="form__submit" action="form.php" method="post">
+		<label>NAME: </label><br />
+		<input type="text" name="name" /><br />
+		<label>AGE: </label><br />
+		<input type="number" name="age" /><br />
+		<label>CITY: </label><br />
+		<input type="text" name="city" /><br /><br />
+		<a href="#" onclick="submitForm()">Submit Here</a>
+	</form>
+
+	<script>
+		function submitForm() {
+			let form = document.getElementById("form__submit");
+			form.submit();
+		}
+	</script>
+</body>
+
+</html>
+
+```
+</details>    
+	
+### 29.  How to validate a form in JavaScript?
+<details>
+  <summary>:bulb:</summary> 
+
+``` JS
+<script>
+<html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>
+
+ 
+
+</script>
+```
+</details> 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   
   
   
